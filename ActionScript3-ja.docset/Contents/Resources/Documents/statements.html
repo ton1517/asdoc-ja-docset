@@ -1,0 +1,1524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"><html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド"><meta name="lang" content="ja-jp"><link rel="stylesheet" href="style.css" type="text/css" media="screen"><link rel="stylesheet" href="print.css" type="text/css" media="print"><link rel="stylesheet" href="override.css" type="text/css"><link rel="stylesheet" href="asfilter.css" type="text/css"><link rel="stylesheet" href="ion.css" type="text/css"><title>ステートメント、キーワード、ディレクティブ - Adobe ActionScript&reg; 3（AS3 ）API リファレンス</title>
+		<link rel="stylesheet" href="./filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="./filter_new.css" type="text/css">
+			
+		<script src="./jquery.js" type="text/javascript"></script>
+		<script src="./s_chl_code.js" type="text/javascript"></script>
+		<script src="./jquery.zclip.js" type="text/javascript"></script>
+		<script src="./jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="./cookies.js" type="text/javascript"></script>
+		<script src="./asdoc.js" type="text/javascript"></script>
+		<script src="./iscroll.js" type="text/javascript"></script>
+		<script src="./AC_OETags.js" type="text/javascript"></script>
+		<script src="./omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "ランタイム";
+			var productsLabel = "製品";
+			var noneLabel = "選択しない";
+			var qsearchBoxLabel = "クイック検索";
+			var qsearchText = "文字列が見つかりません";
+			var ajaxErrorMsg="ページをロード中にエラーが発生しました";
+			var ajaxErrorTryMsg="再試行";
+			var ajaxLoadingMsg="ロード中です";
+			var cancelMsg = "キャンセル";
+			var classesText = "クラス";
+			var strJiveReply = "この質問は、次の記事について投稿されました。 "
+			var showFilters = "フィルターを表示";
+			var hideFilters = "フィルターを非表示";
+			
+		
+			var baseRef = "./";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		
+<!-- ********************************** -->
+<!-- START: ForeSee survey code in: /ssi/globalheader.ssi -->
+
+<script type="text/javascript">
+<!-- 
+// Enable the survey for only English, German and Japanese
+var agt=navigator.userAgent.toLowerCase();
+if ( agt.indexOf("community help client") == -1 ){
+    if ( document.location.href.indexOf("/en_US/") != -1 ){
+        showSurvey();
+//    }else if (document.location.href.indexOf("/de_DE/") != -1){
+//         var locale="de";
+//         showSurvey();
+    }else if (document.location.href.indexOf("/ja_JP/") != -1 ){
+         var locale="ja";
+         showSurvey();
+    }	
+}
+
+function showSurvey(){
+	document.write('<script type="text/javascript" src="/js/foresee/foresee-trigger.js"><\/scr'+'ipt>');
+}
+
+// -->
+</script>
+
+<!-- END: ForeSee survey code -->
+<!-- ******************************** -->
+
+
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform 用 ActionScript<sup>&reg;</sup> 3.0 リファレンスガイド<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="./index.html"> ホーム </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">パッケージおよびクラスリストの表示</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">パッケージおよびクラスリストの非表示</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="./package-summary.html"> パッケージ </a>&nbsp;|&nbsp;
+												<a target="_self" href="./class-summary.html"> クラス </a>&nbsp;|&nbsp;
+												<a target="_self" href="./whatsnew.html"> 新機能 </a>&nbsp;|&nbsp;
+												<a target="_self" href="./all-index-Symbols.html"> 索引 </a>&nbsp;|&nbsp;
+												<a target="_self" href="./appendixes.html"> 付録 </a>
+												<span id="whyEnglish">&nbsp;|&nbsp;
+													<a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">英語で表示される理由</a>
+												</span><br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchFormION" method="get" onSubmit="return submitValue('Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド','community.adobe.com/help/search.html','0','communityhelp_platform_aslr','ja_JP');">
+													<input class="hidden" name="loc" value="" type="hidden">
+													<input class="hidden" name="termPrefix" value="site:help.adobe.com/en_US/AS3CLR/Flash_10.0" type="hidden">
+													<input class="hidden" name="title" value="ActionScript 3.0 Reference for the Adobe Flash Platform" type="hidden">
+													<input class="hidden" name="term" value="" type="hidden">
+													<input class="hidden" name="area" value="" type="hidden">
+													<input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text">
+													<input type="button" name="action" value="" onClick="submitValue('Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド','community.adobe.com/help/search.html','0','communityhelp_platform_aslr','ja_JP')" class="searchbutton"><br>
+													<span id="checkBoxspan" title="検索対象を言語リファレンスのみに限定する">
+														<input id="checkBoxId" type="checkbox" name="checkbox" value="checkbox" checked> 言語リファレンスのみ
+													</span>
+												</form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="./help.js"></script>
+						<script language="javascript" type="text/javascript" src="./asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="./filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>フィルター：</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">サーバーからデータを取得しています...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">サーバーからデータを取得しています...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">&nbsp;</a><br>
+								<h1 id="classProductName">ステートメント、キーワード、ディレクティブ&nbsp;</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> プロパティ </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> プロパティ </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> コンストラクター </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> メソッド </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> グローバル定数 </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> イベント </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> スタイル </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> スキンパーツ </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> スキンの状態 </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> エフェクト </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> 定数 </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> グローバル関数 </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">関数</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> インターフェイス </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> クラス </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> 例 </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								クラス
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><p>ステートメントとは、実行時のアクションを実行または指定する言語エレメントです。例えば、<code>return</code> ステートメントは、実行された関数の結果の値を返します。<code>if</code> ステートメントは、条件を評価して、次に行うべき処理を判定します。<code>switch</code> ステートメントは、ActionScript ステートメントの分岐構造を作成します。 
+		<p>属性キーワードは定義の意味を変更します。また、クラス、変数、関数および名前空間の定義に適用できます。定義キーワードは、変数、関数、クラスおよびインターフェイスなどのエンティティを定義する場合に使用します。プライマリ式のキーワードはリテラル値を表します。予約語のリストについては、 <a href="http://www.adobe.com/go/learn_as3_reservedwords_jp" >ActionScript 3.0 の学習</a>を参照してください。</p> 
+		<p>ディレクティブにはステートメントと定義が含まれ、コンパイル時または実行時に適用できます。次の表では、ステートメントおよび定義以外のディレクティブは、ディレクティブとしてラベルされています。</p>
+		</p><br><a name="statementSummary"></a><table cellspacing="0" cellpadding="3" class="summaryTable"><tr><th>&nbsp;</th><th colspan="2">属性キーワード</th></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#dynamic">dynamic</a></td><td class="summaryTableLastCol">実行時に追加された dynamic プロパティをクラスのインスタンスで保有するよう指定します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#final">final</a></td><td class="summaryTableLastCol">メソッドのオーバーライドまたはクラスの拡張を制限します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#internal">internal</a></td><td class="summaryTableLastCol">クラス、変数、定数または関数に同じパッケージ内のすべての呼び出し元からアクセスできるよう指定します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#native">native</a></td><td class="summaryTableLastCol">Flash Player がネイティブコードで関数またはメソッドを実装するよう指定します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#override">override</a></td><td class="summaryTableLastCol">メソッドで継承したメソッドを置き換えるよう指定します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#private">private</a></td><td class="summaryTableLastCol">変数、定数、メソッドまたは名前空間を定義したクラスからのみアクセスできるよう指定します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#protected">protected</a></td><td class="summaryTableLastCol">変数、定数、メソッドまたは名前空間を定義したクラスとそのサブクラスからのみアクセスできるよう指定します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#public">public</a></td><td class="summaryTableLastCol">クラス、変数、定数またはメソッドにすべての呼び出し元からアクセスできるよう指定します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#static">static</a></td><td class="summaryTableLastCol">変数、定数またはメソッドがクラスのインスタンスではなくクラスに属するよう指定します。</td></tr><tr><th>&nbsp;</th><th colspan="2"> 名前空間 </th></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#AS3">AS3</a></td><td class="summaryTableLastCol">プロトタイププロパティの代わりに固定プロパティとして使用する、ActionScript コアクラスのメソッドおよびプロパティを定義します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#flash_proxy">flash_proxy</a></td><td class="summaryTableLastCol">Proxy クラスのメソッドを定義します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#object_proxy">object_proxy</a></td><td class="summaryTableLastCol">ObjectProxy クラスのメソッドを定義します。</td></tr><tr><th>&nbsp;</th><th colspan="2">ステートメント</th></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#break">break</a></td><td class="summaryTableLastCol">ループ（<code>for</code>、<code>for..in</code>、<code>for each..in</code>、<code>do..while</code> または <code>while</code>）で使用します。また、<code>switch</code> ステートメント内の特定のケースと関連するステートメントのブロック内でも使用します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#case">case</a></td><td class="summaryTableLastCol"><code>switch</code> ステートメントのジャンプターゲットを定義します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#continue">continue</a></td><td class="summaryTableLastCol">ループの終わりまで制御が通過したかのように、最も内側のループ内の残りのステートメントをすべてスキップして、ループの次の反復を開始します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#default">default</a></td><td class="summaryTableLastCol"><code>switch</code> ステートメントのデフォルトケースを定義します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#do..while">do..while</a></td><td class="summaryTableLastCol"><code>while</code> ループに似ていますが、条件の最初の評価に先立ってステートメントが実行される点が異なります。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#else">else</a></td><td class="summaryTableLastCol"><code>if</code> ステートメントの条件が <code>false</code> を返したときに実行するステートメントを指定します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#for">for</a></td><td class="summaryTableLastCol"><code>init</code>（初期化）式を 1 回だけ評価してから、ループシーケンスを開始します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#for..in">for..in</a></td><td class="summaryTableLastCol">オブジェクトの動的プロパティまたは配列のエレメントに対して反復処理を行い、各プロパティまたはエレメントに対して <code>statement</code> を実行します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#for_each..in">for each..in</a></td><td class="summaryTableLastCol">コレクションのアイテムに対して反復処理を行い、各アイテムに対して <code>statement</code> を実行します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#if">if</a></td><td class="summaryTableLastCol">条件を評価して、次のステートメントを実行するかどうかを判定します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#label">label</a></td><td class="summaryTableLastCol">ステートメントを <code>break</code> または <code>continue</code> で参照可能な識別子と関連付けます。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#return">return</a></td><td class="summaryTableLastCol">実行を呼び出し元の関数に直ちに返します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#super">super</a></td><td class="summaryTableLastCol">メソッドやコンストラクターのスーパークラスまたは親バージョンを呼び出します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#switch">switch</a></td><td class="summaryTableLastCol">式の値に応じて、ステートメントへの転送を制御します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#throw">throw</a></td><td class="summaryTableLastCol"><code>catch</code> コードブロックによって処理（キャッチ<em></em>）できるエラーを生成（スロー<em></em>）します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#try..catch..finally">try..catch..finally</a></td><td class="summaryTableLastCol">エラーが発生する可能性のあるコードブロックを囲み、そのエラーに対処します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#while">while</a></td><td class="summaryTableLastCol">条件を評価して、条件の評価結果が <code>true</code> になる場合はステートメントを実行します。その後、ループの先頭に戻り、再び条件を評価します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#with">with</a></td><td class="summaryTableLastCol">ステートメントの実行に使用するデフォルトのオブジェクトを設定します。記述するコードの量を減らすことができます。</td></tr><tr><th>&nbsp;</th><th colspan="2">ディレクティブ</th></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#default_xml_namespace">default xml namespace</a></td><td class="summaryTableLastCol">
+			<code>default xml namespace</code> ディレクティブは、XML オブジェクトに使用するデフォルトの名前空間を設定します。
+			</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#import">import</a></td><td class="summaryTableLastCol">外部で定義されたクラスおよびパッケージをコードで使用できるようにします。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#include">include</a></td><td class="summaryTableLastCol">指定したファイル内のコマンドを呼び出し元のスクリプトにインクルードし、そのスクリプトの一部であるかのように扱います。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#use_namespace">use namespace</a></td><td class="summaryTableLastCol">指定した名前空間をオープンな名前空間のセットに追加します。</td></tr><tr><th>&nbsp;</th><th colspan="2">プライマリ式キーワード</th></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#false">false</a></td><td class="summaryTableLastCol">false を表すブール値です。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#null">null</a></td><td class="summaryTableLastCol">変数に割り当てることができる特別な値、またはデータがない場合に関数から返される特殊な値です。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#this">this</a></td><td class="summaryTableLastCol">メソッドに含まれるオブジェクトへの参照です。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#true">true</a></td><td class="summaryTableLastCol">true を表すブール値です。</td></tr><tr><th>&nbsp;</th><th colspan="2">定義キーワード</th></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#..._(rest)_parameter">... (rest) parameter</a></td><td class="summaryTableLastCol">関数が任意の数のカンマ区切りの引数を取るよう指定します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#class">class</a></td><td class="summaryTableLastCol">独自で定義したメソッドとプロパティを共有するオブジェクトをインスタンス化できるクラスを定義します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#const">const</a></td><td class="summaryTableLastCol">定数（値を 1 回だけ割り当てることができる変数）を指定します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#extends">extends</a></td><td class="summaryTableLastCol">他のクラスのサブクラスとするクラスを定義します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#function">function</a></td><td class="summaryTableLastCol">特定のタスクを実行するよう定義した一連のステートメントで構成されます。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#get">get</a></td><td class="summaryTableLastCol">プロパティと同じように読み取り可能なメソッドである getter を定義します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#implements">implements</a></td><td class="summaryTableLastCol">クラスでインターフェイスを実装するかどうかを指定します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#interface">interface</a></td><td class="summaryTableLastCol">インターフェイスを定義します。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#namespace">namespace</a></td><td class="summaryTableLastCol">定義の可視性を制御できます。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#package">package</a></td><td class="summaryTableLastCol">他のスクリプトから読み込んだ個別のグループにコードを分類できます。</td></tr><tr class="row1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#set">set</a></td><td class="summaryTableLastCol">パブリックインターフェイスでプロパティとして表示されるメソッドである setter を定義します。</td></tr><tr class="row0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableStatementCol"><a class="signatureLink" href="#var">var</a></td><td class="summaryTableLastCol">変数を指定します。</td></tr></table><div class="detailSectionHeader">ステートメント、キーワード、ディレクティブの詳細</div><a name="..._(rest)_parameter"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">... (rest) parameter</td><td class="detailHeaderType">定義キーワード</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>function functionName(parameter0, parameter1, ...rest){ 
+	// statement(s) 
+} </pre>
+			</p></td></tr></table><p></p><p><p>関数が任意の数のカンマ区切りの引数を取るよう指定します。引数のリストは配列となり、関数本体を介してアクセスできます。配列の名前をパラメーター宣言にある <code>...</code> 文字の後に指定します。パラメーターには、予約語ではない名前を指定することができます。 
+			<p>他のパラメーターと共に使用する場合は、最後のパラメーターとして <code>...</code>（rest）パラメーター宣言を指定する必要があります。<code>...</code>（rest）パラメーター配列は、関数に渡された引数の数が他のパラメーターの数より多い場合のみ作成されます。</p> 
+			<p>カンマ区切りリストの引数は、それぞれ配列のエレメントとして配置されます。Array クラスのインスタンスを渡す場合は、配列全体が <code>...</code>（rest）パラメーター配列の 1 つのエレメントに配置されます。</p>
+			<p>このパラメーターを使用すると、<code>arguments</code> オブジェクトは使用できなくなります。<code>...</code>（rest）パラメーターには <code>arguments</code> 配列および <code>arguments.length</code> プロパティと同じ機能がありますが、<code>arguments.callee</code> のような機能はありません。<code>...</code>（rest）パラメーターを使用する前に、<code>arguments.callee</code> を使用する必要がないことをお確かめください。</p></p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">rest</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; 関数に渡される引数の配列名を表す識別子です。このパラメーターの名前を rest とする必要はありません。キーワード以外の任意の名前を付けることができます。...（rest）パラメーターのデータタイプを Array と指定することはできますが、混乱の原因となる場合があります。パラメーターはカンマ区切りの値のリストを受け付けますが、Array クラスのインスタンスとは異なります。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、...（rest）パラメーターを 2 つの異なる関数で使用します。最初の関数 traceParams は、rest 配列にある各引数について trace() 関数を呼び出します。次の関数 average() は引数のリストを取得して、その平均を返します。2 番目の関数のパラメーターには別の名前 args を使用しています。
+<div class="listing"><pre>
+package {
+	import flash.display.MovieClip;
+	
+	public class RestParamExample extends MovieClip {
+		public function RestParamExample() {
+			traceParams(100, 130, "two"); // 100,130,two
+			trace(average(4, 7, 13));     // 8
+		}
+	}
+}
+
+
+function traceParams(... rest) {
+ 	trace(rest);
+ }
+ 
+function average(... args) : Number{
+	var sum:Number = 0;
+	for (var i:uint = 0; i < args.length; i++) {
+		sum += args[i];
+	}
+	return (sum / args.length);
+}
+</pre></div>
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="arguments.html" target="">arguments オブジェクト</a></div></div><a name="AS3"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AS3</td><td class="detailHeaderType"> 名前空間 </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><p></p><p><p>プロトタイププロパティの代わりに固定プロパティとして使用する、ActionScript コアクラスのメソッドおよびプロパティを定義します。"-as3" コンパイラーオプションを <code>true</code> に設定すると（これは Flex Builder 2 のデフォルト設定です）、AS3 名前空間は自動的にすべてのコアクラスに対してオープンになります。つまり、コアクラスのインスタンスでは、クラスのプロトタイプオブジェクトに割り当てられた同じプロパティおよびメソッドのバージョンの代わりに、固定プロパティおよびメソッドを使用します。固定プロパティを使用するとパフォーマンスが向上しますが、ECMAScript Edition 3 言語仕様（ECMA-262）との後方互換性が失われます。</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"></table><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="Object.html" target="">Object クラス</a></div></div><a name="break"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">break</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><p><code>break [label]</code></p></p></td></tr></table><p></p><p><p>ループ（<code>for</code>、<code>for..in</code>、<code>for each..in</code>、<code>do..while</code> または <code>while</code>）で使用します。また、<code>switch</code> ステートメント内の特定のケースと関連するステートメントのブロック内でも使用します。<code>break</code> ステートメントをループ内で使用すると、ループ本体の残りの部分をスキップし、繰り返し処理を停止して、ループステートメントの次のステートメントを実行します。<code>break</code> ステートメントを <code>switch</code> 内で使用すると、<code>case</code> ブロック内の残りのステートメントをスキップし、囲んでいる <code>switch</code> ステートメントに続く最初のステートメントにジャンプします。 
+			<p>入れ子のループ内では、<code>break</code> は、そのループの残りの部分をスキップするだけで、入れ子の一連のループは終了しません。入れ子の一連のループを終了するには、<code>label</code> または <code>try..catch..finally</code> を使用します。</p>
+			<p><code>break</code> ステートメントには、オプションのラベルを指定できますが、このラベルは外側のステートメントのラベルと一致している必要があります。外側のステートメントのラベルと一致しないラベルを使用すると、シンタックスエラーが発生します。ラベル付きの <code>break</code> ステートメントを使用すると、入れ子のループステートメント、<code>switch</code> ステートメントまたは <code>block</code> ステートメントの複数のレベルを終了できます。例については、<code>label</code> ステートメントの項目を参照してください。</p>
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">label</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; ステートメントと関連付けられたラベルの名前です。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、break を使用して無限ループから抜け出します。 
+<div class="listing"><pre>
+var i:int = 0;
+while (true) { 
+	trace(i); 
+	if (i >= 10) { 
+		break; // this will terminate/exit the loop 
+	} 
+	i++; 
+} 
+/*
+0 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10*/</pre></div>  
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#do..while" target="">do..while</a><br/><a href="#for" target="">for</a><br/><a href="#for..in" target="">for..in</a><br/><a href="#for_each..in" target="">for each..in</a><br/><a href="#label" target="">label</a><br/><a href="#while" target="">while</a></div></div><a name="case"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">case</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>case jumpTarget: statements</pre></p></td></tr></table><p></p><p><p><code>switch</code> ステートメントのジャンプターゲットを定義します。<code>jumpTarget</code> パラメーターと、厳密な等価（<code>===</code>）を使用している <code>switch</code> ステートメントの <code>expression</code> パラメーターが等しい場合、<code>break</code> ステートメントが見つかるか、または <code>switch</code> ステートメントの終わりに到達するまで、<code>statements</code> パラメーター内のステートメントが実行されます。 <p><code>case</code> ステートメントを <code>switch</code> ステートメントの外側で使用すると、エラーが発生し、スクリプトはコンパイルされません。</p> 
+			<p></p>
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">jumpTarget</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; 任意の式です。</td></tr><tr><td width="20px"></td><td><code><span class="label">statements</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; jumpTarget が switch ステートメントの条件式に一致した場合に実行されるステートメントです。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、switch ステートメントの thisMonth のジャンプターゲットを定義しています。thisMonth が case ステートメント内の式と等しい場合は、ステートメントが実行されます。 
+<div class="listing"><pre>
+var thisMonth:int = new Date().getMonth(); 
+switch (thisMonth) { 
+	case 0 : 
+		trace("January"); 
+		break; 
+	case 1 : 
+		trace("February"); 
+		break; 
+	case 5 : 
+	case 6 : 
+	case 7 : 
+		trace("Some summer month"); 
+		break; 
+	case 8 : 
+		trace("September"); 
+		break; 
+	default : 
+		trace("some other month"); 
+}</pre></div>
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#break" target="">break</a><br/><a href="#switch" target="">switch</a></div></div><a name="class"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">class</td><td class="detailHeaderType">定義キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>[dynamic] [public | internal] [final] class className [ extends superClass ] [ implements interfaceName[, interfaceName... ] ] { 
+	// class definition here
+}</pre>
+			</p></td></tr></table><p></p><p><p>独自で定義したメソッドとプロパティを共有するオブジェクトをインスタンス化できるクラスを定義します。例えば、送り状追跡システムを作成する場合に、送り状クラスを定義して、各送り状で必要になるすべてのメソッドとプロパティを定義します。その後、<code>new Invoice()</code> コマンドを使用して、送り状オブジェクトを作成します。 
+			<p>ActionScript ソースファイルごとに、他のソースファイルやスクリプトに対して表示されるクラスを 1 つ指定できます。この外部に表示されるクラスは、パブリッククラスでも内部クラスでも構いません。これは package ステートメント内で定義する必要があります。同じファイルに他のクラスを含める場合は、クラスを package ステートメントの外の、ファイルの末尾に配置する必要があります。 </p>
+			<p>外部に対して表示されるクラスの名前は、そのクラスを含む ActionScript ソースファイルの名前と一致する必要があります。ソースファイルの名前は、クラス名にファイル拡張子 .as を付けた名前である必要があります。例えば、あるクラスに Student という名前を付ける場合、このクラスを定義するファイルの名前は Student.as になります。</p> 
+			<p>クラス定義を入れ子にすることはできません。つまり、クラス定義内に別のクラスを定義することはできません。</p> 
+			<p>コンストラクターメソッドは定義できます。これは、クラスの新しいインスタンスが作成されるたびに実行されるメソッドです。コンストラクターメソッドの名前は、クラスの名前と一致する必要があります。コンストラクターメソッドを定義しない場合は、デフォルトのコンストラクターが作成されます。</p>
+			<p>実行時にオブジェクトが動的プロパティを追加したり、動的プロパティにアクセスしたりできるようにする場合は、クラスステートメントの前に <code>dynamic</code> キーワードを付加します。インターフェイスを実装するクラスを宣言するには、<code>implements</code> キーワードを使用します。クラスのサブクラスを作成するには、<code>extends</code> キーワードを使用します。クラスは 1 つしか拡張できませんが、インターフェイスは複数実装することができます。<code>implements</code> キーワードと <code>extends</code> キーワードは、1 つのステートメントで一緒に使うことができます。次の例では、<code>implements</code> キーワードと <code>extends</code> キーワードの一般的な使い方を示します。</p> 
+<div class="listing"><div class="clipcopy"><a href="#" class="copyText">コピー</a></div><pre>class C implements Interface_i, Interface_j // OK 
+class C extends Class_d implements Interface_i, Interface_j // OK 
+class C extends Class_d, Class_e // not OK </pre></div> 
+
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">className</span>:<a href="Class.html">Class</a></code> &mdash; クラスの完全修飾名です。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、Plant という名前のクラスを作成しています。Plant コンストラクターは 2 つのパラメーターを受け取ります。 
+<div class="listing"><pre>// Filename Plant.as 
+package {
+  public class Plant { 
+	// Define property names and types 
+	private var _leafType:String; 
+	private var _bloomSeason:String; 
+	// Following line is constructor 
+	// because it has the same name as the class 
+	public function Plant(param_leafType:String, param_bloomSeason:String) { 
+		// Assign passed values to properties when new Plant object is created 
+		_leafType = param_leafType; 
+		_bloomSeason = param_bloomSeason; 
+	} 
+	// Create methods to return property values, because best practice 
+	// recommends against directly referencing a property of a class 
+	public function get leafType():String { 
+		return _leafType; 
+	} 
+	public function get bloomSeason():String { 
+		return _bloomSeason; 
+	} 
+  }
+}</pre></div> 
+スクリプトで、new 演算子を使用して Plant オブジェクトを作成します。
+<div class="listing"><pre>
+var pineTree:Plant = new Plant("Evergreen", "N/A"); 
+// Confirm parameters were passed correctly 
+trace(pineTree.leafType); 
+trace(pineTree.bloomSeason); </pre></div> 
+			
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#dynamic" target="">dynamic</a><br/><a href="#extends" target="">extends</a><br/><a href="#final" target="">final</a><br/><a href="#internal" target="">internal</a><br/><a href="#public" target="">public</a></div></div><a name="const"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">const</td><td class="detailHeaderType">定義キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>const identifier = value </pre></p></td></tr></table><p></p><p><p>定数（値を 1 回だけ割り当てることができる変数）を指定します。  
+			<p>データタイプの後にコロン（:）を付けて、厳密に定数を型指定できます。</p>
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">identifier</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; 定数の識別子です。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、値を複数回定数に割り当てようとすると、エラーが発生することを示しています。
+<div class="listing"><pre>
+const MIN_AGE:int = 21;
+MIN_AGE = 18; // error</pre></div>
+次の例では、定数が配列である場合は、Array.push() を含む Array クラスメソッドを呼び出すことができることを示しています。ただし、新しい配列リテラルを割り当てることはできません。 
+<div class="listing"><pre>
+const product_array:Array = new Array("Studio", "Dreamweaver", "Flash", "ColdFusion", "Contribute", "Breeze"); 
+product_array.push("Flex"); // array operations are allowed
+product_array = ["Other"];  // assignment is an error
+trace(product_array); 
+</pre></div>
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#var" target="">var</a></div></div><a name="continue"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">continue</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>continue [label]</pre></p></td></tr></table><p></p><p><p>ループの終わりまで制御が通過したかのように、最も内側のループ内の残りのステートメントをすべてスキップして、ループの次の反復を開始します。<code>continue</code> ステートメントはループの外部では作用しません。入れ子のループでは、オプションの <code>label</code> パラメーターを使用すると、最も内側のループ以外もスキップできます。
+			<p><code>continue</code> ステートメントには、オプションのラベルを指定できますが、このラベルは外側のステートメントのラベルと一致している必要があります。外側のステートメントのラベルと一致しないラベルを使用すると、シンタックスエラーが発生します。ラベル付きの <code>continue</code> ステートメントを使用すると、入れ子のループステートメントの複数のレベルをスキップできます。</p>
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の while ループでは、continue ステートメントを使用して、3 の倍数が検出されたときにループ本体の残りをスキップして、ループの上端にジャンプし、条件を再度評価します。 
+<div class="listing"><pre>
+var i:int = 0; 
+while (i < 10) { 
+	if (i % 3 == 0) { 
+		i++; 
+		continue; 
+	} 
+	trace(i); 
+	i++; 
+}</pre></div> 
+for ループでは、continue ステートメントを使用して、ループ本体の残りをスキップできます。次の例では、i % 3 と 0 が等しい場合、trace(i) ステートメントはスキップされます。 
+<div class="listing"><pre> 
+for (var i:int = 0; i < 10; i++) { 
+	if (i % 3 == 0) { 
+		continue; 
+	} 
+	trace(i); 
+}</pre></div> 
+
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#do..while" target="">do..while</a><br/><a href="#for" target="">for</a><br/><a href="#for..in" target="">for..in</a><br/><a href="#for_each..in" target="">for each..in</a><br/><a href="#label" target="">label</a><br/><a href="#while" target="">while</a></div></div><a name="default"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">default</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>default: statements </pre></p></td></tr></table><p></p><p><p><code>switch</code> ステートメントのデフォルトケースを定義します。このステートメントが実行されるのは、<code>switch</code> ステートメントの <code>expression</code> パラメーターが、所定の <code>switch</code> ステートメントの <code>case</code> キーワードに続く <code>expression</code> パラメーターと等しくない場合です（厳密な等価 [<code>===</code>] を使用）。 
+			<p><code>switch</code> ステートメントに <code>default</code> ケースステートメントは必須ではありません。<code>default</code> ケースステートメントは、リストの最後に置く必要はありません。<code>default</code> ステートメントを <code>switch</code> ステートメントの外側で使用すると、エラーが発生し、スクリプトはコンパイルされません。</p></p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">statements</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; 任意のステートメントです。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、曜日が土曜日または日曜日の場合、すべての case ステートメントが適用されず、default ステートメントが実行されます。 
+<div class="listing"><pre>
+var dayOfWeek:int = new Date().getDay(); 
+switch (dayOfWeek) { 
+	case 1 : 
+		trace("Monday"); 
+		break; 
+	case 2 : 
+		trace("Tuesday"); 
+		break; 
+	case 3 : 
+		trace("Wednesday"); 
+		break; 
+	case 4 : 
+		trace("Thursday"); 
+		break; 
+	case 5 : 
+		trace("Friday"); 
+		break; 
+	default : 
+		trace("Weekend"); 
+}</pre></div>
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#switch" target="">switch</a></div></div><a name="default_xml_namespace"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">default xml namespace</td><td class="detailHeaderType">ディレクティブ</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><p><code>default xml namespace = ns</code></p></p></td></tr></table><p></p><p><p>
+			<code>default xml namespace</code> ディレクティブは、XML オブジェクトに使用するデフォルトの名前空間を設定します。 
+			
+			<p><code>default xml namespace</code> を設定しない場合、デフォルトの名前空間は名前のない名前空間となり、空の文字列に設定された URI が設定されます。<code>default xml namespace</code> 宣言のスコープは、変数のスコープと同じように関数ブロック内です。
+			</p>
+			
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、default xml namespace のスコープが関数ブロックであることを示しています。
+			<div class="listing"><pre>var nsDefault1:Namespace = new Namespace("http://www.example.com/namespaces/");
+default xml namespace = nsDefault1;
+	    
+var x1:XML = <test1 />;
+trace("x1 ns: " + x1.namespace());
+			
+scopeCheck();	
+
+var x2:XML = <test2 />;
+trace("x2 ns: " + x2.namespace());
+		
+function scopeCheck(): void {
+	
+	var x3:XML = <test3 />;
+	trace("x3 ns: " + x3.namespace());
+				
+	var nsDefault2:Namespace = new Namespace("http://schemas.xmlsoap.org/soap/envelope/");
+	default xml namespace = nsDefault2;
+		    
+	var x4:XML = <test4 />;
+	trace("x4 ns: " + x4.namespace());
+
+}</pre></div>
+			
+			この例の trace() 出力は次のようになります。
+			
+			x1 ns: http://www.example.com/namespaces/
+x3 ns: 
+x4 ns: http://schemas.xmlsoap.org/soap/envelope/
+x2 ns: http://www.example.com/namespaces/
+
+
+
+次の例では、default xml namespace を使用して、デフォルトの名前空間を割り当てています。2 番目の XML オブジェクト（x2）は、x2 で自身のデフォルトの名前空間を定義しているため、この設定を使用しません。 
+<div class="listing"><pre>
+var nsDefault:Namespace = new Namespace("http://www.example.com/namespaces/");
+default xml namespace = nsDefault;
+            
+var x1:XML = <test1 />;
+
+trace(x1.namespace());
+	// http://www.example.com/namespaces/
+
+var x2:XML = <test2 xmlns = "http://www.w3.org/1999/XSL/Transform/" />;
+trace(x2.namespace());
+	// http://www.w3.org/1999/XSL/Transform/
+
+var x3:XML = <test3 xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/" />;
+trace(x3.namespace());
+	// http://www.example.com/namespaces/
+</pre></div>  
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#namespace" target="">namespace</a><br/><a href="Namespace.html" target="">Namespace クラス</a><br/><a href="#use_namespace" target="">use namespace</a><br/><a href="XML.html" target="">XML</a></div></div><a name="do..while"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">do..while</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>do { statement(s) } while (condition)</pre></p></td></tr></table><p></p><p><p><code>while</code> ループに似ていますが、条件の最初の評価に先立ってステートメントが実行される点が異なります。その後、ステートメントは、条件が <code>true</code> と評価された場合にのみ実行されます。 <p><code>do..while</code> ループの場合、ループ内のコードは少なくとも 1 回は必ず実行されます。<code>while</code> ループを使用して、実行するステートメントのコピーを <code>while</code> ループの開始前に配置することで同じ操作を実現できますが、多くのプログラマーは <code>do..while</code> ループの方が読みやすいと考えています。</p> 
+			<p>条件が常に <code>true</code> と評価されると、<code>do..while</code> ループは無限ループになります。無限ループに陥ると、Flash Player に問題が発生し、警告メッセージが出力されたり、プレーヤーがクラッシュしたりすることがあります。ループの回数がわかっている場合は、できる限り <code>for</code> ループを使用してください。<code>for</code> ループは読みやすくデバッグも簡単ですが、あらゆる状況で <code>do..while</code> ループの代わりに使用できるわけではありません。</p></p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">condition</span>:<a href="Boolean.html">Boolean</a></code> &mdash; 評価する条件です。コードの do ブロック内の statement(s) は、condition パラメーターの評価が true である限り実行されます。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、do..while ループを使用して条件が true かどうかを評価し、myVar が 5 以上になるまで myVar をトレースします。myVar が 5 以上になると、ループは終了します。 
+<div class="listing"><pre>
+var myVar:Number = 0; 
+do { 
+	trace(myVar); 
+	myVar++; 
+} 
+while (myVar < 5); 
+/*
+0 
+1 
+2 
+3 
+4
+*/</pre></div>
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#break" target="">break</a><br/><a href="#continue" target="">continue</a><br/><a href="#while" target="">while</a></div></div><a name="dynamic"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">dynamic</td><td class="detailHeaderType">属性キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>dynamic class className { // class definition here }</pre></p></td></tr></table><p></p><p><p>実行時に追加された dynamic プロパティをクラスのインスタンスで保有するよう指定します。クラスで <code>dynamic</code> 属性を使用する場合は、実行時にクラスのインスタンスにプロパティを追加できます。<code>dynamic</code> と指定されていないクラスは <em>sealed</em> と見なされます。sealed クラスのインスタンスには、プロパティを追加できません。
+			<p>クラスが dynamic ではなく sealed の場合、クラスインスタンスでプロパティを取得または設定しようとすると、結果はエラーとなります。コンパイラーを strict モードに設定し、インスタンスを作成するときにデータタイプを指定する場合は、プロパティを sealed オブジェクトに追加しようとすると、コンパイラーエラーまたはランタイムエラーが発生します。</p> 
+			<p><code>dynamic</code> 属性はサブクラスに継承されません。dynamic クラスを拡張した場合は、サブクラスで <code>dynamic</code> 属性を宣言した場合にのみサブクラスが dynamic になります。</p>
+			
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、2 つのクラスを作成します。1 つは Expando という名前の dynamic クラスで、もう 1 つは Sealed という名前の sealed クラスです。これらのクラスは後の例でも使用します。
+<div class="listing"><pre>
+package {
+
+	dynamic class Expando  {
+	}
+	
+	class Sealed {
+	}
+}
+</pre></div>
+次のコードは、Expando クラスのインスタンスを作成し、このインスタンスにプロパティを追加できることを示しています。
+<div class="listing"><pre>
+var myExpando:Expando = new Expando();
+myExpando.prop1 = "new";
+trace(myExpando.prop1); // new
+</pre></div>
+次のコードは、Sealed クラスのインスタンスを作成し、プロパティを追加しようとすると結果がエラーとなることを示しています。
+<div class="listing"><pre>
+var mySealed:Sealed = new Sealed();
+mySealed.prop1 = "newer"; // error
+</pre></div>
+		
+
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#class" target="">class</a></div></div><a name="else"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">else</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>if (condition) { 
+	// statement(s)
+} 
+else {
+	// statement(s)
+}</pre></p></td></tr></table><p></p><p><p><code>if</code> ステートメントの条件が <code>false</code> を返したときに実行するステートメントを指定します。実行するステートメントが 1 つしかない場合、<code>else</code> ステートメントで実行するステートメントを囲む中括弧（<code>{}</code>）は必要ありません。</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">condition</span>:<a href="Boolean.html">Boolean</a></code> &mdash; 評価結果が true または false になる式です。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、else 条件を使用して、age_txt 変数が 18 より大きいかまたは小さいかを判定しています。 
+<div class="listing"><pre>
+if (age_txt.text>=18) { 
+	trace("welcome, user"); 
+} 
+else { 
+	trace("sorry, junior"); 
+	userObject.minor = true; 
+	userObject.accessAllowed = false;
+}</pre></div> 
+次の例では、else ステートメントに続くステートメントが 1 つだけなので、中括弧（({})）は必要ありません。
+<div class="listing"><pre>
+if (age_txt.text>18) { 
+	trace("welcome, user");
+} 
+else trace("sorry, junior");</pre></div>
+次の例では、if および else ステートメントを組み合わせて使用して、score_txt を指定された値と比較しています。 
+<div class="listing"><pre>
+
+if (score_txt.text>90) { 
+	trace("A"); 
+} 
+else if (score_txt.text>75) { 
+	trace("B"); 
+} 
+else if (score_txt.text>60) { 
+	trace("C"); 
+} 
+else { 
+	trace("F"); 
+}</pre></div><p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#if" target="">if</a></div></div><a name="extends"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">extends</td><td class="detailHeaderType">定義キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>class className extends otherClassName {}
+interface interfaceName extends otherInterfaceName {} </pre> </p></td></tr></table><p></p><p><p>他のクラスのサブクラスとするクラスを定義します。サブクラスは、スーパークラスで定義されているメソッド、プロパティ、関数などをすべて継承します。<code>final</code> とマークされたクラスは拡張できません。
+			<p><code>extends</code> キーワードを使用して、インターフェイスを拡張することもできます。他のインターフェイスを拡張したインターフェイスには、元のインターフェイスのメソッド宣言がすべて含まれます。</p>
+			
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">className</span>:<a href="Class.html">Class</a></code> &mdash; 定義するクラスの名前です。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例の Car クラスは Vehicle クラスを拡張しているので、Vehicle クラスのすべてのメソッド、プロパティおよび関数を継承します。スクリプトで Car オブジェクトをインスタンス化すると、Car クラスのメソッドと Vehicle クラスのメソッドの両方を使用できます。 
+			次の例では、Vehicle クラスを定義している "Vehicle.as" ファイルの内容を示します。  
+<div class="listing"><pre>
+package {
+	class Vehicle { 
+	    var numDoors:Number; 
+	    var color:String; 
+	    public function Vehicle(param_numDoors:Number = 2, param_color:String = null) { 
+	        numDoors = param_numDoors; 
+	        color = param_color; 
+	    } 
+	    public function start():void { 
+	        trace("[Vehicle] start"); 
+	    } 
+	    public function stop():void { 
+	        trace("[Vehicle] stop"); 
+	    } 
+	    public function reverse():void { 
+	        trace("[Vehicle] reverse"); 
+	    } 
+	}	
+}</pre></div> 
+次の例では、同じディレクトリ内にある 2 番目の ActionScript ファイル "Car.as" の内容を示します。このクラスは Vehicle クラスを拡張したクラスで、次のような 3 つの変更を行っています。Car クラスでは、最初に車オブジェクトにフルサイズのスペアタイヤが装着されているかどうかを追跡するための変数 fullSizeSpare を追加しています。2 番目に、車の盗難防止アラームをアクティブにする activateCarAlarm() を車に固有の新しいメソッドとして追加しています。3 番目に、Car クラスでは停車の際にアンチロックブレーキシステムを使用することを示すために、stop() 関数がオーバーライドされています。
+<div class="listing"><pre>
+package {
+
+	public class Car extends Vehicle { 
+	    var fullSizeSpare:Boolean; 
+	    public function Car(param_numDoors:Number, param_color:String, param_fullSizeSpare:Boolean) { 
+	        numDoors = param_numDoors; 
+	        color = param_color; 
+	        fullSizeSpare = param_fullSizeSpare; 
+	    } 
+	    public function activateCarAlarm():void { 
+	        trace("[Car] activateCarAlarm"); 
+	    } 
+	    public override function stop():void { 
+	        trace("[Car] stop with antilock brakes"); 
+	    } 
+	}
+}</pre></div> 
+次の例では、Car オブジェクトをインスタンス化し、Vehicle クラスに定義されているメソッド（start()）を呼び出します。次に Car クラスでオーバーライドされたメソッド（stop()）を呼び出し、最後に Car クラスのメソッド（activateCarAlarm()）を呼び出します。
+<div class="listing"><pre>var myNewCar:Car = new Car(2, "Red", true); 
+myNewCar.start(); // [Vehicle] start 
+myNewCar.stop(); // [Car] stop with anti-lock brakes 
+myNewCar.activateCarAlarm(); // [Car] activateCarAlarm</pre></div> 
+サブクラスがスーパークラスのコンストラクターへのアクセスに使用する super ステートメントを使用して、Vehicle クラスのサブクラスを記述することもできます。次の例では、同じディレクトリ内にある 3 番目の ActionScript ファイル "Truck.as" の内容を示します。Truck クラスは、コンストラクターおよびオーバーライドされた reverse() メソッドで super を使用します。 
+<div class="listing"><pre>
+package {
+	class Truck extends Vehicle {
+		var numWheels:Number;
+		public function Truck(param_numDoors:Number, param_color:String, param_numWheels:Number) { 
+			super(param_numDoors, param_color); 
+			numWheels = param_numWheels; 
+		} 
+		public override function reverse():void { 
+			beep();
+			super.reverse();
+		} 
+		public function beep():void { 
+			trace("[Truck] make beeping sound"); 
+		} 
+	}
+}</pre></div> 
+次の例では、Truck オブジェクトをインスタンス化し、Truck クラスでオーバーライドされたメソッド（reverse()）を呼び出してから、Vehicle クラスで定義されているメソッド（stop()）を呼び出しています。  
+<div class="listing"><pre>var myTruck:Truck = new Truck(2, "White", 18); 
+myTruck.reverse(); // [Truck] make beeping sound [Vehicle] reverse 
+myTruck.stop(); // [Vehicle] stop</pre></div>
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#class" target="">class</a><br/><a href="#final" target="">final</a><br/><a href="#interface" target="">interface</a></div></div><a name="false"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">false</td><td class="detailHeaderType">プライマリ式キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>false</pre></p></td></tr></table><p></p><p><p>false を表すブール値です。ブール値は <code>true</code> または <code>false</code> のいずれかです。<code>false</code> の反対は <code>true</code> です。
+			<p>自動的な型指定により <code>false</code><code></code> を数値に変換すると、その結果は 0 となります。<code>false</code> を文字列に変換すると、その結果は <code>"false"</code> となります。</p>
+			<p><b>注意：</b>文字列 <code>"false"</code> はブール値 <code>true</code> に変換されます。</p>
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、自動的な型指定によって false がどのような数値や文字列に変換されるかを示します。
+<div class="listing"><pre>
+var bool1:Boolean = Boolean(false);
+
+// converts it to the number 0
+trace(1 + bool1); // outputs 1
+
+// converts it to a string
+trace("String: " + bool1); // outputs String: false
+</pre></div>
+次の例では、文字列 "false" がブール値 true に変換されることを示します。
+<div class="listing"><pre>
+trace(Boolean("false")); // true
+
+if ("false") {
+	trace("condition expression evaluated to true");
+}
+else {
+	trace("condition expression evaluated to false");
+}
+// condition expression evaluated to true
+</pre></div>
+
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="Boolean.html" target="">Boolean クラス</a><br/><a href="#true" target="">true</a></div></div><a name="final"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">final</td><td class="detailHeaderType">属性キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>
+final function methodName() { 
+	// your statements here 
+}
+final class className {}</pre> </p></td></tr></table><p></p><p><p>メソッドのオーバーライドまたはクラスの拡張を制限します。<code>final</code> と指定されたメソッドのオーバーライドや、クラスの拡張を試行すると、結果はエラーとなります。</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">methodName</span>:<a href="Function.html">Function</a></code> &mdash; オーバーライドを制限するメソッドの名前です。</td></tr><tr><td width="20px"></td><td><code><span class="label">className</span>:<a href="Class.html">Class</a></code> &mdash; 拡張を制限するクラスの名前です。</td></tr></table><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#override" target="">override</a><br/><a href="#extends" target="">extends</a></div></div><a name="flash_proxy"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">flash_proxy</td><td class="detailHeaderType"> 名前空間 </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><p></p><p><p>Proxy クラスのメソッドを定義します。Proxy クラスメソッドは自身の名前空間内にあり、Proxy クラスメソッド名と一致するインスタンスメソッド名が Proxy サブクラスに含まれる場合に、名前が競合しないようになっています。</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"></table><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="flash/utils/Proxy.html" target="">Proxy クラス</a></div></div><a name="for"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">for</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>for ([init]; [condition]; [next]) { 
+	// statement(s)
+}</pre>
+			</p></td></tr></table><p></p><p><p><code>init</code>（初期化）式を 1 回だけ評価してから、ループシーケンスを開始します。ループシーケンスは、<code>condition</code> 式を評価することで開始されます。<code>condition</code> 式の評価結果が <code>true</code> の場合は、<code>statement</code> が実行され、<code>next</code> が評価されます。その後、<code>condition</code> 式の評価からループシーケンスが再び開始されます。 
+			<p>実行するステートメントが 1 つしかない場合、<code>for</code> ステートメントで実行するステートメントブロックを囲む中括弧（<code>{}</code>）は必要ありません。</p></p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">init</span></code> &mdash; ループシーケンスの開始前に評価される任意の式です。通常は代入式です。このパラメーターに対して、var ステートメントを実行することもできます。</td></tr><tr><td width="20px"></td><td><code><span class="label">condition</span></code> &mdash; ループシーケンスの開始前に評価される任意の式です。通常は比較式です。式の評価結果が true の場合、for ステートメントに関連付けられているステートメントが実行されます。</td></tr><tr><td width="20px"></td><td><code><span class="label">next</span></code> &mdash; ループシーケンスの後に評価される任意の式です。通常はインクリメント式またはデクリメント式です。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、for を使用して配列のエレメントを追加します。 
+<div class="listing"><pre>
+var my_array:Array = new Array(); 
+for (var i:Number = 0; i < 10; i++) { 
+	my_array[i] = (i + 5) * 10;  
+} 
+trace(my_array); // 50,60,70,80,90,100,110,120,130,140 </pre></div> 
+次の例では、for を使用して同じアクションを繰り返し実行します。次のコードでは、for ループにより 1 から 100 の数値を加算します。 
+<div class="listing"><pre>var sum:Number = 0; 
+for (var i:Number = 1; i <= 100; i++) { 
+	sum += i; 
+} 
+trace(sum); // 5050</pre></div> 
+次の例では、実行するステートメントが 1 つしかない場合は、中括弧（{}）を付ける必要がないことを示しています。 
+<div class="listing"><pre>var sum:Number = 0; 
+for (var i:Number = 1; i <= 100; i++) 
+	sum += i; 
+trace(sum); // 5050</pre></div>
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="operators.html#increment" target="">++ (increment)</a></div></div><a name="for..in"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">for..in</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p>
+<pre>for (variableIterant:String in object){ 
+	// statement(s)
+} </pre></p></td></tr></table><p></p><p><p>オブジェクトの動的プロパティまたは配列のエレメントに対して反復処理を行い、各プロパティまたはエレメントに対して <code>statement</code> を実行します。オブジェクトのプロパティは特定の順序では維持されないので、プロパティは予期しない順序で表示されることがあります。<code>for..in</code> ステートメントでは、クラスに定義された変数やメソッドなどの固定プロパティは列挙されません。固定プロパティのリストを取得するには、flash.utils パッケージにある <code>describeType()</code> 関数を使用します。
+			 
+			 
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">variableIterant</span>:<a href="String.html">String</a></code> &mdash; 反復子として動作し、オブジェクトの各プロパティまたは配列内のエレメントを参照する変数の名前です。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、for..in を使用してオブジェクトのプロパティに対して反復処理を行います。 
+<div class="listing"><pre>
+var myObject:Object = {firstName:"Tara", age:27, city:"San Francisco"}; 
+for (var prop in myObject) { 
+	trace("myObject."+prop+" = "+myObject[prop]); 
+} 
+/*
+myObject.firstName = Tara 
+myObject.age = 27 
+myObject.city = San Francisco
+*/</pre></div> 
+次の例では、for..in で typeof 演算子を使用して、特定の型の子に対して反復処理を行います。 
+<div class="listing"><pre>
+var myObject:Object = {firstName:"Tara", age:27, city:"San Francisco"}; 
+for (var name in myObject) { 
+	if (typeof (myObject[name]) == "string") { 
+		trace("I have a string property named "+name); 
+	} 
+}
+/*
+I have a string property named city
+I have a string property named firstName
+*/
+</pre></div> 
+			<p></p><p id="moreExamples"><span class="label">さらに例を参照</span></p><div class="seeAlso"><a href="http://help.adobe.com/ja_JP/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7e6b.html" target="_blank">XML 階層構造へのアクセス</a></div><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="flash/utils/package.html#describeType()" target="">describeType()</a></div></div><a name="for_each..in"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">for each..in</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>for each (variableIterant in object){ 
+	// statement(s)
+} </pre></p></td></tr></table><p></p><p><p>コレクションのアイテムに対して反復処理を行い、各アイテムに対して <code>statement</code> を実行します。E4X の言語拡張の一部として導入された <code>for each..in</code> ステートメントは、XML オブジェクトだけでなくオブジェクトや配列にも使用できます。<code>for each..in</code> ステートメントは、固定プロパティではなくオブジェクトの動的プロパティを介してのみ反復処理を行います。固定プロパティは、クラス定義の一部として定義されるプロパティです。ユーザー定義クラスのインスタンスで <code>for each..in</code> ステートメントを使用するには、クラスの属性を <code>dynamic</code> と宣言する必要があります。 
+			<p><code>for..in</code> ステートメントとは異なり、<code>for each..in</code> ステートメントは、プロパティ名ではなくオブジェクトのプロパティの値に対して反復処理を行います。</p>
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">variableIterant</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; 反復子として動作し、コレクションのアイテムを参照する変数の名前です。</td></tr><tr><td width="20px"></td><td><code><span class="label">object</span>:<a href="Object.html">Object</a></code> &mdash; 反復処理を行うコレクションの名前です。コレクションは、XML オブジェクト、汎用オブジェクトまたは配列とすることができます。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、for each..in を使用して、オブジェクトのプロパティで保持される値に対して反復処理を行います。 
+<div class="listing"><pre>
+var myObject:Object = {firstName:"Tara", age:27, city:"San Francisco"}; 
+for each (var item in myObject) { 
+	trace(item); 
+} 
+/*
+Tara
+27
+San Francisco
+*/</pre></div> 
+次の例では、for each..in を使用して、配列のエレメントに対して反復処理を行います。 
+<div class="listing"><pre>
+var myArray:Array = new Array("one", "two", "three"); 
+for each(var item in myArray) 
+	trace(item); 
+/*
+one
+two
+three
+*/</pre></div> 
+次の例では、for each..in で is 演算子を使用して、特定の型の子に対して反復処理を行います。 
+<div class="listing"><pre>
+var myObject:Object = {firstName:"Tara", age:27, city:"San Francisco"}; 
+for each (var item in myObject) { 
+	if (item is String) {  
+		trace("I have a string property with value " + item); 
+	} 
+}
+
+/*
+I have a string property with value Tara
+I have a string property with value San Francisco
+*/
+</pre></div> 
+
+次の例では、for each..in を使用して、XMLList オブジェクトのプロパティ（doc.p）に対して反復処理を行います。
+
+<div class="listing"><pre>
+var doc:XML = 
+		<body>
+			<p>Hello</p>
+			<p>Hola</p>
+			<hr />
+			<p>Bonjour</p>
+		</body>;
+for each (var item in doc.p) {
+	trace(item);
+}
+
+/*
+Hello
+Hola
+Bonjour
+*/
+</pre></div>
+			<p></p><p id="moreExamples"><span class="label">さらに例を参照</span></p><div class="seeAlso"><a href="http://help.adobe.com/ja_JP/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7e6b.html" target="_blank">XML 階層構造へのアクセス</a></div></div><a name="function"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">function</td><td class="detailHeaderType">定義キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>function functionName([parameter0, parameter1,...parameterN]) : returnType{ 
+	// statement(s) 
+} 
+var functionName:Function = function ([parameter0, parameter1,...parameterN]) : returnType{ 
+	// statement(s) 
+} </pre>
+			</p></td></tr></table><p></p><p><p>特定のタスクを実行するよう定義した一連のステートメントで構成されます。ある位置で関数を定義し、SWF ファイルの異なるスクリプトからその関数を呼び出す<em></em>ことができます。関数を定義する場合、その関数のパラメーターも指定できます。パラメーターは、関数が処理する値のプレースホルダーです。関数を呼び出すたびに異なるパラメーターを渡すことができます。これにより、1 つの関数を異なる状況で再利用できます。 
+			<p>関数で値を生成する、つまり値を返す<em></em>には、関数の <code>statement(s)</code> ブロックで <code>return</code> ステートメントを使用します。</p> 
+			<p>シンタックス 1：<code>function</code> キーワードを使用して、関数名、パラメーターおよびステートメントを指定した関数を定義できます。スクリプトによって関数が呼び出されると、関数定義内のステートメントが実行されます。関数は前方参照が許されます。つまり、同じスクリプト内では、関数を呼び出す箇所よりも後に関数を宣言できます。関数定義は、同じ関数の以前の定義を置き換えます。ステートメントが許されている場所であれば、どこでもこのシンタックスを使用できます。 </p> 
+			<p>シンタックス 2：<code>function</code> を使用して匿名関数を作成し、その関数への参照を返すこともできます。このシンタックスは式の中で使用され、特にオブジェクト内にメソッドを組み込む場合に便利です。</p> 
+			<p>さらに、関数定義内で <code>arguments</code> オブジェクトを使用することができます。一般に、<code>arguments</code> オブジェクトは、可変数のパラメーターを受け取る関数や再帰的な匿名関数を作成する場合に使用します。</p></p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">functionName</span>:<a href="Function.html">Function</a></code> &mdash; 新しい関数の名前です。</td></tr><tr><td width="20px"></td><td><code><span class="label">returnType</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; 戻り値のデータタイプです。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、平方数の値を返す関数 sqr を定義します。 
+<div class="listing"><pre>function sqr(xNum:Number) { 
+	return Math.pow(xNum, 2); 
+} 
+var yNum:Number = sqr(3); 
+trace(yNum); // 9</pre></div> 
+同じスクリプト内で関数を定義して使用する場合は、関数の使用箇所の後に関数定義を記述することができます。 
+<div class="listing"><pre>var yNum:Number = sqr(3); 
+trace(yNum); // 9 
+function sqr(xNum:Number) { 
+	return Math.pow(xNum, 2); 
+}</pre></div> 
+
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="arguments.html" target="">arguments オブジェクト</a><br/><a href="#return" target="">return</a></div></div><a name="get"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">get</td><td class="detailHeaderType">定義キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>
+function get property() : returnType{ 
+	// your statements here 
+}</pre> </p></td></tr></table><p></p><p><p>プロパティと同じように読み取り可能なメソッドである getter を定義します。getter は特別な関数で、<code>var</code> または <code>const</code> キーワードで宣言されたプロパティの値を返します。他のメソッドとは異なり、getter の呼び出しには括弧（<code>()</code>）を使用しないため、変数のように見えます。
+			<p>getter では、プライベートプロパティにパブリックインターフェイスを作成して、非表示の情報の規則を適用できます。情報を非表示にすると、基になるプライベートプロパティの実装が変更された場合でも、パブリックインターフェイスを変更する必要がないというメリットがあります。</p>
+			<p>getter には、サブクラス内でオーバーライドできるというメリットもあります。<code>var</code> または <code>const</code> で宣言されたプロパティはオーバーライドできません。</p>
+			<p>getter は、setter と組み合わせて、読み取り／書き込み可能なプロパティを作成できます。読み取り専用プロパティを作成するには、対応する setter なしで getter を作成します。書き込み専用プロパティを作成するには、対応する getter なしで setter を作成します。</p>
+			
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">property</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; get がアクセスするプロパティの識別子です。この値は対応する set コマンドで使用される値と同じである必要があります。</td></tr><tr><td width="20px"></td><td><code><span class="label">returnType</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; 戻り値のデータタイプです。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、Team クラスを定義しています。Team クラスには、クラス内のプロパティを取得および設定するための getter および setter メソッドがあります。 
+<div class="listing"><pre>
+package {
+	public class Team { 
+		var teamName:String; 
+		var teamCode:String; 
+		var teamPlayers:Array = new Array(); 
+		public function Team(param_name:String, param_code:String) { 
+			teamName = param_name; 
+			teamCode = param_code; 
+		} 
+		public function get name():String { 
+			return teamName; 
+		} 
+		public function set name(param_name:String):void { 
+			teamName = param_name; 
+		}
+	} 
+}</pre></div>
+スクリプトに次のコードを入力します。 
+<div class="listing"><pre>
+var giants:Team = new Team("San Fran", "SFO"); 
+trace(giants.name); 
+giants.name = "San Francisco"; 
+trace(giants.name); 
+/*
+San Fran San Francisco */</pre></div> 
+giants.name をトレースする際に、getter メソッドを使用してプロパティの値を返しています。
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#set" target="">set</a></div></div><a name="if"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">if</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>if (condition) {
+	// statement(s)
+}</pre></p></td></tr></table><p></p><p><p>条件を評価して、次のステートメントを実行するかどうかを判定します。条件が <code>true</code> の場合は、条件に続く中括弧（<code>{}</code>）内のステートメントが実行されます。条件が <code>false</code> の場合は、中括弧内のステートメントをスキップし、中括弧の後のステートメントが実行されます。スクリプト内に分岐処理を作成するには、<code>if</code> ステートメントと <code>else</code> ステートメントを組み合わせます。 
+			<p>実行するステートメントが 1 つしかない場合、<code>if</code> ステートメントで実行するステートメントを囲む中括弧（<code>{}</code>）は必要ありません。</p>
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">condition</span>:<a href="Boolean.html">Boolean</a></code> &mdash; 評価結果が true または false になる式です。</td></tr></table><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#else" target="">else</a></div></div><a name="implements"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">implements</td><td class="detailHeaderType">定義キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>myClass implements interface01 [, interface02 , ...] </pre> </p></td></tr></table><p></p><p><p>クラスでインターフェイスを実装するかどうかを指定します。クラスでインターフェイスを実装する場合、インターフェイスで宣言されているすべてのメソッドをクラスで定義する必要があります。インターフェイスを実装するクラスのインスタンスは、インターフェイスが定義するデータタイプのメンバーと見なされます。このため、<code>is</code> 演算子は、最初のオペランドがクラスインスタンスで、次のオペランドがインターフェイスとなっており、さらに、データタイプの強制型変換がインターフェイス操作で定義されている場合に <code>true</code> を返します。
+			
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"></table><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#class" target="">class</a><br/><a href="#interface" target="">interface</a></div></div><a name="import"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">import</td><td class="detailHeaderType">ディレクティブ</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p>
+<pre>import packageName.className 
+import packageName.*</pre> </p></td></tr></table><p></p><p><p>外部で定義されたクラスおよびパッケージをコードで使用できるようにします。例えば、スクリプトで flash.display.Sprite クラスを使用する場合は、これを読み込む必要があります。<code>import</code> ディレクティブはオプションだったため、この要件は以前のバージョンの ActionScript とは異なります。
+			<p><code>import</code> ディレクティブを使用した後は、パッケージ名を含む完全なクラス名かクラス名のみのいずれかを使用できます。</p>
+<div class="listing"><div class="clipcopy"><a href="#" class="copyText">コピー</a></div><pre> 
+import flash.display.Sprite; 
+
+// name of class only
+var mySprite:Sprite = new Sprite();
+
+// full class name
+var mySprite:flash.display.Sprite = new flash.display.Sprite();
+</pre></div> 
+<p>アクセス対象のクラスがパッケージ内に複数存在する場合は、次の例に示すように、1 つのステートメントですべてのクラスを読み込むことができます。</p>
+<div class="listing"><div class="clipcopy"><a href="#" class="copyText">コピー</a></div><pre>import flash.display.*;</pre></div>
+<p><code>import</code> ディレクティブは、読み込んだパッケージの最上位レベルにあるクラス、関数および変数のみを読み込みます。入れ子のパッケージは明示的に読み込む必要があります。</p>
+<p>読み込んだクラスをスクリプト内で使用しない場合、そのクラスは SWF ファイルには出力されません。したがって、SWF ファイルのサイズを気にすることなく、大きなパッケージを読み込むことができます。クラスに関連付けられたバイトコードは、実際に使用された場合のみ、SWF ファイルに含められます。必要のないクラスを読み込むと、名前の競合が起こりやすくなるというデメリットがあります。</p> 
+ 
+<pre>
+// On Frame 1 of a FLA: 
+import adobe.example.*; 
+var myFoo:foo = new foo();</pre> 
+ 
+
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">packageName</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; 別のクラスファイルで定義したパッケージの名前です。</td></tr><tr><td width="20px"></td><td><code><span class="label">className</span>:<a href="Class.html">Class</a></code> &mdash; 別のクラスファイルで定義したクラスの名前です。</td></tr></table></div><a name="include"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">include</td><td class="detailHeaderType">ディレクティブ</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>include "[path]filename.as"</pre></p></td></tr></table><p></p><p><p>指定したファイル内のコマンドを呼び出し元のスクリプトにインクルードし、そのスクリプトの一部であるかのように扱います。<code>include</code> ディレクティブは、コンパイル時に呼び出されます。このため、インクルードファイルに何らかの変更を行った場合は、ファイルを保存し、ファイルを使用する SWF ファイルを再コンパイルする必要があります。
+			
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"></table></div><a name="interface"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">interface</td><td class="detailHeaderType">定義キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre> interface InterfaceName [extends InterfaceName ] {}</pre> </p></td></tr></table><p></p><p><p>インターフェイスを定義します。インターフェイスとは、メソッドのセットを定義するデータタイプです。このメソッドは、インターフェイスを実装するすべてのクラスで定義される必要があります。
+			<p> インターフェイスはクラスに似ていますが、次に示す重要な違いがあります。</p> 
+			<ul> 
+			  <li>インターフェイスにはメソッドの宣言だけが含まれます。メソッド実装は含まれません。つまり、インターフェイスを実装するすべてのクラスは、インターフェイスで宣言されている各メソッドの実装を定義する必要があります。</li> 
+			  <li>インターフェイスメソッドの定義では、<code>public</code> または <code>private</code> などの属性を指定できませんが、実装されたメソッドはインターフェイスを実装するクラスの定義で <code>public</code> と指定する必要があります。</li> 
+			  <li><code>extends</code> ステートメントまたは <code>implements</code> ステートメントを介したクラスを使用して、インターフェイスで複数のインターフェイスを継承することができます。</li> 
+			</ul>
+			<p>ActionScript 2.0 とは異なり、ActionScript 3.0 ではインターフェイス定義で getter および setter メソッドを使用できます。</p>
+			
+			
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"></table><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#class" target="">class</a><br/><a href="#implements" target="">implements</a></div></div><a name="internal"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">internal</td><td class="detailHeaderType">属性キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>
+[internal] var varName
+[internal] const kName
+[internal] function functionName()  { 
+	// your statements here 
+}
+[internal] class className{
+	// your statements here 
+}
+[internal] namespace nsName
+</pre> </p></td></tr></table><p></p><p><p>クラス、変数、定数または関数に同じパッケージ内のすべての呼び出し元からアクセスできるよう指定します。デフォルトでは、クラス、プロパティおよびメソッドは <code>internal</code> 名前空間に属します。</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">className</span>:<a href="Class.html">Class</a></code> &mdash; internal として指定するクラスの名前です。</td></tr><tr><td width="20px"></td><td><code><span class="label">varName</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; internal として指定する変数の名前です。internal 属性は、変数がクラスの一部かどうかに関わらず適用できます。</td></tr><tr><td width="20px"></td><td><code><span class="label">kName</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; internal として指定する定数の名前です。internal 属性は、定数がクラスの一部かどうかに関わらず適用できます。</td></tr><tr><td width="20px"></td><td><code><span class="label">functionName</span>:<a href="Function.html">Function</a></code> &mdash; internal として指定する関数またはメソッドの名前です。internal 属性は、関数がクラスの一部かどうかに関わらず適用できます。</td></tr><tr><td width="20px"></td><td><code><span class="label">nsName</span>:<a href="Namespace.html">Namespace</a></code> &mdash; internal として指定する名前空間の名前です。internal 属性は、名前空間がクラスの一部かどうかに関わらず適用できます。</td></tr></table><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#package" target="">package</a><br/><a href="#private" target="">private</a><br/><a href="#protected" target="">protected</a><br/><a href="#public" target="">public</a></div></div><a name="label"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">label</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>label: statement
+label: {
+    statements
+}</pre></p></td></tr></table><p></p><p><p>ステートメントを <code>break</code> または <code>continue</code> で参照可能な識別子と関連付けます。入れ子のループでは、ラベルを参照しない <code>break</code> または <code>continue</code> ステートメントは、そのループの残りの部分のみスキップし、一連のループはスキップしません。ただし、一連のループを定義するステートメントに関連付けられたラベルがある場合、<code>break</code> または <code>continue</code> ステートメントはこのラベルを参照することにより、一連のループをスキップできます。
+			<p>また、ラベルによりブロックステートメントを終了することもできます。ブロックステートメントがループの一部である場合以外は、ラベルを参照しない <code>break</code> ステートメントをブロックステートメント内に配置することはできません。ブロックステートメントに関連付けられたラベルがある場合は、このラベルを参照する <code>break</code> ステートメントをブロックステートメント内に配置できます。</p>		
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">label</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; ステートメントに関連付ける有効な識別子です。</td></tr><tr><td width="20px"></td><td><code><span class="label">statements</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; ラベルに関連付けるステートメントです。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、入れ子のループでラベルを使用して、一連のループを終了する方法を示します。このコードでは、入れ子のループを使用して、0 から 99 までの数値のリストを生成します。break ステートメントはカウントが 80 に到達する直前で発生します。break ステートメントで outerLoop ラベルが使用されなかった場合は、そのループの残りの部分のみスキップし、引き続き 90 から 99 までの数値を出力します。ただし、outerLoop ラベルが使用された場合、break ステートメントは残りの一連のループをスキップし、最後に出力される数値は 79 になります。
+<div class="listing"><pre>
+outerLoop: for (var i:int = 0; i < 10; i++) {
+	for (var j:int = 0; j < 10; j++) {
+		if ( (i == 8) && (j == 0)) {
+			break outerLoop;
+		}
+		trace(10 * i + j);
+	}
+}
+/*
+1
+2
+...
+79
+*/
+</pre></div>
+次の例では、ブロックステートメントでのラベルの使用方法を示します。ブロックステートメントには foo ラベルが付けられ、break ステートメントはブロック内の最後のステートメントをスキップできます。
+<div class="listing"><pre>
+foo: {
+	trace("a");
+	break foo;
+	trace("b");
+}
+// a
+</pre></div>
+
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#break" target="">break</a><br/><a href="#continue" target="">continue</a></div></div><a name="namespace"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">namespace</td><td class="detailHeaderType">定義キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>namespace name [= uri]</pre> </p></td></tr></table><p></p><p><p>定義の可視性を制御できます。定義済みの名前空間には、<code>public</code>、<code>private</code>、<code>protected</code> および <code>internal</code> があります。 
+			<p>次に、名前空間を作成、適用、参照する手順を示します。</p>
+			<ul>
+			  <li>最初に、<code>namespace</code> キーワードを使用して、カスタム名前空間を定義します。例えば、コード <code>namespace version1</code> では <code>version1</code> という名前空間が作成されます。</li>
+			  <li>次に、プロパティまたはメソッドの宣言でカスタム名前空間を使用して、プロパティまたはメソッドに名前空間を適用します。例えば、コード <code>version1 myProperty:String</code> では <code>version1</code> 名前空間に属する <code>myProperty</code> という名前のプロパティが作成されます。</li>
+			  <li>次に、<code>use</code> キーワードを使用するか、接頭辞として識別子に名前空間を付けて、名前空間を参照します。例えば、コード <code>use namespace version1;</code> では以後のコード行で <code>version1</code> 名前空間が参照されます。コード <code>version1::myProperty</code> では <code>myProperty</code> プロパティに対して <code>version1</code> 名前空間が参照されます。</li>
+			</ul>
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">name</span>:<a href="Namespace.html">Namespace</a></code> &mdash; 名前空間の名前です。有効な識別子を使用できます。</td></tr><tr><td width="20px"></td><td><code><span class="label">uri</span>:<a href="String.html">String</a></code> &mdash; 名前空間の URI です。このパラメーターは省略可能です。</td></tr></table><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#class" target="">class</a><br/><a href="#internal" target="">internal</a><br/><a href="#package" target="">package</a><br/><a href="#private" target="">private</a><br/><a href="#protected" target="">protected</a><br/><a href="#public" target="">public</a></div></div><a name="native"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">native</td><td class="detailHeaderType">属性キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>
+native function functionName();
+class className { 
+	native function methodName();
+}</pre> </p></td></tr></table><p></p><p><p>Flash Player がネイティブコードで関数またはメソッドを実装するよう指定します。Flash Player では、<code>native</code> キーワードを内部的に使用して、ActionScript アプリケーションプログラミングインターフェイス（API）で関数およびメソッドを宣言します。このキーワードは、独自に作成するコードでは使用できません。			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"></table></div><a name="null"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">null</td><td class="detailHeaderType">プライマリ式キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>null</pre></p></td></tr></table><p></p><p><p>変数に割り当てることができる特別な値、またはデータがない場合に関数から返される特殊な値です。<code>null</code> は、存在しない、または定義されていないデータタイプを表す値として使用されます。
+				<p> <code>null</code> 値は特殊な値 <code>undefined</code> と混同しないようにしてください。<code>null</code> と <code>undefined</code> を等価演算子（<code>==</code>）で比較すると、結果は true になります。ただし、<code>null</code> と <code>undefined</code> を厳密な等価演算子（<code>===</code>）で比較すると、結果は false になります。</p> 
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、インデックスの付いた配列の最初の 6 つの値をチェックし、値が指定されていない（value == null）場合は、メッセージを出力します。
+<div class="listing"><pre>
+
+var testArray:Array = new Array();
+testArray[0] = "fee";
+testArray[1] = "fi";
+testArray[4] = "foo";
+
+for (i = 0; i < 6; i++) {
+    if (testArray[i] == null) {
+        trace("testArray[" + i + "] == null");
+    }
+}
+
+/* 
+testArray[2] == null
+testArray[3] == null
+testArray[5] == null
+*/
+</pre></div>	
+
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="package.html#undefined" target="">undefined</a></div></div><a name="object_proxy"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">object_proxy</td><td class="detailHeaderType"> 名前空間 </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><p></p><p><p>ObjectProxy クラスのメソッドを定義します。ObjectProxy クラスメソッドは自身の名前空間内にあり、Proxy クラスメソッド名と一致するインスタンスメソッド名が Proxy サブクラスに含まれる場合に、名前が競合しないようになっています。</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"></table></div><a name="override"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">override</td><td class="detailHeaderType">属性キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>
+override function name() { 
+	// your statements here 
+}</pre> 
+			</p></td></tr></table><p></p><p><p>メソッドで継承したメソッドを置き換えるよう指定します。継承したメソッドをオーバーライドするには、<code>override</code> 属性を使用する必要があります。名前、クラスプロパティ属性、パラメーターの数と型および戻り値の型は完全に一致する必要があります。<code>override</code> 属性を使用せずにメソッドをオーバーライドしようとするとエラーが発生します。同様に、メソッドに一致する継承されたメソッドがない場合に、<code>override</code> 属性を使用するとエラーが発生します。
+			<p>次の場所で <code>override</code> 属性を使用することはできません。</p>
+			<ul>
+			  <li>変数</li>
+			  <li>定数</li>
+			  <li>静的メソッド</li>
+			  <li>継承されたものでないメソッド</li>
+			  <li>インターフェイスメソッドを実装するメソッド</li>
+			  <li>スーパークラスで <code>final</code> と指定されている継承されたメソッド</li>
+			</ul>
+			<p><code>var</code> または <code>const</code> で宣言されたプロパティをオーバーライドすることはできませんが、基本クラスのプロパティを getter-setter とし、<code>get</code> および <code>set</code> で定義されたメソッドをオーバーライドすることで、同様の機能を実現することができます。</p>
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">name</span>:<a href="Function.html">Function</a></code> &mdash; オーバーライドするメソッドの名前です。</td></tr></table><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#final" target="">final</a><br/><a href="#get" target="">get</a><br/><a href="#set" target="">set</a></div></div><a name="package"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">package</td><td class="detailHeaderType">定義キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>
+package packageName {
+    class someClassName { 
+    } 
+}</pre> </p></td></tr></table><p></p><p><p>他のスクリプトから読み込んだ個別のグループにコードを分類できます。クラスがパッケージのメンバーであることを示すには、<code>package</code> キーワードを使用する必要があります。</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">packageName</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; パッケージの名前です。</td></tr></table><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#internal" target="">internal</a><br/><a href="#public" target="">public</a><br/><a href="#class" target="">class</a></div></div><a name="private"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">private</td><td class="detailHeaderType">属性キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>
+class className{ 
+	private var varName;
+	private const kName;
+	private function methodName() { 
+		// your statements here 
+	}
+	private namespace nsName;
+}</pre> </p></td></tr></table><p></p><p><p>変数、定数またはメソッドを宣言または定義したクラスからのみアクセスできるよう指定します。ActionScript 2.0 とは異なり、ActionScript 3.0 の <code>private</code> ではサブクラスへのアクセスも制限されます。さらに、<code>private</code> ではコンパイル時および実行時の両方でアクセスが制限されます。デフォルトでは、同じパッケージにある呼び出し元は変数または関数にアクセスできます。このキーワードは、変数や関数へのアクセスを制限する場合に使用します。 
+			<p>このキーワードは、クラス定義でのみ使用できます。インターフェイス定義では使用できません。<code>private</code> は、クラスまたはその他のすべてのパッケージレベルの定義には適用できません。</p></p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">varName</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; private として指定する変数の名前です。private 属性は、変数がクラス内にある場合のみ適用できます。</td></tr><tr><td width="20px"></td><td><code><span class="label">kName</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; private として指定する定数の名前です。private 属性は、定数がクラス内にある場合のみ適用できます。</td></tr><tr><td width="20px"></td><td><code><span class="label">methodName</span>:<a href="Function.html">Function</a></code> &mdash; private として指定するメソッドの名前です。private 属性は、メソッドがクラス内にある場合のみ適用できます。</td></tr><tr><td width="20px"></td><td><code><span class="label">nsName</span>:<a href="Namespace.html">Namespace</a></code> &mdash; private として指定する名前空間の名前です。private 属性は、名前空間がクラス内にある場合のみ適用できます。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、private キーワードを使用して、クラス内の特定のプロパティを非表示にする方法について説明します。 
+<div class="listing"><pre>
+class A { 
+  private var alpha:String = "visible only inside class A"; 
+  public var beta:String = "visible everywhere"; 
+}
+	
+class B extends A {
+  function B() {
+    alpha = "Access attempt from subclass"; // error
+  }
+}
+</pre></div> 
+alpha はプライベート変数であるため、A クラスの外部やサブクラス B からもアクセスできません。プライベート変数にアクセスしようとすると、エラーが発生します。
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#internal" target="">internal</a><br/><a href="#protected" target="">protected</a><br/><a href="#public" target="">public</a></div></div><a name="protected"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">protected</td><td class="detailHeaderType">属性キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>
+class className{ 
+	protected var varName;
+	protected const kName;
+	protected function methodName() { 
+		// your statements here 
+	}
+	protected namespace nsName;
+}</pre> </p></td></tr></table><p></p><p><p>変数、定数、メソッドまたは名前空間を定義したクラスとそのサブクラスからのみアクセスできるよう指定します。ActionScript 3.0 の <code>protected</code> の定義は、ActionScript 2.0 の <code>private</code> と似ていますが、<code>protected</code> ではコンパイル時および実行時の両方でアクセスが制限される点が異なります。デフォルトでは、同じパッケージにある呼び出し元は変数または関数にアクセスできます。このキーワードは、変数や関数へのアクセスを制限する場合に使用します。  
+				<p>このキーワードは、クラス定義でのみ使用できます。インターフェイス定義では使用できません。<code>private</code> は、クラスまたは他のすべてのパッケージレベルの定義には適用できません。</p>
+				<p>ActionScript 3.0 の <code>protected</code> の定義には、Java プログラミング言語の <code>protected</code> より多くの制限があります。ActionScript 3.0 の <code>protected</code> ではサブクラスへのアクセスが厳密に制限されますが、Java の <code>protected</code> では同じパッケージ内のすべてのクラスへのアクセスが許可されます。例えば、<code>Base</code> という名前のクラスに <code>protected</code> と指定されたプロパティが含まれる場合、ActionScript 3.0 では Base の拡張クラスのみが保護されたプロパティにアクセスできます。Java では、Base と同じパッケージにあるすべてのクラスが保護されたプロパティにアクセスでき、Base のサブクラスでない場合も同様です。</p>
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">varName</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; protected として指定する変数の名前です。protected 属性は、変数がクラス内にある場合のみ適用できます。</td></tr><tr><td width="20px"></td><td><code><span class="label">kName</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; protected として指定する定数の名前です。protected 属性は、定数がクラス内にある場合のみ適用できます。</td></tr><tr><td width="20px"></td><td><code><span class="label">methodName</span>:<a href="Function.html">Function</a></code> &mdash; protected として指定するメソッドの名前です。protected 属性は、メソッドがクラス内にある場合のみ適用できます。</td></tr><tr><td width="20px"></td><td><code><span class="label">nsName</span>:<a href="Namespace.html">Namespace</a></code> &mdash; protected として指定する名前空間の名前です。protected 属性は、名前空間がクラス内にある場合のみ適用できます。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、クラス A で保護されたクラス変数を作成し、クラス A のサブクラスであるクラス B からその変数に正常にアクセスしています。
+<div class="listing"><pre>
+class A { 
+  private var alpha:String = "visible only inside class A"; 
+  protected var beta:String = "visible inside class A and its subclasses"; 
+}
+	
+class B extends A {
+  public function B() {
+    beta = "Access attempt from subclass succeeded";
+    trace(beta);  // Access attempt from subclass succeeded
+  }
+}
+</pre></div>
+			
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#internal" target="">internal</a><br/><a href="#private" target="">private</a><br/><a href="#public" target="">public</a></div></div><a name="public"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">public</td><td class="detailHeaderType">属性キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>
+public var varName
+public const kName
+public function functionName()  { 
+	// your statements here 
+}
+public class className {
+	// your statements here 
+}
+public namespace nsName
+</pre> </p></td></tr></table><p></p><p><p>クラス、変数、定数またはメソッドにすべての呼び出し元からアクセスできるよう指定します。クラス、変数およびメソッドはデフォルトでは内部クラスです。つまり、現在のパッケージ内にのみ表示されます。クラス、変数またはメソッドにすべての呼び出し元からアクセスできるようにするには、<code>public</code> 属性を使用する必要があります。</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">className</span>:<a href="Class.html">Class</a></code> &mdash; public として指定するクラスの名前です。</td></tr><tr><td width="20px"></td><td><code><span class="label">varName</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; public として指定する変数の名前です。public 属性は、変数がクラスの一部かどうかに関わらず適用できます。</td></tr><tr><td width="20px"></td><td><code><span class="label">kName</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; public として指定する定数の名前です。public 属性は、定数がクラスの一部かどうかに関わらず適用できます。</td></tr><tr><td width="20px"></td><td><code><span class="label">functionName</span>:<a href="Function.html">Function</a></code> &mdash; public として指定する関数またはメソッドの名前です。public 属性は、関数がクラスの一部かどうかに関わらず適用できます。</td></tr><tr><td width="20px"></td><td><code><span class="label">nsName</span>:<a href="Namespace.html">Namespace</a></code> &mdash; public として指定する名前空間の名前です。public 属性は、名前空間がクラスの一部かどうかに関わらず適用できます。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、クラスファイルでパブリック変数を使用する方法を示します。 
+<div class="listing"><pre>class User { 
+	public var age:Number; 
+	public var fname:String; 
+} // end of class User definition
+ 
+var jimmy:User = new User(); 
+jimmy.age = 27; 
+jimmy.fname = "jimmy";
+trace(jimmy.age, jimmy.fname); // 27 jimmy</pre></div> 
+User クラスのいずれかのパブリック変数をプライベート変数に変更した場合、User クラスの外から変数にアクセスしようとすると、コンパイル時エラーが生成されます。 
+
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#class" target="">class</a><br/><a href="#internal" target="">internal</a><br/><a href="#private" target="">private</a><br/><a href="#protected" target="">protected</a></div></div><a name="return"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">return</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>
+function functionName () {
+	return [expression]
+}</pre></p></td></tr></table><p></p><p><p>実行を呼び出し元の関数に直ちに返します。<code>return</code> ステートメントの後に式が続く場合は、式が評価されて結果が返されます。 
+			<p>関数の定義に戻り値の型が含まれている場合は、<code>return</code> ステートメントの後に式を続ける必要があります。戻り値の型が指定されておらず、<code>return</code> ステートメントが単独で使用されている場合は、<code>undefined</code> を返します。</p>
+			<p>複数の値を取得することはできません。複数の値を取得しようとした場合は、最後の値だけが返されます。次の例では、<code>c</code> が返されます。</p> <pre>return a, b, c ;</pre> <p>複数の値を取得する必要がある場合は、代わりに配列またはオブジェクトを使用します。</p></p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">expression</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; 評価を行い関数の値として返す式です。このパラメーターはオプションです。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、sum() 関数の本体内で return ステートメントを使用し、3 つのパラメーターの加算結果を返します。コードの 2 行目で sum() 関数を呼び出し、戻り値を変数 newValue に割り当てます。 
+<div class="listing"><pre>function sum(a:Number, b:Number, c:Number):Number { 
+	return (a + b + c); 
+} 
+var newValue:Number = sum(4, 32, 78); 
+trace(newValue); // 114</pre></div>
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#function" target="">function</a></div></div><a name="set"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">set</td><td class="detailHeaderType">定義キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>
+function set property(newValue:*) : void{ 
+	// your statements here 
+}</pre> 
+			</p></td></tr></table><p></p><p><p>パブリックインターフェイスでプロパティとして表示されるメソッドである setter を定義します。setter は特別なメソッドで、<code>var</code> キーワードで宣言されたプロパティの値を設定します。他のメソッドとは異なり、setter の呼び出しには括弧（<code>()</code>）を使用しないため、変数のように見えます。
+			<p>setter では、プライベートプロパティにパブリックインターフェイスを作成して、非表示の情報の規則を適用できます。情報を非表示にすると、基になるプライベートプロパティの実装が変更された場合でも、パブリックインターフェイスを変更する必要がないというメリットがあります。</p>
+			<p>setter には、サブクラス内でオーバーライドできるというメリットもあります。<code>var</code> で宣言されたプロパティはオーバーライドできません。</p>
+			<p>setter の戻り値の型は、<code>void</code> または指定なしのいずれかである必要があります。</p>
+			<p>setter は、getter と組み合わせて、読み取り／書き込み可能なプロパティを作成できます。読み取り専用プロパティを作成するには、対応する setter なしで getter を作成します。書き込み専用プロパティを作成するには、対応する getter なしで setter を作成します。</p>
+			
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">property</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; set が修正するプロパティの識別子です。この値は対応する get コマンドで使用される値と同じである必要があります。</td></tr><tr><td width="20px"></td><td><code><span class="label">newValue</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; 割り当てる新しい値です。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、getter-setter を定義して、age という名前の読み取り／書き込み可能なプロパティを作成しています。
+<div class="listing"><pre>
+package {
+	class User { 
+	    private var userAge:Number; 
+	    
+	    public function get age():Number {
+	    	return userAge;
+	    }
+	    
+	    public function set age(x:Number):void {
+	    	userAge = x;	
+	    }
+	} 
+} 
+</pre></div>
+スクリプトに次のコードを入力します。
+<div class="listing"><pre>
+var myUser:User = new User();
+myUser.age = 25;
+trace(myUser.age); // 25
+</pre></div>
+			
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#get" target="">get</a></div></div><a name="static"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">static</td><td class="detailHeaderType">属性キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p>
+<pre>class someClassName{ 
+	static var varName; 
+	static const kName;
+	static function methodName() { 
+		// your statements here
+	} 
+}</pre> </p></td></tr></table><p></p><p><p>変数、定数またはメソッドがクラスのインスタンスではなくクラスに属するよう指定します。
+			<p>静的クラスメンバーにアクセスするには、インスタンス名の代わりにクラス名を使用します。例えば、Date クラスにある <code>parse()</code> という名前の静的メソッドは、次のシンタックスでのみ呼び出すことができます。</p>
+			<div class="listing"><div class="clipcopy"><a href="#" class="copyText">コピー</a></div><pre>Date.parse()</pre></div>
+			<p><code>parse()</code> メソッドは、Date クラスのインスタンスで呼び出すことはできません。例えば、次のコードではエラーが発生します。</p>
+			<div class="listing"><div class="clipcopy"><a href="#" class="copyText">コピー</a></div><pre>var myDate:Date = new Date();
+            myDate.parse("Jan 01 00:00:00 2006"); // error</pre></div>
+			<p><code>static</code> は、クラス定義でのみ使用できます。インターフェイス定義では使用できません。</p>
+			<p>静的クラスメンバーは継承されません。Java や C++ のように、サブクラス名を使用して静的クラスメンバーを参照することはできません。ただし、修飾子を使用せずに、クラスまたはサブクラス内の静的変数またはメソッドを参照できます。次の例を参照してください。</p>
+			<p>静的メソッド内では、<code>super</code> ステートメントまたは <code>this</code> キーワードは使用できません。</p>
+			
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">varName</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; static として指定する変数の名前です。</td></tr><tr><td width="20px"></td><td><code><span class="label">kName</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; static として指定する定数の名前です。</td></tr><tr><td width="20px"></td><td><code><span class="label">methodName</span>:<a href="Function.html">Function</a></code> &mdash; static として指定するメソッドの名前です。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、static キーワードを使用して、作成されたクラスのインスタンス数を追跡するカウンターを作成する方法を示します。numInstances は静的変数なので、個々のインスタンスごとに作成されるのではなく、クラス全体で 1 回のみ作成されます。"Users.as" という新しい ActionScript ファイルを作成し、次のコードを入力します。 
+<div class="listing"><pre>class Users { 
+	private static var numInstances:Number = 0; 
+	function Users() { 
+		numInstances++; 
+	} 
+	static function get instances():Number { 
+		return numInstances; 
+	} 
+}</pre></div> 
+スクリプトに次のコードを入力します。
+<div class="listing"><pre>
+trace(Users.instances); 
+var user1:Users = new Users(); 
+trace(Users.instances); 
+var user2:Users = new Users(); 
+trace(Users.instances); 
+</pre></div>
+次の例では、Users クラスを拡張して、静的変数およびメソッドは継承されないものの、サブクラスで参照できることを示しています。
+<div class="listing"><pre>
+class PowerUsers extends Users{
+    function PowerUsers() {
+        instances++;  // unqualified reference to static property Users.instances is legal
+    }
+}
+
+trace(PowerUsers.instances); // error, cannot access static property using PowerUsers class
+</pre></div>
+
+			<p></p></div><a name="super"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">super</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>super([arg1, ..., argN])
+super.method([arg1, ..., argN])</pre></p></td></tr></table><p></p><p><p>メソッドやコンストラクターのスーパークラスまたは親バージョンを呼び出します。クラスコンストラクターの本体内で使用する場合、<code>super()</code> ステートメントはコンストラクターのスーパークラスバージョンを呼び出します。スーパークラスコンストラクターの呼び出しには、正しい数の引数が指定されている必要があります。スーパークラスコンストラクターは、明示的に呼び出すかどうかに関わらず、必ず呼び出されます。明示的に呼び出さない場合、呼び出しは引数なしでサブクラスのコンストラクター本体の最初のステートメントの前に自動的に挿入されます。つまり、サブクラスでコンストラクター関数を定義し、スーパークラスコンストラクターが引数を取る場合は、正しい数の引数を指定してスーパークラスコンストラクターを明示的に呼び出す必要があります。そうでない場合は、エラーが発生します。ただし、ActionScript 2.0 とは異なり、スーパークラスコンストラクターへの呼び出しは、サブクラスコンストラクターの最初のステートメントである必要はありません。
+			<p>インスタンスメソッドの本体で使用する場合は、<code>super</code> をドット（.）演算子と共に使用して、メソッドのスーパークラスバージョンを呼び出すことができます。また、オプションとしてスーパークラスメソッドに引数 <code>(arg1 ... argN)</code> を渡すこともできます。このスタイルは、スーパークラスのメソッドにビヘイビアーを追加するだけでなく、そのメソッドを呼び出して元のビヘイビアーを実行するようなサブクラスメソッドを作成する場合に便利です。</p>
+			<p>静的メソッドで <code>super</code> ステートメントを使用することはできません。</p></p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">method</span>:<a href="Function.html">Function</a></code> &mdash; スーパークラスで呼び出すメソッドです。</td></tr><tr><td width="20px"></td><td><code><span class="label">argN</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; メソッドのスーパークラスバージョンまたはスーパークラスのコンストラクター関数に渡すオプションのパラメーターです。</td></tr></table><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#class" target="">class</a><br/><a href="#extends" target="">extends</a></div></div><a name="switch"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">switch</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p>
+<pre>
+switch (expression) {
+	caseClause: 
+	[defaultClause:] 
+}</pre></p></td></tr></table><p></p><p><p>式の値に応じて、ステートメントへの転送を制御します。<code>switch</code> ステートメントには、どの <code>case</code> ステートメントも式に一致しない場合に実行するデフォルトケースを指定する必要があります。それぞれの <code>case</code> ステートメントは、<code>break</code> ステートメントで終了する必要があります。これにより、フォールスルーエラーを回避できます。フォールスルーエラーが発生すると、ケースがテスト式に一致しない場合でも、次の <code>case</code> ステートメントのコードが実行されます。</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">expression</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; 任意の式です。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、デフォルトケースにフォールスルーする switch ステートメントを定義します。
+
+<div class="listing"><pre>
+
+var switchExpression:int = 3;
+		
+switch (switchExpression) {
+	case 0:
+		trace(0);
+		break;
+	case 1:
+		trace(1);
+		break;
+	case 2:
+		trace(2);
+		break;
+	default:
+		trace("Not 0, 1, or 2");
+}
+
+// Not 0, 1, or 2
+</pre></div>
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="operators.html#strict_equality" target="">=== (strict equality)</a><br/><a href="#case" target="">case</a><br/><a href="#default" target="">default</a></div></div><a name="this"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">this</td><td class="detailHeaderType">プライマリ式キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>this</pre></p></td></tr></table><p></p><p><p>メソッドに含まれるオブジェクトへの参照です。スクリプトの実行時には、<code>this</code> キーワードはそのスクリプトを含むオブジェクトを参照します。メソッド本体内では、<code>this</code> キーワードは呼び出されたメソッドを含むクラスインスタンスを参照します。</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>動的クラスで定義された関数を呼び出すには、this を使用して適切なスコープで関数を呼び出す必要があります。
+<div class="listing"><pre>
+// incorrect version of Simple.as
+/*
+dynamic class Simple {
+    function callfunc() {
+        func();
+    }
+}
+*/
+// correct version of Simple.as
+dynamic class Simple {
+    function callfunc() {
+        this.func();
+    }
+}
+</pre></div>
+スクリプトに次のコードを追加します。
+<div class="listing"><pre>
+var simpleObj:Simple = new Simple();
+simpleObj.func = function() {
+	trace("hello there");
+}
+simpleObj.callfunc();
+</pre></div>
+上記のコードは、callfunc() メソッドで this を使用した場合に機能します。ただし、不適切なバージョンの "Simple.as" を使用するとシンタックスエラーが発生し、上記の例ではコメントアウトされます。
+
+			
+			<p></p></div><a name="throw"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">throw</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>throw expression </pre></p></td></tr></table><p></p><p><p><code>catch</code> コードブロックによって処理（キャッチ<em></em>）できるエラーを生成（スロー<em></em>）します。<code>catch</code> ブロックが例外をキャッチしない場合は、スローされた値の文字列表現が出力パネルに表示されます。<code>catch</code> または <code>finally</code> ブロックが例外をキャッチしない場合は、スローされた値の文字列表現がログファイルに送られます。 <p>一般には、Error クラスまたはそのサブクラスのインスタンスをスローします。「例」を参照してください。</p></p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">expression</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; ActionScript の式またはオブジェクトです。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>この例の checkEmail() 関数は、受け取った文字列が正しい形式の電子メールアドレスかどうかを確認します。文字列に "@" 記号が含まれていない場合は、エラーをスローします。 
+<div class="listing"><pre>function checkEmail(email:String) { 
+	if (email.indexOf("@") == -1) { 
+		throw new Error("Invalid email address"); 
+	} 
+} 
+checkEmail("someuser_theirdomain.com");</pre></div> 
+次に、以下のコードで try コードブロック内の同じ checkEmail() 関数を呼び出します。e-mail 文字列に有効な電子メールアドレスが含まれていない場合は、trace ステートメントでエラーメッセージが出力されます。
+<div class="listing"><pre>
+try { 
+	checkEmail("Joe Smith"); 
+} 
+catch (e) { 
+	trace(e); 
+}
+// Error: Invalid email address.</pre></div> 
+次の例では、Error クラスのサブクラスをスローします。checkEmail() 関数がそのサブクラスのインスタンスをスローするよう修正します。
+<div class="listing"><pre>
+// Define Error subclass InvalidEmailError 
+class InvalidEmailAddress extends Error { 
+    public function InvalidEmailAddress() {
+    	message = "Invalid email address."; 
+    }
+}
+</pre></div> 
+スクリプトに次のコードを入力します。
+<div class="listing"><pre>
+import InvalidEmailAddress; 
+function checkEmail(email:String) { 
+	if (email.indexOf("@") == -1) { 
+		throw new InvalidEmailAddress(); 
+	} 
+} 
+try { 
+	checkEmail("Joe Smith"); 
+} 
+catch (e) { 
+	trace(e);
+}
+// Error: Invalid email address.</pre></div>
+			<p></p><p id="moreExamples"><span class="label">さらに例を参照</span></p><div class="seeAlso"><a href="http://help.adobe.com/ja_JP/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ed1.html" target="_blank">アプリケーションの同期エラーの処理</a></div><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="Error.html" target="">Error クラス</a><br/><a href="#try..catch..finally" target="">try..catch..finally</a></div></div><a name="true"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">true</td><td class="detailHeaderType">プライマリ式キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>true</pre></p></td></tr></table><p></p><p><p>true を表すブール値です。ブール値は <code>true</code> または <code>false</code> のいずれかです。<code>true</code> の反対は <code>false</code> です。自動的な型指定により <code>true</code> を数値に変換すると、その結果は 1 となります。<code>true</code> を文字列に変換すると、その結果は <code>"true"</code> となります。
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、if ステートメントで true を使用しています。
+<div class="listing"><pre>
+
+var shouldExecute:Boolean;
+// ...
+// code that sets shouldExecute to either true or false goes here
+// shouldExecute is set to true for this example:
+
+shouldExecute = true;
+
+if (shouldExecute == true) {
+    trace("your statements here");
+}
+
+// true is also implied, so the if statement could also be written:
+// if (shouldExecute) {
+//         trace("your statements here");
+// }</pre></div>
+次の例では、自動的な型指定によって true を数値 1 に変換する方法を示しています。
+<div class="listing"><pre>
+
+var myNum:Number;
+myNum = 1 + true;
+trace(myNum); // 2</pre></div>
+
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="Boolean.html" target="">Boolean クラス</a><br/><a href="#false" target="">false</a></div></div><a name="try..catch..finally"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">try..catch..finally</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>try { 
+    // try block 
+} finally { 
+    // finally block  
+} 
+
+try { 
+    // try block 
+} catch(error[:ErrorType1]) {
+    // catch block 
+} [catch(error[:ErrorTypeN]) { 
+    // catch block 
+}] [finally {
+    // finally block 
+}]</pre></p></td></tr></table><p></p><p><p>エラーが発生する可能性のあるコードブロックを囲み、そのエラーに対処します。<code>try..catch..finally</code> ステートメントを使用して実装される例外処理は、ActionScript 3.0 でランタイムエラーの条件処理に使用される主要なメカニズムです。ランタイムエラーが発生すると、Flash Player は例外をスローして、通常の実行を一時停止し、<code>Error</code> 型の特殊なオブジェクトを作成します。次に、最初にアクセス可能な <code>catch</code> ブロックにエラーオブジェクトをパス（スロー<em></em>）します。アクセス可能な <code>catch</code> ブロックがない場合、例外は不明な例外と見なされます。不明な例外が発生すると、スクリプトは終了します。
+			<p><code>throw</code> ステートメントを使用して、コードで例外を明示的にスローすることができます。任意の値をスローできますが、柔軟性があり Flash Player のビヘイビアーに一致するオブジェクトをスローすることが推奨されます。</p>
+			<p>例外をキャッチするには、Flash Player または作成したコードでスローするかに関わらず、例外をスローするコードを <code>try</code> ブロックに配置します。<code>try</code> ブロック内のコードが例外をスローすると、制御は <code>catch</code> ブロックがある場合はこれに移動し、次に <code>finally</code> ブロックがある場合はこれに移動します。<code>finally</code> ブロックは、例外がスローされたかどうかに関わらず、必ず実行されます。<code>try</code> ブロック内のコードが例外をスローしなかった場合（<code>try</code> ブロックが正常終了した場合）、<code>catch</code> ブロック内のコードは無視されますが、<code>finally</code> ブロック内のコードは実行されます。<code>return</code> ステートメントを使用して <code>try</code> ブロックを終了した場合でも、<code>finally</code> ブロックは実行されます。 </p>
+			<p><code>try</code> ブロックの後には、<code>catch</code> ブロックまたは <code>finally</code> ブロック、またはその両方を続ける必要があります。1 つの <code>try</code> ブロックに対して複数の <code>catch</code> ブロックを指定できますが、<code>finally</code> ブロックは 1 つしか記述できません。<code>try</code> ブロックは、必要なだけ何レベルでも入れ子にできます。</p> 
+			<p><code>catch</code> ハンドラーで指定する <code>error</code> パラメーターには、<code>e</code>、<code>theException</code> または <code>x</code> のような単純な識別子を使用します。パラメーターの型を指定することもできます。複数の <code>catch</code> ブロックを使用する場合は、型指定したパラメーターを使用することで、1 つの <code>try</code> ブロックからスローされた複数の型のエラーオブジェクトをキャッチできます。</p> 
+			<p>スローした例外がオブジェクトである場合、スローしたオブジェクトが指定した型のサブクラスであれば、型が一致します。特定の型のエラーがスローされた場合は、対応するエラーを処理する <code>catch</code> ブロックが実行されます。指定した型ではない例外がスローされた場合、<code>catch</code> ブロックは実行されず、<code>try</code> ブロックからそのエラーに一致する <code>catch</code> ハンドラーに対して例外が自動的にスローされます。 </p> 
+			<p>関数の内部でエラーがスローされ、その関数に <code>catch</code> ハンドラーが含まれていない場合、その関数は終了します。<code>catch</code> ブロックが見つからない限り、呼び出し元の関数もすべて終了します。このプロセスの間に、すべてのレベルの <code>finally</code> ハンドラーが呼び出されます。</p>
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">error</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; throw ステートメントでスローされる式です。通常は Error クラスまたはそのサブクラスのインスタンスです。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次に、try..catch ステートメント内でどのように生成され、処理されるかを示しています。try ブロック内のコードで無効な操作が指定されています。スプライトは自身を子として追加することはできません。このため、Flash Player は例外をスローし、ArgumentError 型のオブジェクトを対応する catch ブロックに渡します。
+<div class="listing"><pre>
+import flash.display.Sprite;
+
+var spr:Sprite = new Sprite();
+try {
+	spr.addChild(spr);
+}
+catch (e:ArgumentError) {
+	trace (e); // ArgumentError: Error #2024: An object may not be added as a child of itself.
+}
+</pre></div> 
+次の例では、RecordSetException オブジェクトと MalformedRecord オブジェクトは Error クラスのサブクラスです。  
+<div class="listing"><pre>
+class RecordSetException extends Error { 
+	public function RecordSetException () {
+		message = "Record set exception occurred."; 
+	}
+}
+
+class MalformedRecord extends Error { 
+	public function MalformedRecord {
+		message = "Malformed record exception occurred."; 
+	}
+}</pre></div> 
+
+RecordSet クラスの sortRows() メソッドでは、発生した例外の型に応じて、これらの定義済みエラーオブジェクトのいずれかをスローします。次に例を示します。 
+<div class="listing"><pre>
+class RecordSet { 
+	public function sortRows() { 
+		var returnVal:Number = randomNum(); 
+		if (returnVal == 1) { 
+			throw new RecordSetException(); 
+		} 
+		else if (returnVal == 2) { 
+			throw new MalformedRecord(); 
+		} 
+	}
+	public function randomNum():Number { 
+		return Math.round(Math.random() * 10) % 3; 
+	}
+}</pre></div> 
+最後に、次のコードでは RecordSet クラスのインスタンスで sortRows() メソッドを呼び出します。このコードでは、sortRows() でスローされるエラーオブジェクトの型ごとに、catch ブロックを定義しています。
+<div class="listing"><pre>import RecordSet; 
+var myRecordSet:RecordSet = new RecordSet();
+try { 
+	myRecordSet.sortRows(); 
+	trace("everything is fine"); 
+} 
+catch (e:RecordSetException) { 
+	trace(e.toString()); 
+} 
+catch (e:MalformedRecord) { 
+	trace(e.toString()); 
+}</pre></div>
+			<p></p><p id="moreExamples"><span class="label">さらに例を参照</span></p><div class="seeAlso"><a href="http://help.adobe.com/ja_JP/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ecc.html" target="_blank">デバッガーバージョンの Flash ランタイムの操作</a><br/><a href="http://help.adobe.com/ja_JP/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7ed1.html" target="_blank">アプリケーションの同期エラーの処理</a></div><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="Error.html" target="">Error クラス</a><br/><a href="#throw" target="">throw</a></div></div><a name="use_namespace"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">use namespace</td><td class="detailHeaderType">ディレクティブ</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>use namespace ns1[, ns2, ...nsN]</pre></p></td></tr></table><p></p><p><p>指定した名前空間をオープンな名前空間のセットに追加します。指定した名前空間は、現在のコードブロックが終了すると、オープンな名前空間のセットから削除されます。<code>use namespace</code> ディレクティブは、プログラム、パッケージ定義またはクラス定義の最上位のレベルに表示できます。</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">nsN</span>:<a href="Namespace.html">Namespace</a></code> &mdash; オープンな名前空間のセットに追加された名前空間です。</td></tr></table><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#default_xml_namespace" target="">default xml namespace</a><br/><a href="#namespace" target="">namespace</a><br/><a href="XML.html" target="">XML クラス</a></div></div><a name="var"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">var</td><td class="detailHeaderType">定義キーワード</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>var variableName [= value1][...,variableNameN[=valueN]] </pre></p></td></tr></table><p></p><p><p>変数を指定します。関数内で変数を宣言した場合、その変数はローカルです。変数はその関数用に定義され、関数呼び出しの終了時にスコープから外れます。 
+			 
+			<p>別のオブジェクトのスコープ内の変数をローカル変数として宣言することはできません。</p> 
+<pre>my_array.length = 25; // ok 
+var my_array.length = 25; // syntax error </pre> 
+			<p>データタイプの後にコロンを付けて、変数にデータタイプを割り当てることができます。</p>
+			<p>カンマで宣言を区切ることにより、1 つのステートメントで複数の変数を宣言できます。ただし、このシンタックスを使用すると、コードが読みにくくなる場合があります。</p>
+			<pre>var first:String = "Bart", middle:String = "J.", last:String = "Bartleby";</pre>
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">variableName</span>:<a xmlns:xd="http://www.pnp-software.com/XSLTdoc" href="specialTypes.html#*">*</a></code> &mdash; 識別子です。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の ActionScript では、製品名の新しい配列を作成します。Array.push を使用して、配列の末尾にエレメントを追加します。 
+<div class="listing"><pre>
+var product_array:Array = new Array("Studio", "Dreamweaver", "Flash", "ColdFusion", "Contribute", "Breeze"); 
+product_array.push("Flex"); 
+trace(product_array); 
+// Studio,Dreamweaver,Flash,ColdFusion,Contribute,Breeze,Flex</pre></div>
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#const" target="">const</a></div></div><a name="while"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">while</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>while (condition) { 
+	// statement(s)
+}</pre></p></td></tr></table><p></p><p><p>条件を評価して、条件の評価結果が <code>true</code> になる場合はステートメントを実行します。その後、ループの先頭に戻り、再び条件を評価します。条件の評価結果が <code>false</code> になると、ステートメントはスキップされ、ループは終了します。 
+			<p><code>while</code> ステートメントは、次の手順を実行します。手順 1 ～ 4 の各繰り返しはループの反復<em></em>と呼ばれます。次の手順に示すように、条件は各反復の始めにテストされます。</p> 
+			<ol> 
+				<li>式 <code>condition</code> が評価されます。</li> 
+				<li><code>condition</code> の評価が <code>true</code> であるか、ブール値 <code>true</code> に変換される値（ゼロ以外の数値など）である場合は、手順 3 に進みます。それ以外の場合は、<code>while</code> ステートメントが完了し、<code>while</code> ループの直後のステートメントから実行が再開されます。</li> 
+				<li>ステートメントブロック <code>statement(s)</code> を実行します。<code>continue</code> ステートメントが検出された場合は、残りのステートメントをスキップし、手順 1 に進みます。<code>break</code> ステートメントが検出された場合は、<code>while</code> ステートメントを終了し、<code>while</code> ループの直後のステートメントから実行が再開されます。</li> 
+				<li>手順 1 に進みます。</li> 
+			</ol> 
+			<p>一般にループ処理は、カウンター変数が指定値より小さい間にアクションを実行するために使用します。各ループの最後で、指定された値に達するまでカウンターがインクリメントされます。指定された値に達すると、<code>condition</code> は <code>true</code> でなくなり、ループは終了します。</p> 
+			<p>実行するステートメントが 1 つしかない場合、<code>while</code> ステートメントで実行するステートメントを囲む中括弧（<code>{}</code>）は必要ありません。</p>
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">condition</span>:<a href="Boolean.html">Boolean</a></code> &mdash; 評価結果が true または false になる式です。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、while ステートメントを使用して式をテストします。i の値が 20 未満の場合に、i の値がトレースされます。条件が true でなくなると、ループは終了します。 
+<div class="listing"><pre>
+var i:Number = 0; 
+while (i < 20) { 
+	trace(i); 
+	i += 3; 
+}
+/*
+0 
+3 
+6 
+9 
+12
+15 
+18
+*/</pre></div>
+			<p></p><p><span class="label"> 関連する API エレメント </span></p><div class="seeAlso"><a href="#break" target="">break</a><br/><a href="#continue" target="">continue</a><br/><a href="#do..while" target="">do..while</a></div></div><a name="with"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">with</td><td class="detailHeaderType">ステートメント</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">使用方法</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><p><pre>with (object:Object) { 
+	// statement(s)
+}</pre></p></td></tr></table><p></p><p><p>ステートメントの実行に使用するデフォルトのオブジェクトを設定します。記述するコードの量を減らすことができます。
+			<p><code>object</code> パラメーターは、<code>statement(s)</code> パラメーターのプロパティ、変数および関数を読み取るときのコンテキストになります。例えば、<code>object</code> が <code>my_array</code> であり、指定されたプロパティのうちの 2 つが <code>length</code> と <code>concat</code> である場合、これらのプロパティは <code>my_array.length</code> および <code>my_array.concat</code> として自動的に読み取られます。別の例で、<code>object</code> が <code>state.california</code> である場合、<code>with</code> ステートメント内のアクションまたはステートメントは <code>california</code> インスタンス内から呼び出されます。</p> 
+			<p><code>statement(s)</code> パラメーターで識別子の値を検索する場合、ActionScript は <code>object</code> で指定されたスコープチェーンの先頭から開始し、特定の順序でスコープチェーンの各レベルで識別子を検索します。 </p> 
+			<p>識別子を解決するために <code>with</code> ステートメントで使用されるスコープチェーンは、次のリストの最初の項目から始まり、最後の項目まで続きます。</p> 
+			<ul> 
+				<li>最も内側の <code>with</code> ステートメントの <code>object</code> パラメーターで指定されたオブジェクト</li> 
+				<li>最も外側の <code>with</code> ステートメントの <code>object</code> パラメーターで指定されたオブジェクト</li> 
+				<li>Activation オブジェクト（スクリプトが関数内で呼び出されたローカル変数を持つ関数を呼び出すときに自動的に作成されるテンポラリオブジェクト）</li> 
+				<li>実行中のスクリプトを含むオブジェクト</li> 
+				<li>Global オブジェクト（Math や String などの定義済みオブジェクト）</li> 
+			</ul> 
+			<p><code>with</code> ステートメント内に変数を設定するには、<code>with</code> ステートメントの外側で変数を宣言しておくか、変数を設定するタイムラインへのフルパスを入力する必要があります。変数を宣言せずに <code>with</code> ステートメントに設定すると、<code>with</code> ステートメントはスコープチェーンに従って値を検索します。変数がまだ存在しない場合、<code>with</code> ステートメントが呼び出されたタイムライン上に新しい値が設定されます。</p> 
+			</p></p><p></p><span class="label">パラメーター</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">object</span>:<a href="Object.html">Object</a></code> &mdash; ActionScript オブジェクトまたはムービークリップのインスタンスです。</td></tr></table><br/><span class="label">例</span><br/><span class="usage"><a href="http://www.adobe.com/go/learn_as3_usingexamples_jp"> この例の使用方法 </a></span><br/>次の例では、someOther_mc インスタンスの _x プロパティと _y プロパティを設定してから、フレーム 3 に進んで停止するよう someOther_mc に指示します。 
+with (someOther_mc) { 
+	_x = 50; 
+	_y = 100; 
+	gotoAndStop(3); 
+} 
+次のコードスニペットでは、with ステートメントを使用せずに、上記のコードを記述しています。 
+someOther_mc._x = 50; 
+someOther_mc._y = 100; 
+someOther_mc.gotoAndStop(3); 
+with ステートメントは、スコープチェーンリスト内の複数の項目に同時にアクセスする場合に便利です。次の例では、ビルトインの Math オブジェクトをスコープチェーンの前に設定します。Math をデフォルトオブジェクトとして設定すると、cos、sin、PI の各識別子がそれぞれ Math.cos、Math.sin、Math.PI に解決されます。a、x、y、r の各識別子は Math オブジェクトのメソッドやプロパティではありませんが、関数 polar() のオブジェクトアクティベーションスコープ内に存在するので、それぞれ対応するローカル変数として処理されます。 
+<div class="listing"><pre>function polar(r:Number):void { 
+	var a:Number, x:Number, y:Number; 
+	with (Math) { 
+		a = PI * pow(r, 2); 
+		x = r * cos(PI); 
+		y = r * sin(PI / 2); 
+	} 
+	trace("area = " + a); 
+	trace("x = " + x); 
+	trace("y = " + y); 
+} polar(3);
+/* 
+area = 28.2743338823081 
+x = -3 
+y = 3
+*/</pre></div>
+			<p></p></div><p></p><center class="copyright"> &copy; 2013 Adobe Systems Incorporated. All rights reserved. <br/>Fri Apr 26 2013, 02:16 PM -07:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><!--BEGIN IONCOMMENTS--><div id="ionComHere"></div><!--END IONCOMMENTS--><div style="display: none;">
+<!-- SiteCatalyst -->
+<script language="JavaScript" type="text/javascript"><!--
+var s_code=' ';
+var s_docHost = window.location.hostname.toLowerCase();
+var s_docURL = window.location.pathname.toLowerCase();
+var scJsHost = (("https:" == document.location.protocol) ? "https://www.adobe.com" : "http://wwwimages.adobe.com");
+if (s_docHost.indexOf(".corp.adobe") != -1 || s_docHost.indexOf("stage.") != -1 || s_docHost.indexOf(".dev.adobe") != -1 || s_docHost.indexOf("staging.") != -1) scJsHost="";
+document.write(unescape("%3Cscript src='" + scJsHost + "/uber/js/omniture_s_code.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var s_accountName;
+s_server="www.adobe.com static content pages";
+if (!window.s_account) s_accountName="mxmacromedia";
+else s_accountName=window.s_account;
+
+if (window.s_docURL.indexOf("/designcenter/") != -1)
+  s_channel="Adobe Design Center";	
+else if ((window.s_docHost.indexOf("labs.adobe") != -1) ||
+(window.s_docHost.indexOf("labs-staging.") != -1))
+  s_channel="Labs";
+else if (window.s_docHost.indexOf("help.adobe.com") != -1) {
+  s_channel="Support Help.adobe.com";
+  if (window.s_docURL.indexOf("/en_us/") == -1) {
+    s_docURLArray=s_docURL.split('/');
+    s_pageName="http://help.adobe.com/"+s_docURLArray[1]+"/"+ s_docURLArray[2]+"/"+s_docURLArray[3];
+    s_prop23="http://help.adobe.com"+window.location.pathname;
+  }
+}
+else if (window.s_docHost.indexOf("kb2.adobe.com") != -1) {
+  s_channel="Support Knowledgebase";
+  s_prop23="http://kb2.adobe.com"+s_docURL+":";
+  if (typeof(omtrProductList) != 'undefined' && omtrProductList.length > 0)
+ {
+    s_prop23=s_prop23+omtrProductList;
+  }
+}
+else if (window.s_docHost.indexOf("resellers.adobe.com") != -1) {
+		var s_pageName=document.getElementsByTagName("title")[0].text;
+}
+
+if (!window.scMMInclude) {
+	var s_wd=window,s_tm=new Date;
+	if(s_code!=' '){
+		s_code=s_dc(s_accountName);
+		if(s_code)document.write(s_code)
+	} 
+} else {
+	s_wds(s_accountName);s_ca(s_accountName); 
+}	
+
+function sendAnalyticsEvent(str){var ns=s_accountName;if(str!=null)ns+=","+str;void(s_gs(ns));}
+function sendLinkEvent(accnt,lnkname,type){
+accnt=s_accountName;s_linkType=type;s_lnk=true;s_linkName=lnkname;void(s_gs(accnt));}
+//--></script>
+<noscript><img src="http://stats.adobe.com/b/ss/mxmacromedia/1/H.15-XELvs/0?pageName=http%3A//www.adobe.com%3A%20noscript&ch=http%3A//www.adobe.com%3A%20noscript&g=http%3A//www.adobe.com" height="1" width="1" border="0" alt="" /></noscript>
+<!-- End SiteCatalyst -->
+</div>
+
+<script language="JavaScript" type="text/javascript">//<![CDATA[
+var scJsHost = (("https:" == document.location.protocol) ? "https://www.adobe.com" : "http://wwwimages.adobe.com");
+document.write(unescape("%3Cscript src='" + scJsHost + "/uber/js/atm/s_code_www.js' type='text/javascript'%3E%3C/script%3E"));
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+if(s_adobe){	
+	s_adobe.server="www.adobe.com Static Content pages";
+	/* Set pageName */
+	s_adobe.s_URL="adobe.com"+((location.pathname.charAt(0)=='/')?location.pathname:'/'+location.pathname);
+	if (s_adobe.s_URL.substring(s_adobe.s_URL.lastIndexOf('/')+1)=="") s_adobe.s_URL=s_adobe.s_URL+"index.html";
+	s_adobe.s_URLSplit=s_adobe.s_URL.split("/");
+	s_adobe.pageName=s_adobe.s_URLSplit.join(":");
+
+	/* Set prop4 to language-locale */
+	var s_meta=document.getElementsByTagName('meta'); 
+      for (i=0; i<s_meta.length; i++) { 
+        if (s_meta[i].getAttribute("http-equiv") == "Content-Language") { 
+          s_adobe.prop4=s_meta[i].getAttribute("content"); 
+	    s_adobe.prop4=s_adobe.prop4.replace(/\s+/g,'');
+        } 
+      } 
+	s_adobe.t()
+}
+//]]></script>
+
+
+
+
+
+
+
+<iframe src="./jive-comments.html" width="100%" height="100%" frameborder="no" style="overflow:hidden" name="jiveFrame" id="jiveFrame"></iframe><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/ja_JP/legalnotices/index.html">法律上の注意</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">プライバシーポリシー</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		<div id="whyEnglishContent">
+			<div id="light" class="white_content">
+				<div class="white_content_title">
+					<span style="float:right"><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">[ X ]</a></span><span style="float:left">英語で表示される理由</span>
+				</div>
+				<div class="white_content_body">
+					<b>ActionScript 3.0 リファレンスガイドのコンテンツが英語で表示されます。</b><br><br>
+					ActionScript 3.0 リファレンスガイドのすべての部分がすべての言語に翻訳されているわけではありません。言語エレメントが翻訳されていない場合、そのエレメントは英語で表示されます。例えば、ga.controls.HelpBox クラスはどの言語にも訳されていません。このため、リファレンスガイドの日本語バージョンでは、ga.controls.HelpBox クラスは英語で表示されます。
+				</div>
+			</div>
+			<div id="fade" class="black_overlay"></div>
+		</div>
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2013 Adobe Systems Incorporated. All rights reserved. <br/>Fri Apr 26 2013, 02:16 PM -07:00  -->

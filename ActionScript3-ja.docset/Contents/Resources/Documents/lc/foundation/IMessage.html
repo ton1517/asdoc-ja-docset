@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"><html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="book" content="Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド"><meta name="lang" content="ja-jp"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:10"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="flash player"><meta name="productver" content="flash player:10"><meta name="product" content="livecycle"><meta name="prodver" content="livecycle:ES2"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="IMessage,lc.foundation.IMessage"><title>lc.foundation.IMessage - Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<script type="text/javascript">
+			var runtimesLabel = "ランタイム";
+			var productsLabel = "製品";
+		  var noneLabel = "選択しない";
+				
+				var baseRef = "../../";
+				var buildType = 'filter';
+				var alreadyrunflag=0; //flag to indicate whether target function has already been run
+				var terms_HELPCFG = "PlatformASLR.helpcfg";
+
+if (document.addEventListener)
+  document.addEventListener("DOMContentLoaded", function(){alreadyrunflag=1; init()}, false)
+else if (document.all && !window.opera){
+ /* blocks IE from working, as it's fired before dom if ready
+ document.write('<script type="text/javascript" id="contentloadtag" defer="defer" src="javascript:void(0)"><\/script>')
+  var contentloadtag=document.getElementById("contentloadtag")
+  contentloadtag.onreadystatechange=function(){
+    if (this.readyState=="complete"){
+      alreadyrunflag=1;
+      init();
+    }
+  }*/
+} else if(/Safari/i.test(navigator.userAgent)){ //Test for Safari
+  var _timer=setInterval(function(){
+  if(/loaded|complete/.test(document.readyState)){
+    clearInterval(_timer)
+     alreadyrunflag=1;
+    init(); // call target function
+  }}, 10)
+}
+
+function onLoadFunction() {
+	setTimeout("if (!alreadyrunflag) init();  alreadyrunflag=1; ionReadyLoad(); ", 0);
+}			
+		</script>
+		<script language="javascript" type="text/javascript" src="../../cookies.js"></script>
+		<script language="javascript" type="text/javascript" src="../../asdoc.js"></script>
+		<!--oss:off-->
+		
+<!-- ********************************** -->
+<!-- START: ForeSee survey code in: /ssi/globalheader.ssi -->
+
+<script type="text/javascript">
+<!-- 
+// Enable the survey for only English, German and Japanese
+var agt=navigator.userAgent.toLowerCase();
+if ( agt.indexOf("community help client") == -1 ){
+    if ( document.location.href.indexOf("/en_US/") != -1 ){
+        showSurvey();
+//    }else if (document.location.href.indexOf("/de_DE/") != -1){
+//         var locale="de";
+//         showSurvey();
+    }else if (document.location.href.indexOf("/ja_JP/") != -1 ){
+         var locale="ja";
+         showSurvey();
+    }	
+}
+
+function showSurvey(){
+	document.write('<script type="text/javascript" src="/js/foresee/foresee-trigger.js"><\/scr'+'ipt>');
+}
+
+// -->
+</script>
+
+<!-- END: ForeSee survey code -->
+<!-- ******************************** -->
+
+
+	</head>
+	<body onload="onLoadFunction()">
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+										Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド<br>
+										  <span class="titleTableTopNavION">
+										    <a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">パッケージおよびクラスリストの表示</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">パッケージおよびクラスリストの非表示</a>&nbsp;|&nbsp;
+										  <a target="_self" href="../../package-summary.html"> パッケージ </a>&nbsp;|&nbsp;
+										    <a target="_self" href="../../class-summary.html"> クラス </a>&nbsp;|&nbsp;
+										    <a target="_self" href="../../all-index-Symbols.html"> 索引 </a>&nbsp;|&nbsp;
+										    <a target="_self" href="../../appendixes.html"> 付録 </a>
+										    <span id="whyEnglish">&nbsp;|&nbsp;
+										      <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">英語で表示される理由</a>
+										    </span><br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+											  <form class="searchFormION" method="get" onSubmit="return submitValue('Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド','community.adobe.com/help/search.html','0','communityhelp_platform_aslr','ja_JP');">
+																	  <input class="hidden" name="loc" value="" type="hidden">
+																	  <input class="hidden" name="termPrefix" value="site:help.adobe.com/en_US/AS3CLR/Flash_10.0" type="hidden">
+																	  <input class="hidden" name="title" value="ActionScript 3.0 Reference for the Adobe Flash Platform" type="hidden">
+																	  <input class="hidden" name="term" value="" type="hidden">
+																	  <input class="hidden" name="area" value="" type="hidden">
+																	  <input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text">
+											    <input type="button" name="action" value="" onClick="submitValue('Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド','community.adobe.com/help/search.html','0','communityhelp_platform_aslr','ja_JP')" class="searchbutton"><br>
+																      <input id="checkBoxId" type="checkbox" name="checkbox" value="checkbox" checked>言語リファレンスのみ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+																	  </form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+						  <td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+					  <div id="filter_panel_nf">
+  					  <table class="filterTable" width="100%">
+  					    <tr>
+  					      <td>パッケージフィルターおよびクラスフィルター：</td>
+     					    <td width="5%" align="right"><div id="runtimeLabel" onMouseOut="hideFilterPods(event, 1)"></div></td>
+     					    <td id="runtimes" align="left" style=" white-space:normal">サーバーからデータを取得しています...</td>
+  					    </tr>
+  					    <tr>
+  					      <td></td>
+  					      <td align="right" valign="top"><div id="productLabel" onMouseOut="hideFilterPods(event, 2)"></div></td>
+  					      <td id="products" width="85%" style="white-space:normal">サーバーからデータを取得しています...</td>
+  					    </tr>
+  					  </table>
+					  </div>
+					  <div id="runtimespod" onMouseOut="hideFilterPods(event, 1)">
+					    <form id="runtimesForm">
+					      <div id="runtime_podblock">サーバーからデータを取得しています...</div>
+					    </form>
+					  </div>
+					  <div id="productspod" onMouseOut="hideFilterPods(event, 2)">
+					    <form id="productsForm">
+					       <div id="product_podblock">サーバーからデータを取得しています...</div> 
+					    </form>
+					  </div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">lc.foundation&nbsp;</a><br>
+								<convert>IMessage&nbsp;</convert>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+							  <a id="propertiesLink" href="#propertySummary" style="display:none"> プロパティ </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> プロパティ </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> コンストラクター </a>
+								<span id="constructorBar" style="display:none"> | </span>
+							  <a id="methodsLink" href="#methodSummary" style="display:none"> メソッド </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('methodSummary');" style="display:none"> 関数 </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+							  <a id="eventsLink" href="#eventSummary" style="display:none"> イベント </a>
+								<span id="eventsBar" style="display:none"> | </span>
+							  <a id="stylesLink" href="#styleSummary" style="display:none"> スタイル </a>
+								<span id="stylesBar" style="display:none"> | </span>
+							  <a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> スキンパーツ </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+							  <a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> スキンの状態 </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+							  <a id="effectsLink" href="#effectSummary" style="display:none"> エフェクト </a>
+								<span id="effectsBar" style="display:none"> | </span>
+							  <a id="constantsLink" href="#constantSummary" style="display:none"> 定数 </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constantSummary');" style="display:none"> 定数 </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('interfaceSummary');" style="display:none"> インターフェイス </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('classSummary');" style="display:none"> クラス </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="packageUseLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('package-use.html');" style="display:none">用途</a>
+								<span id="packageUseBar" style="display:none"> | </span>
+							  <a id="examplesLink" href="#includeExamplesSummary" style="display:none"> 例 </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+        <div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div class="classlistoutline"></div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">パッケージ</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">lc.foundation</a></td></tr><tr><td class="classHeaderTableLabel">インターフェイス</td><td class="classSignature">public  interface  IMessage</td></tr><tr><td class="classHeaderTableLabel">実装者</td><td> <a href="../../lc/foundation/domain/Message.html">Message</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2 SP1</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><div id="badgeAnchorSupport" class="ionBadgeWrapper"></div><div id="badgeContainerSupport"></div><p></p><p></p>
+	 For internal use only. Do not use.
+	 <p></p><br/><hr></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2011 Adobe Systems Incorporated. All rights reserved. <br/>Wed Jun 29 2011, 08:40 PM -07:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><!--BEGIN IONCOMMENTS--><div id="ionComHere"></div><!--END IONCOMMENTS--><!--googleoff: all-->
+
+<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript" language="JavaScript"></script>
+<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript" language="JavaScript"></script>
+<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript" language="JavaScript"></script>
+<script type="text/javascript">
+<!--
+// <![CDATA[
+
+var helpcfgPath;
+var request;
+var info;
+var ionLoadReady = false;
+var ionLoaded = false;
+var ionSupportLoaded = false;
+var ionSupportLoadReady = false;
+
+var agt=navigator.userAgent.toLowerCase();
+var use_robohelp_behavior = false;
+
+if (typeof(terms_HELPCFG) != 'undefined' && terms_HELPCFG.length > 0){
+    var loc = getLangName();     //alert(loc);
+    helpcfgPath = "http://" + window.location.host + "/HelpCfg/" + loc + "/" + terms_HELPCFG;
+    setTimeout ( createXMLHttpRequest, 500 );
+}
+
+
+// -----------------------------------------
+// ----------- START AJAX CODE  ------------
+//
+function createXMLHttpRequest(){
+    if (window.XMLHttpRequest){       // code for Firefox, Opera, IE7, etc.
+        request=new XMLHttpRequest();        
+    }else if (window.ActiveXObject){  // code for IE6, IE5
+        request=new ActiveXObject("Microsoft.XMLHTTP");
+    }    
+    if (request != null){
+        request.onreadystatechange = handleStateChange;
+        request.open("GET", helpcfgPath, true);
+        request.send(null);
+    }else{
+        alert("Your browser does NOT support XMLHTTP.");
+    }
+}
+
+function handleStateChange(){    
+    if(request.readyState == 4){    // "loaded" 
+        if (request.status == 200){ // "OK"
+            var requestMsg = getXMLDoc(request.responseText);
+            try
+            {
+                info  = requestMsg.getElementsByTagName('product');
+                label = getIonLabel();               
+                site  = getIonSite();    
+                if (use_robohelp_behavior || !(label) || !(loc) || !(label.length > 0) || !(loc.length > 0)) {
+           //         document.getElementById("ionCount").style.display = "none";
+                    document.getElementById("ionComHere").style.display = "none";
+					document.getElementById("badgeContainerSupport").style.display = "none";
+                }
+                else {
+          //          document.getElementById("ionCount").style.display = "block";
+                    document.getElementById("ionComHere").style.display = "block";
+					document.getElementById("badgeContainerSupport").style.display = "block";
+                }
+				
+                if ( (info[0].getAttribute('ionCommentingAllowed') == 'yes') && (label) && (label.length > 0) && (loc)  && (loc.length > 0)) {
+					//only do this if the DOM is ready, else wait and call the function
+					ionLoadReady = true;
+				}
+				if((info[0].getAttribute('ionSupportBadgeAllowed') == 'yes') && (label) && (label.length > 0) && (loc)  && (loc.length > 0)) {
+					ionSupportLoadReady = true;
+				}
+				ionReadyLoad();
+            }catch(exception){}
+        }
+    }
+}
+
+function ionReadyLoad()
+{
+	//only do if DOM ready and ionLoadReady, and not loaded yet
+	if(alreadyrunflag && ionLoadReady && !ionLoaded)
+	{
+		ionLoaded = true;
+		var badge = new ionBadge();
+		badge.url = window.location.toString().replace(/\?(.*)/, "");
+		badge.locale = loc;
+		//badge.anchor = document.getElementById("ionCount");
+		badge.container = document.getElementById("ionComHere");
+		badge.productLabel = label;
+		if ( info[0].getAttribute('ionRatingAllowed') == 'yes' ){
+		    badge.ratingType = info[0].getAttribute('ionRatingType');
+		    badge.siteArea = site;
+		}
+		badge.load();
+	}
+	if(alreadyrunflag && ionSupportLoadReady && !ionSupportLoaded){
+		ionSupportLoaded = true;
+		var badgeSupport = new ionSupportBadge();
+		badgeSupport.container = document.getElementById("badgeContainerSupport");
+		badgeSupport.commenting = true;
+		badgeSupport.locale = loc;
+		badgeSupport.productLabel = label;
+		badgeSupport.rating = true;
+		badgeSupport.ratingType = "thumbs";
+		badgeSupport.siteArea = site;
+		badgeSupport.timeOutDelay = 30000;
+		badgeSupport.url = window.location.toString().replace(/\?(.*)/, "");
+		badgeSupport.load();
+		
+	}
+}
+
+function getXMLDoc(xmlText){
+    if(window.ActiveXObject){
+        xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+        xmlDoc.async=false;
+        xmlDoc.loadXML(xmlText);
+    }else if(document.implementation && document.implementation.createDocument){
+        xmlDoc=document.implementation.createDocument('','',null);
+        var oParser=new DOMParser();
+        xmlDoc=oParser.parseFromString(xmlText,"text/xml");
+    }else{
+        return null;
+    }
+    return xmlDoc;
+}
+
+// 
+// -----------  END AJAX CODE   ------------
+// -----------------------------------------
+
+
+
+
+function getLangName() {
+    var lang = "en-us";
+    var metaElements = document.all ?
+    document.all.tags('meta') :
+    document.getElementsByTagName ?
+    document.getElementsByTagName ('meta') : new Array();
+    for (var m = 0; m < metaElements.length; m++) {
+        if (metaElements[m].name == "lang") {
+            lang = metaElements[m].content;
+            break;
+        }
+    }
+    var ptn = /(..)-(..)/;
+    if (ptn.test(lang)) {
+        var countryCode = lang.replace(ptn, "$1");
+        var languageCode = lang.replace(ptn, "$2");
+        lang = countryCode + "_" + languageCode.toUpperCase();
+    }
+    return lang;
+}
+
+function isHomepage() {
+    var metaElements = document.all ?
+    document.all.tags('meta') :
+    document.getElementsByTagName ?
+    document.getElementsByTagName ('meta') : new Array();
+    for (var m = 0; m < metaElements.length; m++) {
+        if ((metaElements[m].name == "topictype") && (metaElements[m].content == "homepage")) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function getIonLabel() {
+    var href = "" + document.location.href;
+    var label = "";
+    // No commenting for the home page
+    if (isHomepage()) {
+        return label;
+    }
+    // 3D Reviewer doesn't get commenting, but the rest of Acrobat does.
+    if (href.indexOf("Acrobat/9.0/Reviewer") != -1) {
+        return label;
+    }
+
+    label = info[0].getAttribute('ionId');
+    return label;
+}
+
+function getIonSite(){
+    if ( info[0].getAttribute('ionSiteArea') != "" ){
+        return info[0].getAttribute('ionSiteArea');
+    }else{
+        return "help";
+    }
+}
+
+
+//-->
+</script>
+<!--googleoff: all-->
+
+
+<div style="display: none;">
+<!-- SiteCatalyst -->
+<script language="JavaScript" type="text/javascript"><!--
+var s_code=' ';
+var s_docHost = window.location.hostname.toLowerCase();
+var s_docURL = window.location.pathname.toLowerCase();
+var scJsHost = (("https:" == document.location.protocol) ? "https://www.adobe.com" : "http://wwwimages.adobe.com");
+if (s_docHost.indexOf(".corp.adobe") != -1 || s_docHost.indexOf("stage.") != -1 || s_docHost.indexOf(".dev.adobe") != -1 || s_docHost.indexOf("staging.") != -1) scJsHost="";
+document.write(unescape("%3Cscript src='" + scJsHost + "/uber/js/omniture_s_code.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var s_accountName;
+s_server="www.adobe.com static content pages";
+if (!window.s_account) s_accountName="mxmacromedia";
+else s_accountName=window.s_account;
+
+if (window.s_docURL.indexOf("/designcenter/") != -1)
+  s_channel="Adobe Design Center";	
+else if ((window.s_docHost.indexOf("labs.adobe") != -1) ||
+(window.s_docHost.indexOf("labs-staging.") != -1))
+  s_channel="Labs";
+else if (window.s_docHost.indexOf("help.adobe.com") != -1) {
+  s_channel="Support Help.adobe.com";
+  if (window.s_docURL.indexOf("/en_us/") == -1) {
+    s_docURLArray=s_docURL.split('/');
+    s_pageName="http://help.adobe.com/"+s_docURLArray[1]+"/"+ s_docURLArray[2]+"/"+s_docURLArray[3];
+    s_prop23="http://help.adobe.com"+window.location.pathname;
+  }
+}
+else if (window.s_docHost.indexOf("kb2.adobe.com") != -1) {
+  s_channel="Support Knowledgebase";
+  s_prop23="http://kb2.adobe.com"+s_docURL+":";
+  if (typeof(omtrProductList) != 'undefined' && omtrProductList.length > 0)
+ {
+    s_prop23=s_prop23+omtrProductList;
+  }
+}
+else if (window.s_docHost.indexOf("resellers.adobe.com") != -1) {
+		var s_pageName=document.getElementsByTagName("title")[0].text;
+}
+
+if (!window.scMMInclude) {
+	var s_wd=window,s_tm=new Date;
+	if(s_code!=' '){
+		s_code=s_dc(s_accountName);
+		if(s_code)document.write(s_code)
+	} 
+} else {
+	s_wds(s_accountName);s_ca(s_accountName); 
+}	
+
+function sendAnalyticsEvent(str){var ns=s_accountName;if(str!=null)ns+=","+str;void(s_gs(ns));}
+function sendLinkEvent(accnt,lnkname,type){
+accnt=s_accountName;s_linkType=type;s_lnk=true;s_linkName=lnkname;void(s_gs(accnt));}
+//--></script>
+<noscript><img src="http://stats.adobe.com/b/ss/mxmacromedia/1/H.15-XELvs/0?pageName=http%3A//www.adobe.com%3A%20noscript&ch=http%3A//www.adobe.com%3A%20noscript&g=http%3A//www.adobe.com" height="1" width="1" border="0" alt="" /></noscript>
+<!-- End SiteCatalyst -->
+</div>
+
+<script language="JavaScript" type="text/javascript">//<![CDATA[
+var scJsHost = (("https:" == document.location.protocol) ? "https://www.adobe.com" : "http://wwwimages.adobe.com");
+document.write(unescape("%3Cscript src='" + scJsHost + "/uber/js/atm/s_code_www.js' type='text/javascript'%3E%3C/script%3E"));
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+if(s_adobe){	
+	s_adobe.server="www.adobe.com Static Content pages";
+	/* Set pageName */
+	s_adobe.s_URL="adobe.com"+((location.pathname.charAt(0)=='/')?location.pathname:'/'+location.pathname);
+	if (s_adobe.s_URL.substring(s_adobe.s_URL.lastIndexOf('/')+1)=="") s_adobe.s_URL=s_adobe.s_URL+"index.html";
+	s_adobe.s_URLSplit=s_adobe.s_URL.split("/");
+	s_adobe.pageName=s_adobe.s_URLSplit.join(":");
+
+	/* Set prop4 to language-locale */
+	var s_meta=document.getElementsByTagName('meta'); 
+      for (i=0; i<s_meta.length; i++) { 
+        if (s_meta[i].getAttribute("http-equiv") == "Content-Language") { 
+          s_adobe.prop4=s_meta[i].getAttribute("content"); 
+	    s_adobe.prop4=s_adobe.prop4.replace(/\s+/g,'');
+        } 
+      } 
+	s_adobe.t()
+}
+//]]></script>
+
+
+
+
+
+
+
+<p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/ja_JP/legalnotices/index.html">法律上の注意</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">プライバシーポリシー</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+	  <div id="whyEnglishContent">
+   	  <div id="light" class="white_content">
+   	    <div class="white_content_title">
+   	      <span style="float:right"><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">[ X ]</a></span><span style="float:left">英語で表示される理由</span>
+   	    </div>
+   	    <div class="white_content_body">
+   	      <b>ActionScript 3.0 リファレンスガイドのコンテンツが英語で表示されます。</b><br><br>
+   	      ActionScript 3.0 リファレンスガイドのすべての部分がすべての言語に翻訳されているわけではありません。言語エレメントが翻訳されていない場合、そのエレメントは英語で表示されます。例えば、ga.controls.HelpBox クラスはどの言語にも訳されていません。このため、リファレンスガイドの日本語バージョンでは、ga.controls.HelpBox クラスは英語で表示されます。
+   	    </div>
+   	   </div>
+   	  <div id="fade" class="black_overlay"></div>
+	  </div>
+	</body>
+</html><!-- &copy; 2011 Adobe Systems Incorporated. All rights reserved. <br/>Wed Jun 29 2011, 08:40 PM -07:00  -->

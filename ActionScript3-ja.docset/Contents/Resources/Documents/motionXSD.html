@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"><html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド"><meta name="lang" content="ja-jp"><link rel="stylesheet" href="style.css" type="text/css" media="screen"><link rel="stylesheet" href="print.css" type="text/css" media="print"><link rel="stylesheet" href="override.css" type="text/css"><link rel="stylesheet" href="asfilter.css" type="text/css"><link rel="stylesheet" href="ion.css" type="text/css"><title> モーション XML エレメント  - Adobe ActionScript&reg; 3（AS3 ）API リファレンス</title>
+		<link rel="stylesheet" href="./filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="./filter_new.css" type="text/css">
+			
+		<script src="./jquery.js" type="text/javascript"></script>
+		<script src="./s_chl_code.js" type="text/javascript"></script>
+		<script src="./jquery.zclip.js" type="text/javascript"></script>
+		<script src="./jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="./cookies.js" type="text/javascript"></script>
+		<script src="./asdoc.js" type="text/javascript"></script>
+		<script src="./iscroll.js" type="text/javascript"></script>
+		<script src="./AC_OETags.js" type="text/javascript"></script>
+		<script src="./omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "ランタイム";
+			var productsLabel = "製品";
+			var noneLabel = "選択しない";
+			var qsearchBoxLabel = "クイック検索";
+			var qsearchText = "文字列が見つかりません";
+			var ajaxErrorMsg="ページをロード中にエラーが発生しました";
+			var ajaxErrorTryMsg="再試行";
+			var ajaxLoadingMsg="ロード中です";
+			var cancelMsg = "キャンセル";
+			var classesText = "クラス";
+			var strJiveReply = "この質問は、次の記事について投稿されました。 "
+			var showFilters = "フィルターを表示";
+			var hideFilters = "フィルターを非表示";
+			
+		
+			var baseRef = "./";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		
+<!-- ********************************** -->
+<!-- START: ForeSee survey code in: /ssi/globalheader.ssi -->
+
+<script type="text/javascript">
+<!-- 
+// Enable the survey for only English, German and Japanese
+var agt=navigator.userAgent.toLowerCase();
+if ( agt.indexOf("community help client") == -1 ){
+    if ( document.location.href.indexOf("/en_US/") != -1 ){
+        showSurvey();
+//    }else if (document.location.href.indexOf("/de_DE/") != -1){
+//         var locale="de";
+//         showSurvey();
+    }else if (document.location.href.indexOf("/ja_JP/") != -1 ){
+         var locale="ja";
+         showSurvey();
+    }	
+}
+
+function showSurvey(){
+	document.write('<script type="text/javascript" src="/js/foresee/foresee-trigger.js"><\/scr'+'ipt>');
+}
+
+// -->
+</script>
+
+<!-- END: ForeSee survey code -->
+<!-- ******************************** -->
+
+
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform 用 ActionScript<sup>&reg;</sup> 3.0 リファレンスガイド<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="./index.html"> ホーム </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">パッケージおよびクラスリストの表示</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">パッケージおよびクラスリストの非表示</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="./package-summary.html"> パッケージ </a>&nbsp;|&nbsp;
+												<a target="_self" href="./class-summary.html"> クラス </a>&nbsp;|&nbsp;
+												<a target="_self" href="./whatsnew.html"> 新機能 </a>&nbsp;|&nbsp;
+												<a target="_self" href="./all-index-Symbols.html"> 索引 </a>&nbsp;|&nbsp;
+												<a target="_self" href="./appendixes.html"> 付録 </a>
+												<span id="whyEnglish">&nbsp;|&nbsp;
+													<a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">英語で表示される理由</a>
+												</span><br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchFormION" method="get" onSubmit="return submitValue('Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド','community.adobe.com/help/search.html','0','communityhelp_platform_aslr','ja_JP');">
+													<input class="hidden" name="loc" value="" type="hidden">
+													<input class="hidden" name="termPrefix" value="site:help.adobe.com/en_US/AS3CLR/Flash_10.0" type="hidden">
+													<input class="hidden" name="title" value="ActionScript 3.0 Reference for the Adobe Flash Platform" type="hidden">
+													<input class="hidden" name="term" value="" type="hidden">
+													<input class="hidden" name="area" value="" type="hidden">
+													<input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text">
+													<input type="button" name="action" value="" onClick="submitValue('Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド','community.adobe.com/help/search.html','0','communityhelp_platform_aslr','ja_JP')" class="searchbutton"><br>
+													<span id="checkBoxspan" title="検索対象を言語リファレンスのみに限定する">
+														<input id="checkBoxId" type="checkbox" name="checkbox" value="checkbox" checked> 言語リファレンスのみ
+													</span>
+												</form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="./help.js"></script>
+						<script language="javascript" type="text/javascript" src="./asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="./filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>フィルター：</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">サーバーからデータを取得しています...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">サーバーからデータを取得しています...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">&nbsp;</a><br>
+								<h1 id="classProductName"> モーション XML エレメント &nbsp;</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> プロパティ </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> プロパティ </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> コンストラクター </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> メソッド </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> グローバル定数 </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> イベント </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> スタイル </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> スキンパーツ </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> スキンの状態 </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> エフェクト </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> 定数 </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> グローバル関数 </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">関数</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> インターフェイス </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> クラス </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> 例 </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								クラス
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><p><div id="badgeAnchorSupport" class="ionBadgeWrapper"></div><div id="badgeContainerSupport"></div>fl.motion パッケージに含まれている XML および ActionScript クラスを使用して、モーショントゥイーンを記述することができます。Adobe Flash Professional には、他のシンボルやプロジェクトで使用する XML および ActionScript を、タイムライン上のモーショントゥイーンに基づいて生成する「AS 3.0 にモーションを書き出してコピー」コマンドがあります。また自分でモーショントゥイーンを記述することもできます。コンパイル時のクラスパス内に fl.motion クラスがある場合は、モーショントゥイーンが、指定した表示オブジェクトに適用されます。モーションクラスの詳細については、<a href="fl/motion/package-detail.html">fl.motion</a> パッケージを参照してください。サポートされている XML のエレメントは、『Adobe Flash Platform 用 ActionScript 3.0 リファレンスガイド』のクラスとプロパティに対応しています。</p><p>XML エレメントの階層を次に示します。</p><pre>&lt;Motion&gt; 
+ &lt;Source&gt; 
+      &lt;dimensions/&gt; 
+        &lt;geom:Rectangle /&gt; 
+      &lt;/dimensions&gt; 
+      &lt;transformationPoint&gt; 
+        &lt;geom:Point /&gt; 
+      &lt;/transformationPoint&gt; 
+  &lt;/Source&gt; 
+  &lt;Keyframe&gt; 
+    &lt;color&gt;  
+      &lt;Color /&gt; 
+    &lt;/color&gt;      
+    &lt;tweens&gt; 
+      &lt;SimpleEase /&gt; 
+      &lt;CustomEase&gt; 
+      &lt;BezierControl /&gt; 
+        &lt;BezierNode /&gt; 
+      &lt;/CustomEase&gt; 
+    &lt;/tweens&gt; 
+    &lt;filters&gt;  
+      &lt;filters /&gt; 
+    &lt;/filters&gt;    
+  &lt;/Keyframe&gt; 
+&lt;/Motion&gt;</pre><p>次の表は、モーションオブジェクトに割り当てることができる XML エレメントおよび属性の概要を示しています。各エントリの詳細については、各エレメントに対応するクラスにリストされているプロパティを参照してください。</p><table cellpadding="3" cellspacing="0" class="summaryTable"><tr><th width="">エレメント</th><th width="">属性</th><th width="">型</th><th width="">説明</th></tr><tbody><tr><td>Motion</td><td>&nbsp;</td><td>&nbsp;</td><td>モーションインスタンスを定義して、Flash がモーショントゥイーンの特性を指定するプロパティを割り当てられるようにします。<a href="fl/motion/Motion.html">fl.motion.Motion</a> クラスを参照してください。</td></tr><tr><td>&nbsp;</td><td>duration</td><td>Number</td><td>選択したモーショントゥイーンのフレーム数。<a href="fl/motion/MotionBase.html#duration">fl.motion.MotionBase.duration</a> プロパティを参照してください。</td></tr><tr><td>source</td><td>&nbsp;</td><td>&nbsp;</td><td>モーションに関連付けられた元のビジュアルオブジェクトのプロパティを含みます。<a href="fl/motion/Source.html">fl.motion.Source</a> クラスを参照してください。</td></tr><tr><td>Source</td><td>frameRate</td><td>Number</td><td>Flash Professional からコピーした元のアニメーションを含む SWF ファイルに対して設定されている 1 秒あたりのフレーム数（fps）。この値は、他の SWF ファイルでの ActionScript 実装には影響しません。<a href="fl/motion/Source.html#frameRate">fl.motion.Source.frameRate</a> プロパティを参照してください。</td></tr><tr><td>&nbsp;</td><td>x</td><td>Number</td><td>Flash Professional からコピーした元のモーショントゥイーンの先頭にあるシンボルインスタンスの変換ポイントの x 座標。</td></tr><tr><td>&nbsp;</td><td>y</td><td>Number</td><td>Flash Professional からコピーした元のモーショントゥイーンの先頭にあるシンボルインスタンスの変換ポイントの y 座標。 </td></tr><tr><td>&nbsp;</td><td>scaleX</td><td>Number</td><td>水平スケールの比率を示す 10 進数値。一般的に 0 ～ 1 の範囲の値が使用されますが、0 未満の値や 1 より大きい値も設定できます。例えば、scaleX を -1 に設定してオブジェクトを反転させたり、3 に設定して元のサイズの 3 倍にしたりすることができます。</td></tr><tr><td>&nbsp;</td><td>skewX</td><td>Number</td><td>水平軸方向の変形の角度（度数）。skewX 値と skewY 値が等しい場合、それらの値は rotation 属性に置き換えられます。</td></tr><tr><td>&nbsp;</td><td>skewY</td><td>Number</td><td>垂直軸方向の変形の角度（度数）。skewX 値と skewY 値が等しい場合、それらの値は rotation 属性に置き換えられます。</td></tr><tr><td>&nbsp;</td><td>rotation</td><td>Number</td><td>最初のフレームの回転の角度。</td></tr><tr><td>&nbsp;</td><td>elementType</td><td>String</td><td>モーショントゥイーンで使用するビジュアルオブジェクトの種類。有効な値は、"movie clip"、"button"、"graphic"、"rectangle object"、"oval object"、"drawing object"、"group"、"bitmap"、"compiled clip"、"video"、および "text" です。</td></tr><tr><td>&nbsp;</td><td>symbolName</td><td>String</td><td>Adobe Flash Professional ドキュメントライブラリに含まれているシンボル名。ただし、元のビジュアルオブジェクトがシンボルインスタンスであるとはかぎらないので、シンボル名が存在する場合に限ります。</td></tr><tr><td>dimensions</td><td>&nbsp;</td><td>&nbsp;</td><td>geom 名前空間を使用してトゥイーンシンボルの境界ボックスおよび変換ポイントを記述するタグが含まれます。</td></tr><tr><td>geom:Rectangle </td><td>&nbsp;</td><td><a href="flash/geom/package-detail.html">flash.geom</a> パッケージのオブジェクト。</td><td>flash.geom.Rectangle オブジェクトのプロパティに対応する属性を追加することができます。次に実際の使用例を示します。 &lt;geom:Rectangle left="7" top="9" width="151.95" height="151.95" /&gt;top 値と left 値は、親オブジェクトの基準点に対する相対値です。top および left は、親オブジェクトの座標空間で定義します。</td></tr><tr><td>geom:Point</td><td>&nbsp;</td><td><a href="flash/geom/package-detail.html">flash.geom</a> パッケージのオブジェクト。</td><td>変換ポイントの座標は、境界ボックスのサイズの比率値（geom:Rectangle エレメントの値）として定義します。変換ポイントが境界ボックスの左上隅である場合、座標は（0, 0）です。変換ポイントが境界ボックスの右下隅である場合、座標は（1, 1）です。これらの値を使用することで、比率や基準点が異なる複数のオブジェクトに、変換ポイントを一貫して適用することができます。変換ポイントは境界ボックスの外側に置くことができます。その場合、座標は 0 未満または 1 より大きくなる場合があります。</td></tr><tr><td>Keyframe</td><td>&nbsp;</td><td>&nbsp;</td><td>タイムラインのキーフレームに対応する情報を記述します。</td></tr><tr><td>&nbsp;</td><td>blank</td><td>Boolean</td><td>キーフレームが空であることを示します。</td></tr><tr><td>&nbsp;</td><td>index</td><td>Number</td><td>キーフレーム用の一意の整数値。最初のキーフレームのインデックスは常に 0 です。XML のキーフレームは、インデックス値の昇順で指定する必要があります。</td></tr><tr><td>&nbsp;</td><td>label</td><td>String</td><td>キーフレームを記述するための省略可能なストリング。このストリングは、タイムラインのフレームラベルに対応しています。</td></tr><tr><td>&nbsp;</td><td>tweenSync</td><td>Boolean</td><td>同期設定のオン（"true"）とオフ（"false"）を切り替えます。同期設定をオンにすると、トゥイーンのフレーム数が、タイムライン上でトゥイーンに割り当てられているフレーム数と一致するように再計算されます。ActionScript はグラフィックシンボルを制御できないので、この属性は ActionScript のアニメーションには影響しません。XML 属性を使用するのは、Adobe Flash Professional の「モーションをコピー」コマンドおよび「モーションをペースト」コマンドでのみです。XML から省略した場合、デフォルト値の true になります。</td></tr><tr><td>&nbsp;</td><td>tweenSnap</td><td>Boolean</td><td>スナップ設定のオン（"true"）とオフ（"false"）を切り替えます。スナップにより、基準点に基づくモーションパスにシンボルが配置されます。ActionScript はグラフィックシンボルを制御できないので、この属性は ActionScript のアニメーションには影響しません。XML 属性を使用するのは、Adobe Flash Professional の「モーションをコピー」コマンドおよび「モーションをペースト」コマンドでのみです。XML から省略した場合、デフォルト値の true になります。</td></tr><tr><td>&nbsp;</td><td>x</td><td>Number</td><td>現在のキーフレームにおけるシンボルインスタンスの中心点の x 座標。</td></tr><tr><td>&nbsp;</td><td>y</td><td>Number</td><td>現在のキーフレームにおけるシンボルインスタンスの中心点の y 座標。 </td></tr><tr><td>&nbsp;</td><td>scaleX</td><td>Number</td><td>水平スケールの比率を示す 10 進数値。一般的に 0 ～ 1 の範囲の値が使用されますが、0 未満の値や 1 より大きい値も設定できます。例えば、scaleX を -1 に設定してオブジェクトを反転させたり、3 に設定して元のサイズの 3 倍にしたりすることができます。</td></tr><tr><td>&nbsp;</td><td>scaleY</td><td>Number</td><td>垂直スケールの比率を示す 10 進数値。一般的に 0 ～ 1 の範囲の値が使用されますが、0 未満の値や 1 より大きい値も設定できます。例えば、scaleY を -1 に設定してオブジェクトを反転させたり、3 に設定して元のサイズの 3 倍にしたりすることができます。</td></tr><tr><td>&nbsp;</td><td>skewX</td><td>Number</td><td>水平軸方向の変形の角度（度数）。skewX 値と skewY 値が等しい場合、それらの値は rotation 属性に置き換えられます。</td></tr><tr><td>&nbsp;</td><td>skewY</td><td>Number</td><td>垂直軸方向の変形の角度（度数）。skewX 値と skewY 値が等しい場合、それらの値は rotation 属性に置き換えられます。</td></tr><tr><td>&nbsp;</td><td>rotation</td><td>Number</td><td>現在のフレームの回転の角度。</td></tr><tr><td>&nbsp;</td><td>rotateDirection</td><td>String</td><td>トゥイーンされたエレメントの回転方法を指定します。有効な値は "auto"、"none"、"cw"、および "ccw" です。XML から省略した場合、デフォルト値の "auto" になります。</td></tr><tr><td>&nbsp;</td><td>rotateTimes</td><td>Number</td><td>通常の回転に加えて、開始キーフレームと次のキーフレーム間でのトゥイーンされたエレメントの回転回数を指定します。Adobe Flash Professional では、値は 0 以上の整数である必要がありますが、モーションクラスでは小数を使用できます。</td></tr><tr><td>&nbsp;</td><td>tweenScale</td><td>Boolean</td><td>false の場合、トゥイーンの間に縮尺率を変更ません。XML から省略した場合、デフォルト値の true になります。 </td></tr><tr><td>&nbsp;</td><td>cacheAsBitmap</td><td>Boolean</td><td>XML から省略した場合、デフォルト値の false になります。</td></tr><tr><td>&nbsp;</td><td>blendMode</td><td>String</td><td>有効な値は "normal"、"layer"、"multiply"、"screen"、"overlay"、"hardlight"、"lighten"、"darken"、"difference"、"add"、"subtract"、"invert"、"alpha"、および "erase" です。XML から省略した場合、デフォルト値の "normal" になります。</td></tr><tr><td>&nbsp;</td><td>orientToPath</td><td>Boolean</td><td>XML から省略した場合、デフォルト値の false になります。</td></tr><tr><td>Color</td><td>&nbsp;</td><td>&nbsp;</td><td>カラーバリエーションの設定を含みます。Flash のシンボルインスタンスには、none、alpha、tint、brightness、および advanced の 5 つのカラーモードがあります。 変換しない（none）場合、Color タグは空となり、通常の外観になります。alpha 変換の場合、alphaMultiplier 属性および alphaOffset 属性を設定します。tint 変換の場合、tintColor 属性および tintMultiplier 属性を設定します。brightness 変換の場合、brightness 属性を使用します。advanced 変換の場合、redMultiplier、greenMultiplier、blueMultiplier、alphaMultiplier、redOffset、greenOffset、blueOffset、および alphaOffset 属性を使用します。</td></tr><tr><td>&nbsp;</td><td>brightness</td><td>Number</td><td>明度チャンネルを適用する比率値を -1 ～ 1 の間で設定します。-1 に設定すると完全な黒になり、1 に設定すると完全な白になります。</td></tr><tr><td>&nbsp;</td><td>tintColor</td><td>Hexidecimal</td><td>適用するカラーを示す 16 進数のカラー値。</td></tr><tr><td>&nbsp;</td><td>alphaMultiplier</td><td>Number</td><td>アルファチャンネルを適用する比率値を 0 ～ 1 の間の 10 進数値で示します。</td></tr><tr><td>&nbsp;</td><td>redMultiplier</td><td>Number</td><td>このカラーを適用する比率値を 0 ～ 1 の間の進数値で示します。</td></tr><tr><td>&nbsp;</td><td>greenMultiplier</td><td>Number</td><td>このカラーを適用する比率値を 0 ～ 1 の間の進数値で示します。</td></tr><tr><td>&nbsp;</td><td>blueMultiplier</td><td>Number</td><td>このカラーを適用する比率値を 0 ～ 1 の間の進数値で示します。</td></tr><tr><td>&nbsp;</td><td>alphaMultiplier</td><td>Number</td><td>アルファ透明度チャンネルを適用する比率値を 0 ～ 1 の間の 10 進数値で示します。</td></tr><tr><td>&nbsp;</td><td>tintMultiplier</td><td>Number</td><td>tintColor 値で適用する比率値を 0 ～ 1 の間の 10 進数値で示します。</td></tr><tr><td>&nbsp;</td><td>redOffset</td><td>Number</td><td>赤チャンネル値に redMultiplier 値を乗算した後に加算する数値です。数値の範囲は -255 ～ 255 です。 </td></tr><tr><td>&nbsp;</td><td>greenOffset</td><td>Number</td><td>緑チャンネル値に greenMultiplier 値を乗算した後に加算する数値です。数値の範囲は -255 ～ 255 です。 </td></tr><tr><td>&nbsp;</td><td>blueOffset</td><td>Number</td><td>青チャンネル値に blueMultiplier 値を乗算した後に加算する数値です。数値の範囲は -255 ～ 255 です。 </td></tr><tr><td>&nbsp;</td><td>alphaOffset</td><td>Number</td><td>アルファチャンネル値に alphaMultiplier 値を乗算した後に加算する数値。数値の範囲は -255 ～ 255 です。</td></tr><tr><td>tweens</td><td>&nbsp;</td><td>&nbsp;</td><td>イージングバリエーションの設定を含みます。</td></tr><tr><td>SimpleEase</td><td>&nbsp;</td><td>&nbsp;</td><td>すべてのイージングプロパティのモーショントゥイーン全体で、イージング設定を単一の値に定義します。</td></tr><tr><td>&nbsp;</td><td>ease</td><td>Number</td><td>モーショントゥイーンのすべてのプロパティに適用するイージング値。ease 属性は、-1（100% イーズインまたは加速）～ 1（100% イーズアウトまたは減速）の間の比率値で示されます。デフォルト値は 0 です。0 の場合、トゥイーンは加速も減速もせず、一定の速度でアニメーション化します。</td></tr><tr><td>&nbsp;</td><td>target</td><td>Number</td><td>Adobe Flash Professional の「モーションをコピー」コマンドおよび「モーションをペースト」コマンドを使用すると、SimpleEase エレメントの target 属性を含まない XML が生成されます。これは、Flash Professional ではすべての ease プロパティに同じ値が適用されるためです。しかし、ActionScript 3.0 クラスを使用すると、異なる SimpleEase 値を個々のプロパティに同時に適用することができます。target の有効な値は、CustomEase と同様、"position"、"scale"、"rotation"、"color"、"filters"、"x"、"y"、"scaleX"、"scaleY"、"skewX"、および "skewY" です。</td></tr><tr><td>CustomEase</td><td>&nbsp;</td><td>&nbsp;</td><td>三次ベジェ曲線で構成されるカスタムイージング曲線を定義します。この定義を一度にすべてのプロパティに適用することもできますし、プロパティごとに異なる曲線を定義することもできます。 カスタムイーズプロパティを示す曲線の詳細については、<a href="fl/motion/CustomEase.html">CustomEase </a> クラスを参照してください。</td></tr><tr><td>&nbsp;</td><td>target</td><td>Number</td><td>カスタム値が割り当てられたプロパティ。Adobe Flash Professional の「モーションをコピー」コマンドおよび「モーションをペースト」コマンドを使用すると、オーサリングツールによって target の有効な値（"position"、"scale"、"rotation"、"color"、および "filters"）が生成されます。ActionScript 3.0 モーションクラスを使用すると、"x"、"y"、"scaleX"、"scaleY"、"skewX"、および "skewY" の個々の曲線をさらに柔軟に定義することができます。XML で "target" 属性を省略した場合、すべての ease プロパティが対象となります。 注意：XML では、カスタムイージング曲線の最初と最後のポイントを省略します。最初のポイントは、常に（0, 0）（トゥイーンされたプロパティの開始値）である必要があります。最後のポイントは、（1, 1）（トゥイーンされたプロパティの終了値）である必要があります。コードの効率性を保ち、エラーの可能性を避けるため、これらの値は XML から省略されており、暗黙的であると仮定されています。</td></tr><tr><td>BezierControl</td><td>&nbsp;</td><td>&nbsp;</td><td>曲線を定義するために使用する、曲線と相対的なポイント。</td></tr><tr><td>&nbsp;</td><td>x</td><td>Number</td><td>曲線を定義するためのポイントの x 座標。</td></tr><tr><td>&nbsp;</td><td>y</td><td>Number</td><td>曲線を定義するためのポイントの y 座標。</td></tr><tr><td>BezierNode</td><td>&nbsp;</td><td>&nbsp;</td><td>曲線を定義するために使用する、曲線上のポイント。</td></tr><tr><td>&nbsp;</td><td>x</td><td>Number</td><td>曲線上のポイントの x 座標。</td></tr><tr><td>&nbsp;</td><td>y</td><td>Number</td><td>曲線上のポイントの y 座標。</td></tr><tr><td>filters</td><td>&nbsp;</td><td>&nbsp;</td><td>エレメントとして使用する、flash.filters パッケージのオブジェクトを定義します（例：filters:GlowFilter）。指定した flash.filters オブジェクトのプロパティに対応する属性を追加することができます。次に実際の使用例を示します。 &lt;filters:DropShadowFilter quality="1" inner="false" knockout="false" hideObject="false" distance="0" angle="45" color="0x000000" alpha="1" blurX="0" blurY="0" strength="0" /&gt;. <a href="flash/filters/package-detail.html">flash.filters</a> パッケージを参照してください。</td></tr></tbody></table><p>次の例は、myShape シンボルに対する moveShape ムービークリップインスタンスのモーショントゥイーンを記述する、インライン XML 付きの ActionScript を示しています。この ActionScript では、回転、移動、カスタムイーズ設定の使用、およびアルファ値の変更を、10 フレームに渡って実行します。</p><pre>import fl.motion.Animator; 
+var moveShape_xml:XML = &lt;Motion duration="10" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*"&gt; 
+    &lt;source&gt; 
+        &lt;Source frameRate="12" x="41.35" y="91.35" scaleX="1" scaleY="1" rotation="0" elementType="movie clip" instanceName="moveShape" symbolName="myShape"&gt; 
+            &lt;dimensions&gt; 
+                &lt;geom:Rectangle left="-46.65" top="-61.95" width="133.05" height="133.95"/&gt; 
+            &lt;/dimensions&gt; 
+            &lt;transformationPoint&gt; 
+                &lt;geom:Point x="0.49981210071401727" y="0.4998133631952222"/&gt; 
+            &lt;/transformationPoint&gt; 
+        &lt;/Source&gt; 
+    &lt;/source&gt; 
+   &lt;Keyframe index="0" rotateTimes="2"&gt; 
+        &lt;tweens&gt; 
+            &lt;CustomEase&gt; 
+                &lt;BezierControl x="0.08650266979261687" y="0.14705453864744866"/&gt; 
+                &lt;BezierControl x="0.23675978562091857" y="0.28829454738109694"/&gt; 
+                &lt;BezierNode x="0.2689728109485753" y="0.49688733564952436"/&gt; 
+                &lt;BezierControl x="0.32093023255813957" y="0.8333333333333333"/&gt; 
+                &lt;BezierControl x="0.5988021982960045" y="1.034249160488573"/&gt; 
+                &lt;BezierNode x="0.7309082984924317" y="0.8685852488735627"/&gt; 
+                &lt;BezierControl x="0.8116279069767443" y="0.767361111111111"/&gt; 
+                &lt;BezierControl x="0.910302766164144" y="0.9730908298492431"/&gt; 
+            &lt;/CustomEase&gt; 
+        &lt;/tweens&gt; 
+    &lt;/Keyframe&gt; 
+    &lt;Keyframe index="9" x="371.95" y="188"&gt; 
+        &lt;color&gt; 
+            &lt;Color alphaMultiplier="0.4" alphaOffset="0"/&gt; 
+        &lt;/color&gt; 
+    &lt;/Keyframe&gt; 
+&lt;/Motion&gt;; 
+var moveShape_animator:Animator = new Animator(moveShape_xml, moveShape); 
+moveShape_animator.play();</pre><br><center class="copyright"> &copy; 2013 Adobe Systems Incorporated. All rights reserved. <br/>Fri Apr 26 2013, 02:14 PM -07:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><!--BEGIN IONCOMMENTS--><div id="ionComHere"></div><!--END IONCOMMENTS--><div style="display: none;">
+<!-- SiteCatalyst -->
+<script language="JavaScript" type="text/javascript"><!--
+var s_code=' ';
+var s_docHost = window.location.hostname.toLowerCase();
+var s_docURL = window.location.pathname.toLowerCase();
+var scJsHost = (("https:" == document.location.protocol) ? "https://www.adobe.com" : "http://wwwimages.adobe.com");
+if (s_docHost.indexOf(".corp.adobe") != -1 || s_docHost.indexOf("stage.") != -1 || s_docHost.indexOf(".dev.adobe") != -1 || s_docHost.indexOf("staging.") != -1) scJsHost="";
+document.write(unescape("%3Cscript src='" + scJsHost + "/uber/js/omniture_s_code.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var s_accountName;
+s_server="www.adobe.com static content pages";
+if (!window.s_account) s_accountName="mxmacromedia";
+else s_accountName=window.s_account;
+
+if (window.s_docURL.indexOf("/designcenter/") != -1)
+  s_channel="Adobe Design Center";	
+else if ((window.s_docHost.indexOf("labs.adobe") != -1) ||
+(window.s_docHost.indexOf("labs-staging.") != -1))
+  s_channel="Labs";
+else if (window.s_docHost.indexOf("help.adobe.com") != -1) {
+  s_channel="Support Help.adobe.com";
+  if (window.s_docURL.indexOf("/en_us/") == -1) {
+    s_docURLArray=s_docURL.split('/');
+    s_pageName="http://help.adobe.com/"+s_docURLArray[1]+"/"+ s_docURLArray[2]+"/"+s_docURLArray[3];
+    s_prop23="http://help.adobe.com"+window.location.pathname;
+  }
+}
+else if (window.s_docHost.indexOf("kb2.adobe.com") != -1) {
+  s_channel="Support Knowledgebase";
+  s_prop23="http://kb2.adobe.com"+s_docURL+":";
+  if (typeof(omtrProductList) != 'undefined' && omtrProductList.length > 0)
+ {
+    s_prop23=s_prop23+omtrProductList;
+  }
+}
+else if (window.s_docHost.indexOf("resellers.adobe.com") != -1) {
+		var s_pageName=document.getElementsByTagName("title")[0].text;
+}
+
+if (!window.scMMInclude) {
+	var s_wd=window,s_tm=new Date;
+	if(s_code!=' '){
+		s_code=s_dc(s_accountName);
+		if(s_code)document.write(s_code)
+	} 
+} else {
+	s_wds(s_accountName);s_ca(s_accountName); 
+}	
+
+function sendAnalyticsEvent(str){var ns=s_accountName;if(str!=null)ns+=","+str;void(s_gs(ns));}
+function sendLinkEvent(accnt,lnkname,type){
+accnt=s_accountName;s_linkType=type;s_lnk=true;s_linkName=lnkname;void(s_gs(accnt));}
+//--></script>
+<noscript><img src="http://stats.adobe.com/b/ss/mxmacromedia/1/H.15-XELvs/0?pageName=http%3A//www.adobe.com%3A%20noscript&ch=http%3A//www.adobe.com%3A%20noscript&g=http%3A//www.adobe.com" height="1" width="1" border="0" alt="" /></noscript>
+<!-- End SiteCatalyst -->
+</div>
+
+<script language="JavaScript" type="text/javascript">//<![CDATA[
+var scJsHost = (("https:" == document.location.protocol) ? "https://www.adobe.com" : "http://wwwimages.adobe.com");
+document.write(unescape("%3Cscript src='" + scJsHost + "/uber/js/atm/s_code_www.js' type='text/javascript'%3E%3C/script%3E"));
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+if(s_adobe){	
+	s_adobe.server="www.adobe.com Static Content pages";
+	/* Set pageName */
+	s_adobe.s_URL="adobe.com"+((location.pathname.charAt(0)=='/')?location.pathname:'/'+location.pathname);
+	if (s_adobe.s_URL.substring(s_adobe.s_URL.lastIndexOf('/')+1)=="") s_adobe.s_URL=s_adobe.s_URL+"index.html";
+	s_adobe.s_URLSplit=s_adobe.s_URL.split("/");
+	s_adobe.pageName=s_adobe.s_URLSplit.join(":");
+
+	/* Set prop4 to language-locale */
+	var s_meta=document.getElementsByTagName('meta'); 
+      for (i=0; i<s_meta.length; i++) { 
+        if (s_meta[i].getAttribute("http-equiv") == "Content-Language") { 
+          s_adobe.prop4=s_meta[i].getAttribute("content"); 
+	    s_adobe.prop4=s_adobe.prop4.replace(/\s+/g,'');
+        } 
+      } 
+	s_adobe.t()
+}
+//]]></script>
+
+
+
+
+
+
+
+<iframe src="./jive-comments.html" width="100%" height="100%" frameborder="no" style="overflow:hidden" name="jiveFrame" id="jiveFrame"></iframe><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/ja_JP/legalnotices/index.html">法律上の注意</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">プライバシーポリシー</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		<div id="whyEnglishContent">
+			<div id="light" class="white_content">
+				<div class="white_content_title">
+					<span style="float:right"><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">[ X ]</a></span><span style="float:left">英語で表示される理由</span>
+				</div>
+				<div class="white_content_body">
+					<b>ActionScript 3.0 リファレンスガイドのコンテンツが英語で表示されます。</b><br><br>
+					ActionScript 3.0 リファレンスガイドのすべての部分がすべての言語に翻訳されているわけではありません。言語エレメントが翻訳されていない場合、そのエレメントは英語で表示されます。例えば、ga.controls.HelpBox クラスはどの言語にも訳されていません。このため、リファレンスガイドの日本語バージョンでは、ga.controls.HelpBox クラスは英語で表示されます。
+				</div>
+			</div>
+			<div id="fade" class="black_overlay"></div>
+		</div>
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2013 Adobe Systems Incorporated. All rights reserved. <br/>Fri Apr 26 2013, 02:14 PM -07:00  -->

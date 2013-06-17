@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"><html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド"><meta name="lang" content="ja-jp"><link rel="stylesheet" href="style.css" type="text/css" media="screen"><link rel="stylesheet" href="print.css" type="text/css" media="print"><link rel="stylesheet" href="override.css" type="text/css"><link rel="stylesheet" href="asfilter.css" type="text/css"><link rel="stylesheet" href="ion.css" type="text/css"><title> Adobe ActionScript&reg; 3（AS3 ）API リファレンス</title>
+		<link rel="stylesheet" href="filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link rel="stylesheet" href="filter_new.css" type="text/css">
+			
+		<script src="jquery.js" type="text/javascript"></script>
+		<script src="s_chl_code.js" type="text/javascript"></script>
+		<script src="jquery.zclip.js" type="text/javascript"></script>
+		<script src="jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="cookies.js" type="text/javascript"></script>
+		<script src="asdoc.js" type="text/javascript"></script>
+		<script src="iscroll.js" type="text/javascript"></script>
+		<script src="AC_OETags.js" type="text/javascript"></script>
+		<script src="omniture_asdocs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "ランタイム";
+			var productsLabel = "製品";
+			var noneLabel = "選択しない";
+			var qsearchBoxLabel = "クイック検索";
+			var qsearchText = "文字列が見つかりません";
+			var ajaxErrorMsg="ページをロード中にエラーが発生しました";
+			var ajaxErrorTryMsg="再試行";
+			var ajaxLoadingMsg="ロード中です";
+			var cancelMsg = "キャンセル";
+			var classesText = "クラス";
+			var strJiveReply = "この質問は、次の記事について投稿されました。 "
+			var showFilters = "フィルターを表示";
+			var hideFilters = "フィルターを非表示";
+			
+		
+			var baseRef = "";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		
+<!-- ********************************** -->
+<!-- START: ForeSee survey code in: /ssi/globalheader.ssi -->
+
+<script type="text/javascript">
+<!-- 
+// Enable the survey for only English, German and Japanese
+var agt=navigator.userAgent.toLowerCase();
+if ( agt.indexOf("community help client") == -1 ){
+    if ( document.location.href.indexOf("/en_US/") != -1 ){
+        showSurvey();
+//    }else if (document.location.href.indexOf("/de_DE/") != -1){
+//         var locale="de";
+//         showSurvey();
+    }else if (document.location.href.indexOf("/ja_JP/") != -1 ){
+         var locale="ja";
+         showSurvey();
+    }	
+}
+
+function showSurvey(){
+	document.write('<script type="text/javascript" src="/js/foresee/foresee-trigger.js"><\/scr'+'ipt>');
+}
+
+// -->
+</script>
+
+<!-- END: ForeSee survey code -->
+<!-- ******************************** -->
+
+
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+											Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform 用 ActionScript<sup>&reg;</sup> 3.0 リファレンスガイド<br>
+											<span class="titleTableTopNavION">
+												<span id="homelink">
+													<a target="_self" href="index.html"> ホーム </a>&nbsp;|&nbsp;
+												</span>
+												<span id="TocLink">
+													<a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">パッケージおよびクラスリストの表示</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">パッケージおよびクラスリストの非表示</a>&nbsp;|&nbsp;
+												</span>
+												<a target="_self" href="package-summary.html"> パッケージ </a>&nbsp;|&nbsp;
+												<a target="_self" href="class-summary.html"> クラス </a>&nbsp;|&nbsp;
+												<a target="_self" href="whatsnew.html"> 新機能 </a>&nbsp;|&nbsp;
+												<a target="_self" href="all-index-Symbols.html"> 索引 </a>&nbsp;|&nbsp;
+												<a target="_self" href="appendixes.html"> 付録 </a>
+												<span id="whyEnglish">&nbsp;|&nbsp;
+													<a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">英語で表示される理由</a>
+												</span><br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+												<form class="searchFormION" method="get" onSubmit="return submitValue('Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド','community.adobe.com/help/search.html','0','communityhelp_platform_aslr','ja_JP');">
+													<input class="hidden" name="loc" value="" type="hidden">
+													<input class="hidden" name="termPrefix" value="site:help.adobe.com/en_US/AS3CLR/Flash_10.0" type="hidden">
+													<input class="hidden" name="title" value="ActionScript 3.0 Reference for the Adobe Flash Platform" type="hidden">
+													<input class="hidden" name="term" value="" type="hidden">
+													<input class="hidden" name="area" value="" type="hidden">
+													<input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text">
+													<input type="button" name="action" value="" onClick="submitValue('Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド','community.adobe.com/help/search.html','0','communityhelp_platform_aslr','ja_JP')" class="searchbutton"><br>
+													<span id="checkBoxspan" title="検索対象を言語リファレンスのみに限定する">
+														<input id="checkBoxId" type="checkbox" name="checkbox" value="checkbox" checked> 言語リファレンスのみ
+													</span>
+												</form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="help.js"></script>
+						<script language="javascript" type="text/javascript" src="asfilter.js"></script>
+						<script language="javascript" type="text/javascript" src="filter_new.js"></script>
+						<div id="filter_panel_nf">
+							<table class="filterTable" width="100%">
+								<tr>
+									<td>フィルター：</td>
+									<td width="5%" id="runtimefilter"></td>
+									<td id="runtimes" align="left" style=" white-space:normal">サーバーからデータを取得しています...</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td id="productfilter" valign="top"></td>
+									<td id="products" width="85%" style="white-space:normal">サーバーからデータを取得しています...</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<a href="#"><span id="filterImg" class="filterImg_hide" alt="Hide Filters" title="Hide Filters" onclick="showHideFilters();">
+							<font id="filterImgText">
+							</font>
+						</span></a>
+					</center>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">&nbsp;</a><br>
+								<h1 id="classProductName">&nbsp;</h1>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+								<a id="propertiesLink" href="#propertySummary" style="display:none"> プロパティ </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> プロパティ </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> コンストラクター </a>
+								<span id="constructorBar" style="display:none"> | </span>
+								<a id="methodsLink" href="#methodSummary" style="display:none"> メソッド </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#constantSummary" style="display:none"> グローバル定数 </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="eventsLink" href="#eventSummary" style="display:none"> イベント </a>
+								<span id="eventsBar" style="display:none"> | </span>
+								<a id="stylesLink" href="#styleSummary" style="display:none"> スタイル </a>
+								<span id="stylesBar" style="display:none"> | </span>
+								<a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> スキンパーツ </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+								<a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> スキンの状態 </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+								<a id="effectsLink" href="#effectSummary" style="display:none"> エフェクト </a>
+								<span id="effectsBar" style="display:none"> | </span>
+								<a id="constantsLink" href="#constantSummary" style="display:none"> 定数 </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#methodSummary" style="display:none"> グローバル関数 </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+								<a id="packageMethodFunctionsLink" href="#methodSummary" style="display:none">関数</a>
+								<span id="packageMethodFunctionsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#interfaceSummary" style="display:none"> インターフェイス </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#classSummary" style="display:none"> クラス </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="examplesLink" href="#includeExamplesSummary" style="display:none"> 例 </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div id="classlistWrapper">
+						<h4 id="classlisth4">
+							<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+								クラス
+							</a>
+							<span id="cls_searchspan" style="display:none">
+								<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+								<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+							</span>
+						</h4>
+						<div id="classlistoutline" class="classlistoutline"></div>
+					</div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content">
+        
+        
+<p>この『Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Platform 用 ActionScript<sup>&reg;</sup> 3.0 リファレンスガイド』では、Flash Platform のツール、ランタイム、サービスおよびサーバー用の ActionScript の言語エレメント、コアライブラリおよびコンポーネントパッケージとクラスについて説明します。  </p>
+    
+<p><strong>プリセットフィルターを使用して製品でフィルター</strong></p>
+    
+<p>このリファレンスガイドには、次の Adobe 製品とランタイムの ActionScript 言語エレメントおよびライブラリの情報を記載しています。このリファレンスガイドにフィルターを適用して最新バージョンの製品および関連するランタイムのコンテンツのみを表示するには、下の製品名をクリックしてください。</p>
+    
+<table border="0"> 
+    <tr>
+      <td><div class="sprite flashplayer_icon_sm"/></td>
+      <td><strong><a href="index.html?filter_flashplayer=11.7" target="_top">Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Player 11.7 以前</a></strong></td>
+      <td><div class="sprite air_icon_sm"/></td>
+      <td><strong><a href="index.html?filter_air=3.7" target="_top">Adobe<sup>&reg;</sup> AIR<sup>&reg;</sup> 3.7 以前</a></strong></td>
+      <td><div class="sprite flashplayer_icon_sm"/></td>
+      <td><strong><a href="index.html?filter_flashlite=4" target="_top">Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Lite 4</a></strong></td>
+    </tr>
+    <tr>
+      <td><div class="sprite flashpro_icon_sm"/></td>
+      <td><strong><a href="index.html?filter_flash=cs6&amp;filter_flashplayer=11.6&amp;filter_air=3.6" target="_top">Adobe<sup>&reg;</sup> Flash<sup>&reg;</sup> Professional CS6 以前</a></strong></td>
+      <td><div class="sprite flex_icon_sm"/></td>
+      <td><strong><a href="index.html?filter_flex=4.6&amp;filter_flashplayer=11.6&amp;filter_air=3.6" target="_top">Adobe<sup>&reg;</sup> Flex<sup>&reg;</sup> 4.6 以前</a></strong></td>
+      <td><div class="sprite coldfusion_icon_sm"/></td>
+      <td><strong><a href="index.html?filter_coldfusion=10&amp;filter_flashplayer=11.6&amp;filter_air=3.6" target="_top">Adobe<sup>&reg;</sup> ColdFusion<sup>&reg;</sup> 10 以前</a></strong></td>
+    </tr>
+    <tr>
+      <td><img height="32" alt="Adobe Digital Enterprise Platform 10.0.1" src="images/adep_icon_sm.png" width="32"/></td>
+      <td><strong><a href="index.html?filter_livecyclees=10.0.1&amp;filter_flashplayer=10.2&amp;filter_air=2.6" target="_top" >Adobe<sup>&reg;</sup> Digital Enterprise Platform 10.0.1 以前（旧称 Adobe<sup>&reg;</sup> LiveCycle Enterprise Suite）</a></strong></td>
+      <td><img height="32" alt="Adobe Digital Enterprise Platform Data Services for Java EE 4.6 " src="images/adep_icon_sm.png" width="32"/></td>
+      <td><strong><a href="index.html?filter_livecycle=4.6&amp;filter_flashplayer=10.2&amp;filter_air=2.6" target="_top" >Adobe<sup>&reg;</sup> Digital Enterprise Platform - Data Services for Java EE 4.6 以前（旧称 Adobe<sup>&reg;</sup> LiveCycle Data Services）</a></strong></td>
+      <td><div class="sprite blazeds_icon_sm"/></td>
+      <td><strong><a href="index.html?filter_blazeds=4&amp;filter_flashplayer=10&amp;filter_air=1.5" target="_top" >Adobe<sup>&reg;</sup> BlazeDS 4</a></strong></td>
+    </tr>
+    <tr>
+      <td><div class="sprite osmf_icon_sm"/></td>
+      <td><strong><a href="index.html?filter_osmf=2.0&amp;filter_flashplayer=11.6&amp;filter_air=3.6" target="_top" >Open Source Media Framework 2.0 以前</a></strong></td>    
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+<p><strong>フィルターコントロールを使用して製品でフィルター </strong> </p>
+
+<p>ページ上部にあるコントロールを使用してリファレンスガイドの表示をカスタマイズすることもできます。</p>
+        <ul>
+        <li>特定の製品およびランタイムのコンテンツを追加または除外するには、フィルターを使用してください。表示されるパッケージパネルのパッケージとクラスパネルのクラスはフィルター設定に応じて異なります。</li>
+        <li>パッケージパネルとクラスパネルが表示されていない場合は、「パッケージおよびクラスリストの表示」リンクをクリックしてください。 </li> </ul>    
+
+
+        
+        
+    <br><center class="copyright"> &copy; 2013 Adobe Systems Incorporated. All rights reserved. <br/>Fri Apr 26 2013, 02:17 PM -07:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><div style="display: none;">
+<!-- SiteCatalyst -->
+<script language="JavaScript" type="text/javascript"><!--
+var s_code=' ';
+var s_docHost = window.location.hostname.toLowerCase();
+var s_docURL = window.location.pathname.toLowerCase();
+var scJsHost = (("https:" == document.location.protocol) ? "https://www.adobe.com" : "http://wwwimages.adobe.com");
+if (s_docHost.indexOf(".corp.adobe") != -1 || s_docHost.indexOf("stage.") != -1 || s_docHost.indexOf(".dev.adobe") != -1 || s_docHost.indexOf("staging.") != -1) scJsHost="";
+document.write(unescape("%3Cscript src='" + scJsHost + "/uber/js/omniture_s_code.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var s_accountName;
+s_server="www.adobe.com static content pages";
+if (!window.s_account) s_accountName="mxmacromedia";
+else s_accountName=window.s_account;
+
+if (window.s_docURL.indexOf("/designcenter/") != -1)
+  s_channel="Adobe Design Center";	
+else if ((window.s_docHost.indexOf("labs.adobe") != -1) ||
+(window.s_docHost.indexOf("labs-staging.") != -1))
+  s_channel="Labs";
+else if (window.s_docHost.indexOf("help.adobe.com") != -1) {
+  s_channel="Support Help.adobe.com";
+  if (window.s_docURL.indexOf("/en_us/") == -1) {
+    s_docURLArray=s_docURL.split('/');
+    s_pageName="http://help.adobe.com/"+s_docURLArray[1]+"/"+ s_docURLArray[2]+"/"+s_docURLArray[3];
+    s_prop23="http://help.adobe.com"+window.location.pathname;
+  }
+}
+else if (window.s_docHost.indexOf("kb2.adobe.com") != -1) {
+  s_channel="Support Knowledgebase";
+  s_prop23="http://kb2.adobe.com"+s_docURL+":";
+  if (typeof(omtrProductList) != 'undefined' && omtrProductList.length > 0)
+ {
+    s_prop23=s_prop23+omtrProductList;
+  }
+}
+else if (window.s_docHost.indexOf("resellers.adobe.com") != -1) {
+		var s_pageName=document.getElementsByTagName("title")[0].text;
+}
+
+if (!window.scMMInclude) {
+	var s_wd=window,s_tm=new Date;
+	if(s_code!=' '){
+		s_code=s_dc(s_accountName);
+		if(s_code)document.write(s_code)
+	} 
+} else {
+	s_wds(s_accountName);s_ca(s_accountName); 
+}	
+
+function sendAnalyticsEvent(str){var ns=s_accountName;if(str!=null)ns+=","+str;void(s_gs(ns));}
+function sendLinkEvent(accnt,lnkname,type){
+accnt=s_accountName;s_linkType=type;s_lnk=true;s_linkName=lnkname;void(s_gs(accnt));}
+//--></script>
+<noscript><img src="http://stats.adobe.com/b/ss/mxmacromedia/1/H.15-XELvs/0?pageName=http%3A//www.adobe.com%3A%20noscript&ch=http%3A//www.adobe.com%3A%20noscript&g=http%3A//www.adobe.com" height="1" width="1" border="0" alt="" /></noscript>
+<!-- End SiteCatalyst -->
+</div>
+
+<script language="JavaScript" type="text/javascript">//<![CDATA[
+var scJsHost = (("https:" == document.location.protocol) ? "https://www.adobe.com" : "http://wwwimages.adobe.com");
+document.write(unescape("%3Cscript src='" + scJsHost + "/uber/js/atm/s_code_www.js' type='text/javascript'%3E%3C/script%3E"));
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+if(s_adobe){	
+	s_adobe.server="www.adobe.com Static Content pages";
+	/* Set pageName */
+	s_adobe.s_URL="adobe.com"+((location.pathname.charAt(0)=='/')?location.pathname:'/'+location.pathname);
+	if (s_adobe.s_URL.substring(s_adobe.s_URL.lastIndexOf('/')+1)=="") s_adobe.s_URL=s_adobe.s_URL+"index.html";
+	s_adobe.s_URLSplit=s_adobe.s_URL.split("/");
+	s_adobe.pageName=s_adobe.s_URLSplit.join(":");
+
+	/* Set prop4 to language-locale */
+	var s_meta=document.getElementsByTagName('meta'); 
+      for (i=0; i<s_meta.length; i++) { 
+        if (s_meta[i].getAttribute("http-equiv") == "Content-Language") { 
+          s_adobe.prop4=s_meta[i].getAttribute("content"); 
+	    s_adobe.prop4=s_adobe.prop4.replace(/\s+/g,'');
+        } 
+      } 
+	s_adobe.t()
+}
+//]]></script>
+
+
+
+
+
+
+
+<iframe src="jive-comments.html" width="100%" height="100%" frameborder="no" style="overflow:hidden" name="jiveFrame" id="jiveFrame"></iframe><p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/ja_JP/legalnotices/index.html">法律上の注意</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">プライバシーポリシー</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		<div id="whyEnglishContent">
+			<div id="light" class="white_content">
+				<div class="white_content_title">
+					<span style="float:right"><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">[ X ]</a></span><span style="float:left">英語で表示される理由</span>
+				</div>
+				<div class="white_content_body">
+					<b>ActionScript 3.0 リファレンスガイドのコンテンツが英語で表示されます。</b><br><br>
+					ActionScript 3.0 リファレンスガイドのすべての部分がすべての言語に翻訳されているわけではありません。言語エレメントが翻訳されていない場合、そのエレメントは英語で表示されます。例えば、ga.controls.HelpBox クラスはどの言語にも訳されていません。このため、リファレンスガイドの日本語バージョンでは、ga.controls.HelpBox クラスは英語で表示されます。
+				</div>
+			</div>
+			<div id="fade" class="black_overlay"></div>
+		</div>
+		
+		
+		<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+		<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2013 Adobe Systems Incorporated. All rights reserved. <br/>Fri Apr 26 2013, 02:17 PM -07:00  -->

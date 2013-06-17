@@ -1,0 +1,696 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"><html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="book" content="Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド"><meta name="lang" content="ja-jp"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:10"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="flash player"><meta name="productver" content="flash player:10"><meta name="product" content="livecycle"><meta name="prodver" content="livecycle:ES2"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><link rel="stylesheet" href="../../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../../ion.css" type="text/css"><meta name="keywords" content="Endpoint,lc.procmgmt.domain.Endpoint,categoryId,description,endpointId,name,service,addEventListener,dispatchEvent,hasEventListener,invoke,removeEventListener,setSession,willTrigger"><title>lc.procmgmt.domain.Endpoint - Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド</title>
+		<link rel="stylesheet" href="../../../filter-style.css" type="text/css">
+		<script type="text/javascript">
+			var runtimesLabel = "ランタイム";
+			var productsLabel = "製品";
+		  var noneLabel = "選択しない";
+				
+				var baseRef = "../../../";
+				var buildType = 'filter';
+				var alreadyrunflag=0; //flag to indicate whether target function has already been run
+				var terms_HELPCFG = "PlatformASLR.helpcfg";
+
+if (document.addEventListener)
+  document.addEventListener("DOMContentLoaded", function(){alreadyrunflag=1; init()}, false)
+else if (document.all && !window.opera){
+ /* blocks IE from working, as it's fired before dom if ready
+ document.write('<script type="text/javascript" id="contentloadtag" defer="defer" src="javascript:void(0)"><\/script>')
+  var contentloadtag=document.getElementById("contentloadtag")
+  contentloadtag.onreadystatechange=function(){
+    if (this.readyState=="complete"){
+      alreadyrunflag=1;
+      init();
+    }
+  }*/
+} else if(/Safari/i.test(navigator.userAgent)){ //Test for Safari
+  var _timer=setInterval(function(){
+  if(/loaded|complete/.test(document.readyState)){
+    clearInterval(_timer)
+     alreadyrunflag=1;
+    init(); // call target function
+  }}, 10)
+}
+
+function onLoadFunction() {
+	setTimeout("if (!alreadyrunflag) init();  alreadyrunflag=1; ionReadyLoad(); ", 0);
+}			
+		</script>
+		<script language="javascript" type="text/javascript" src="../../../cookies.js"></script>
+		<script language="javascript" type="text/javascript" src="../../../asdoc.js"></script>
+		<!--oss:off-->
+		
+<!-- ********************************** -->
+<!-- START: ForeSee survey code in: /ssi/globalheader.ssi -->
+
+<script type="text/javascript">
+<!-- 
+// Enable the survey for only English, German and Japanese
+var agt=navigator.userAgent.toLowerCase();
+if ( agt.indexOf("community help client") == -1 ){
+    if ( document.location.href.indexOf("/en_US/") != -1 ){
+        showSurvey();
+//    }else if (document.location.href.indexOf("/de_DE/") != -1){
+//         var locale="de";
+//         showSurvey();
+    }else if (document.location.href.indexOf("/ja_JP/") != -1 ){
+         var locale="ja";
+         showSurvey();
+    }	
+}
+
+function showSurvey(){
+	document.write('<script type="text/javascript" src="/js/foresee/foresee-trigger.js"><\/scr'+'ipt>');
+}
+
+// -->
+</script>
+
+<!-- END: ForeSee survey code -->
+<!-- ******************************** -->
+
+
+	</head>
+	<body onload="onLoadFunction()">
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+										Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド<br>
+										  <span class="titleTableTopNavION">
+										    <a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">パッケージおよびクラスリストの表示</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">パッケージおよびクラスリストの非表示</a>&nbsp;|&nbsp;
+										  <a target="_self" href="../../../package-summary.html"> パッケージ </a>&nbsp;|&nbsp;
+										    <a target="_self" href="../../../class-summary.html"> クラス </a>&nbsp;|&nbsp;
+										    <a target="_self" href="../../../all-index-Symbols.html"> 索引 </a>&nbsp;|&nbsp;
+										    <a target="_self" href="../../../appendixes.html"> 付録 </a>
+										    <span id="whyEnglish">&nbsp;|&nbsp;
+										      <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">英語で表示される理由</a>
+										    </span><br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+											  <form class="searchFormION" method="get" onSubmit="return submitValue('Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド','community.adobe.com/help/search.html','0','communityhelp_platform_aslr','ja_JP');">
+																	  <input class="hidden" name="loc" value="" type="hidden">
+																	  <input class="hidden" name="termPrefix" value="site:help.adobe.com/en_US/AS3CLR/Flash_10.0" type="hidden">
+																	  <input class="hidden" name="title" value="ActionScript 3.0 Reference for the Adobe Flash Platform" type="hidden">
+																	  <input class="hidden" name="term" value="" type="hidden">
+																	  <input class="hidden" name="area" value="" type="hidden">
+																	  <input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text">
+											    <input type="button" name="action" value="" onClick="submitValue('Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド','community.adobe.com/help/search.html','0','communityhelp_platform_aslr','ja_JP')" class="searchbutton"><br>
+																      <input id="checkBoxId" type="checkbox" name="checkbox" value="checkbox" checked>言語リファレンスのみ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+																	  </form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+						  <td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../../asfilter.js"></script>
+					  <div id="filter_panel_nf">
+  					  <table class="filterTable" width="100%">
+  					    <tr>
+  					      <td>パッケージフィルターおよびクラスフィルター：</td>
+     					    <td width="5%" align="right"><div id="runtimeLabel" onMouseOut="hideFilterPods(event, 1)"></div></td>
+     					    <td id="runtimes" align="left" style=" white-space:normal">サーバーからデータを取得しています...</td>
+  					    </tr>
+  					    <tr>
+  					      <td></td>
+  					      <td align="right" valign="top"><div id="productLabel" onMouseOut="hideFilterPods(event, 2)"></div></td>
+  					      <td id="products" width="85%" style="white-space:normal">サーバーからデータを取得しています...</td>
+  					    </tr>
+  					  </table>
+					  </div>
+					  <div id="runtimespod" onMouseOut="hideFilterPods(event, 1)">
+					    <form id="runtimesForm">
+					      <div id="runtime_podblock">サーバーからデータを取得しています...</div>
+					    </form>
+					  </div>
+					  <div id="productspod" onMouseOut="hideFilterPods(event, 2)">
+					    <form id="productsForm">
+					       <div id="product_podblock">サーバーからデータを取得しています...</div> 
+					    </form>
+					  </div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">lc.procmgmt.domain&nbsp;</a><br>
+								<convert>Endpoint&nbsp;</convert>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+							  <a id="propertiesLink" href="#propertySummary" style="display:none"> プロパティ </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> プロパティ </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> コンストラクター </a>
+								<span id="constructorBar" style="display:none"> | </span>
+							  <a id="methodsLink" href="#methodSummary" style="display:none"> メソッド </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('methodSummary');" style="display:none"> 関数 </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+							  <a id="eventsLink" href="#eventSummary" style="display:none"> イベント </a>
+								<span id="eventsBar" style="display:none"> | </span>
+							  <a id="stylesLink" href="#styleSummary" style="display:none"> スタイル </a>
+								<span id="stylesBar" style="display:none"> | </span>
+							  <a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> スキンパーツ </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+							  <a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> スキンの状態 </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+							  <a id="effectsLink" href="#effectSummary" style="display:none"> エフェクト </a>
+								<span id="effectsBar" style="display:none"> | </span>
+							  <a id="constantsLink" href="#constantSummary" style="display:none"> 定数 </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constantSummary');" style="display:none"> 定数 </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('interfaceSummary');" style="display:none"> インターフェイス </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('classSummary');" style="display:none"> クラス </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="packageUseLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('package-use.html');" style="display:none">用途</a>
+								<span id="packageUseBar" style="display:none"> | </span>
+							  <a id="examplesLink" href="#includeExamplesSummary" style="display:none"> 例 </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+        <div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div class="classlistoutline"></div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">パッケージ</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">lc.procmgmt.domain</a></td></tr><tr><td class="classHeaderTableLabel">クラス</td><td class="classSignature">public  class  Endpoint</td></tr><tr><td class="classHeaderTableLabel">継承</td><td class="inheritanceList">Endpoint  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../../lc/foundation/domain/DomainObject.html">DomainObject</a> <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../../Object.html">Object</a></td></tr><tr><td class="classHeaderTableLabel">実装</td><td> <a href="../../../mx/data/IManaged.html">IManaged</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><div id="badgeAnchorSupport" class="ionBadgeWrapper"></div><div id="badgeContainerSupport"></div><p></p><p></p>
+	 The <code>Endpoint</code> class represents a TaskManager endpoint in LiveCycle ES2. 
+	 An <code>Endpoint</code> object is used for the following purposes:
+	 <li>Retrieving the properties of the endpoint.</li>
+	              <li>Starting a process instance and the corresponding tasks by invoking 
+	 an endpoint. For the user's perspective, a process is started by using a form.</li>
+	 
+	 Workspace start points that are added to a process diagram create TaskManager endpoints. TaskManager
+	 endpoints are invoked to start the process by using LiveCycle Workspace ES2. When using Workspace ES2 to 
+	 start a process, a form is always used. A PDF form or form data is passed as input to the process. For more information about creating processes for Workspace ES2,
+	 see "Designing human-centric processes" in <a href="http://www.adobe.com/go/learn_lc_wb_processes_9" >
+                  <i>
+	 LiveCycle Workbench ES2 Help</i>
+               </a>.
+	  
+	 <p></p><p><span class="classHeaderTableLabel">関連項目</span></p><div class="seeAlso"><a href="ProcessInstance.html" target="">lc.procmgmt.domain.ProcessInstance</a><br/><a href="Task.html" target="">lc.procmgmt.domain.Task</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">パブリックプロパティ</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../../images/expanded.gif"> 継承されるパブリックプロパティを隠す</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../../images/collapsed.gif"> 継承されるパブリックプロパティを表示</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">プロパティ</th><th>定義元</th></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#categoryId" class="signatureLink">categoryId</a> : <a href="../../../String.html">String</a><div class="summaryTableDescription"> 
+		 The identifier of the category that the TaskManager endpoint is part of.</div></td><td class="summaryTableOwnerCol">Endpoint</td></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../../Object.html">Object</a><div class="summaryTableDescription">
+	 指定されたオブジェクトインスタンスのクラスオブジェクトまたはコンストラクター関数への参照です。</div></td><td class="summaryTableOwnerCol"><a href="../../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#description" class="signatureLink">description</a> : <a href="../../../String.html">String</a><div class="summaryTableDescription"> 
+		 The description of the TaskManager endpoint.</div></td><td class="summaryTableOwnerCol">Endpoint</td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#endpointId" class="signatureLink">endpointId</a> : <a href="../../../String.html">String</a><div class="summaryTableDescription"> 
+		 The endpoint identifier representing the TaskManager endpoint.</div></td><td class="summaryTableOwnerCol">Endpoint</td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#name" class="signatureLink">name</a> : <a href="../../../String.html">String</a><div class="summaryTableDescription"> 
+		 The name of the TaskManager endpoint or form used to start a process.</div></td><td class="summaryTableOwnerCol">Endpoint</td></tr><tr class="hideInheritedProperty" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../../Object.html#prototype" class="signatureLink">prototype</a> : <a href="../../../Object.html">Object</a><div class="summaryTableDescription">[静的] 
+	 クラスまたは関数オブジェクトのプロトタイプオブジェクトへの参照です。</div></td><td class="summaryTableOwnerCol"><a href="../../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#service" class="signatureLink">service</a> : <a href="../../../String.html">String</a><div class="summaryTableDescription">
+		 </div></td><td class="summaryTableOwnerCol">Endpoint</td></tr><tr class="hideInheritedProperty" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../../lc/foundation/domain/DomainObject.html#session" class="signatureLink">session</a> : <a href="../../../lc/foundation/domain/SessionMap.html">SessionMap</a><div class="summaryTableDescription">[読み取り専用] 
+       A SessionMap object that stores information relating to the server session.</div></td><td class="summaryTableOwnerCol"><a href="../../../lc/foundation/domain/DomainObject.html">DomainObject</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">パブリックメソッド </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../../images/expanded.gif"> 継承されるパブリックメソッドを隠す</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../../images/collapsed.gif"> 継承されるパブリックメソッドを表示</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">メソッド</th><th>定義元</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addEventListener()" class="signatureLink">addEventListener</a>(type:<a href="../../../String.html">String</a>, listener:<a href="../../../Function.html">Function</a>, useCapture:<a href="../../../Boolean.html">Boolean</a> = false, priority:<a href="../../../int.html">int</a> = 0, weakRef:<a href="../../../Boolean.html">Boolean</a> = false):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	 
+	Registers an event listener object with an EventDispatcher object so that the listener
+	receives notification of an event.</div></td><td class="summaryTableOwnerCol">Endpoint</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#dispatchEvent()" class="signatureLink">dispatchEvent</a>(event:<a href="../../../flash/events/Event.html">Event</a>):<a href="../../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 
+	Dispatches an event into the event flow.</div></td><td class="summaryTableOwnerCol">Endpoint</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#hasEventListener()" class="signatureLink">hasEventListener</a>(type:<a href="../../../String.html">String</a>):<a href="../../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 
+	Checks whether the EventDispatcher object has any listeners registered for a specific type 
+	of event.</div></td><td class="summaryTableOwnerCol">Endpoint</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../../String.html">String</a>):<a href="../../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 オブジェクトに指定されたプロパティが定義されているかどうかを示します。</div></td><td class="summaryTableOwnerCol"><a href="../../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#invoke()" class="signatureLink">invoke</a>():<a href="../../../lc/foundation/util/ObjectToken.html">lc.foundation.util:ObjectToken</a></div><div class="summaryTableDescription"> 
+		 Invokes the specified TaskManager endpoint.</div></td><td class="summaryTableOwnerCol">Endpoint</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../../Object.html">Object</a>):<a href="../../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Object クラスのインスタンスが、パラメーターとして指定されたオブジェクトのプロトタイプチェーン内にあるかどうかを示します。</div></td><td class="summaryTableOwnerCol"><a href="../../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../../String.html">String</a>):<a href="../../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 指定されたプロパティが存在し、列挙できるかどうかを示します。</div></td><td class="summaryTableOwnerCol"><a href="../../../Object.html">Object</a></td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeEventListener()" class="signatureLink">removeEventListener</a>(type:<a href="../../../String.html">String</a>, listener:<a href="../../../Function.html">Function</a>, useCapture:<a href="../../../Boolean.html">Boolean</a> = false):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	 
+	Removes a listener from the EventDispatcher object.</div></td><td class="summaryTableOwnerCol">Endpoint</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../../String.html">String</a>, isEnum:<a href="../../../Boolean.html">Boolean</a> = true):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     ループ処理に対するダイナミックプロパティの可用性を設定します。</div></td><td class="summaryTableOwnerCol"><a href="../../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setSession()" class="signatureLink">setSession</a>(session:<a href="../../../lc/foundation/domain/SessionMap.html">SessionMap</a>):<a href="../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[オーバーライド] 
+	   Sets a SessionMap object that stores the information relating to the 
+	   server session.</div></td><td class="summaryTableOwnerCol">Endpoint</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../../String.html">String</a></div><div class="summaryTableDescription">
+	 ロケール固有の規則に従って書式設定された、このオブジェクトのストリング表現を返します。</div></td><td class="summaryTableOwnerCol"><a href="../../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../../String.html">String</a></div><div class="summaryTableDescription">
+	 指定されたオブジェクトのストリング表現を返します。</div></td><td class="summaryTableOwnerCol"><a href="../../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 指定されたオブジェクトのプリミティブな値を返します。</div></td><td class="summaryTableOwnerCol"><a href="../../../Object.html">Object</a></td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#willTrigger()" class="signatureLink">willTrigger</a>(type:<a href="../../../String.html">String</a>):<a href="../../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 
+	Checks whether an event listener is registered with this EventDispatcher object or any of its ancestors for the specified event type.</div></td><td class="summaryTableOwnerCol">Endpoint</td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">プロパティの詳細</div><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="propertyDetail"></a><a name="categoryId"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>categoryId</h2></td><td class="detailHeaderType">プロパティ</td></tr></table><div class="detailBody"><code>categoryId:<a href="../../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p> 
+		 The identifier of the category that the TaskManager endpoint is part of.
+		 
+		 </p><p>このプロパティはデータバインディングのソースとして使用できます。 このプロパティを変更すると、 <code>propertyChange</code>                 イベントが送出されます。</p><br/><br/><span class="label"> 実装 </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get categoryId():<a href="../../../String.html">String</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set categoryId(value:<a href="../../../String.html">String</a>):<a href="../../../specialTypes.html#void">void</a></code><br/><p><span class="label">関連項目</span></p><div class="seeAlso"><a href="Category.html" target="">lc.procmgmt.domain.Category</a></div></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="propertyDetail"></a><a name="description"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>description</h2></td><td class="detailHeaderType">プロパティ</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>description:<a href="../../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p> 
+		 The description of the TaskManager endpoint.
+		 
+		 </p><p>このプロパティはデータバインディングのソースとして使用できます。 このプロパティを変更すると、 <code>propertyChange</code>                 イベントが送出されます。</p><br/><br/><span class="label"> 実装 </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get description():<a href="../../../String.html">String</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set description(value:<a href="../../../String.html">String</a>):<a href="../../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="propertyDetail"></a><a name="endpointId"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>endpointId</h2></td><td class="detailHeaderType">プロパティ</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>endpointId:<a href="../../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p> 
+		 The endpoint identifier representing the TaskManager endpoint.
+		 
+		 </p><p>このプロパティはデータバインディングのソースとして使用できます。 このプロパティを変更すると、 <code>propertyChange</code>                 イベントが送出されます。</p><br/><br/><span class="label"> 実装 </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get endpointId():<a href="../../../String.html">String</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set endpointId(value:<a href="../../../String.html">String</a>):<a href="../../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="propertyDetail"></a><a name="name"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>name</h2></td><td class="detailHeaderType">プロパティ</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>name:<a href="../../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p> 
+		 The name of the TaskManager endpoint or form used to start a process.
+		 
+		 </p><p>このプロパティはデータバインディングのソースとして使用できます。 このプロパティを変更すると、 <code>propertyChange</code>                 イベントが送出されます。</p><br/><br/><span class="label"> 実装 </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get name():<a href="../../../String.html">String</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set name(value:<a href="../../../String.html">String</a>):<a href="../../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="propertyDetail"></a><a name="service"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>service</h2></td><td class="detailHeaderType">プロパティ</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>service:<a href="../../../String.html">String</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p>
+		 </p><p>このプロパティはデータバインディングのソースとして使用できます。 このプロパティを変更すると、 <code>propertyChange</code>                 イベントが送出されます。</p><br/><br/><span class="label"> 実装 </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get service():<a href="../../../String.html">String</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set service(value:<a href="../../../String.html">String</a>):<a href="../../../specialTypes.html#void">void</a></code><br/></div></span><a name="methodDetail"></a><div class="detailSectionHeader">メソッドの詳細</div><span id="pageFilter"><a name="addEventListener()"></a><a name="addEventListener(String,Function,Boolean,int,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>addEventListener</h2></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">メソッド</td></tr></table><div class="detailBody"><code> public function addEventListener(type:<a href="../../../String.html">String</a>, listener:<a href="../../../Function.html">Function</a>, useCapture:<a href="../../../Boolean.html">Boolean</a> = false, priority:<a href="../../../int.html">int</a> = 0, weakRef:<a href="../../../Boolean.html">Boolean</a> = false):<a href="../../../specialTypes.html#void">void</a></code><p></p><p></p><p>
+	 
+	Registers an event listener object with an EventDispatcher object so that the listener
+	receives notification of an event. You can register event listeners on all nodes in the
+	display list for a specific type of event, phase, and priority.
+	<p>After you successfully register an event listener, you cannot change its priority
+	through additional calls to <code>addEventListener()</code>. To change a listener's priority, you
+	must first call <code>removeEventListener()</code>. Then you can register the listener again with the new
+	priority level.</p>
+	<p>After the listener is registered, subsequent calls to 
+	<code>addEventListener()</code> with a different value for either <code>type</code> or <code>useCapture</code> result in the
+	creation of a separate listener registration. For example, if you first register a
+	listener with <code>useCapture</code> set to <code>true</code>, it listens only during the capture phase. If you
+	call <code>addEventListener()</code> again using the same listener object, but with <code>useCapture</code> set to
+	<code>false</code>, you have two separate listeners: one that listens during the capture phase, and
+	another that listens during the target and bubbling phases.</p>
+	<p>You cannot register an event listener for only the target phase or the bubbling phase. Those phases are coupled during registration because bubbling applies only to the ancestors of the target node.</p>
+	<p>When you no longer need an event listener, remove it by calling <code>EventDispatcher.removeEventListener()</code>; otherwise, memory problems might result. Objects
+	with registered event listeners are not automatically removed from memory because the
+	garbage collector does not remove objects that still have references.</p>
+	<p>Copying an EventDispatcher instance does not copy the event listeners attached to it.
+	(If your newly created node needs an event listener, you must attach the listener after
+	creating the node.) However, if you move an EventDispatcher instance, the event
+	listeners attached to it move along with it.</p>
+	<p>If the event listener is being registered on a node while an event is also being processed on 
+	this node, the event listener is not triggered during the current phase but may be 
+	triggered during a later phase in the event flow, such as the bubbling phase.</p>
+	<p>If an event listener is removed from a node while an event is being processed on the node, it is still triggered by the current actions. After it is removed, the event listener is never invoked again 
+	(unless it is registered again for future processing). </p>
+	
+	</p><p><span class="label"> パラメーター </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../../String.html">String</a></code> &mdash; The type of event.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listener</span>:<a href="../../../Function.html">Function</a></code> &mdash; The listener function that processes the event. This function must accept an event object 
+	as its only parameter and must return nothing, as this example shows:
+	<p><code>function(evt:Event):void</code></p>
+	The function can have any name.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useCapture</span>:<a href="../../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; Determines whether the listener works in the capture phase or the target 
+	and bubbling phases. If <code>useCapture</code> is set to <code>true</code>, the  
+	listener processes the event only during the capture phase and not in the target or 
+	bubbling phase. If <code>useCapture</code> is <code>false</code>, the listener processes the event only
+	during the target or bubbling phase. To listen for the event in all three phases, call 
+	<code>addEventListener()</code> twice, once with <code>useCapture</code> set to <code>true</code>, 
+	then again with <code>useCapture</code> set to <code>false</code>.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">priority</span>:<a href="../../../int.html">int</a></code> (default = <code>0</code>)<code></code> &mdash; The priority level of the event listener. Priorities are designated by a 32-bit integer. The higher the number, the higher the priority. All listeners with priority <i>n</i> are processed before listeners of priority <i>n-1</i>. If two or more listeners share the same priority, they are processed in the order in which they were added. The default priority is 0. 
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">weakRef</span>:<a href="../../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; Determines whether the reference to the listener is strong or weak. A strong 
+    reference (the default) prevents your listener from being garbage-collected. A weak 
+    reference does not. <p>Class-level member functions are not subject to garbage 
+    collection, so you can set <code>useWeakReference</code> to <code>true</code> for 
+    class-level member functions without subjecting them to garbage collection. If you set
+    <code>useWeakReference</code> to <code>true</code> for a listener that is a nested inner 
+    function, the function will be garbge-collected and no longer persistent. If you create 
+    references to the inner function (save it in another variable) then it is not 
+    garbage-collected and stays persistent.</p>
+	 
+	 </td></tr></table></p></div></span><span id="pageFilter"><a name="dispatchEvent()"></a><a name="dispatchEvent(flash.events.Event)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>dispatchEvent</h2></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">メソッド</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function dispatchEvent(event:<a href="../../../flash/events/Event.html">Event</a>):<a href="../../../Boolean.html">Boolean</a></code><p></p><p></p><p>
+	 
+	Dispatches an event into the event flow. The event target is the
+	EventDispatcher object upon which <code>dispatchEvent()</code> is called.
+	
+	</p><p><span class="label"> パラメーター </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">event</span>:<a href="../../../flash/events/Event.html">Event</a></code> &mdash; The event object dispatched into the event flow.
+	</td></tr></table></p><p></p><span class="label">戻り値</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../Boolean.html">Boolean</a></code> &mdash; A value of <code>true</code> unless <code>preventDefault()</code> is called on the event, 
+	in which case it returns <code>false</code>.
+	 
+	 </td></tr></table></div></span><span id="pageFilter"><a name="hasEventListener()"></a><a name="hasEventListener(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>hasEventListener</h2></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">メソッド</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function hasEventListener(type:<a href="../../../String.html">String</a>):<a href="../../../Boolean.html">Boolean</a></code><p></p><p></p><p>
+	 
+	Checks whether the EventDispatcher object has any listeners registered for a specific type 
+	of event. This allows you to determine where an EventDispatcher object has altered handling of an event type in the event flow hierarchy. To determine whether 
+	a specific event type will actually trigger an event listener, use <code>IEventDispatcher.willTrigger()</code>.
+	<p>The difference between <code>hasEventListener()</code> and <code>willTrigger()</code> is that <code>hasEventListener()</code> examines only the object to which it belongs, whereas <code>willTrigger()</code> examines the entire event flow for the event specified by the <code>type</code> parameter.</p>
+	
+	</p><p><span class="label"> パラメーター </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../../String.html">String</a></code> &mdash; The type of event.
+	</td></tr></table></p><p></p><span class="label">戻り値</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../Boolean.html">Boolean</a></code> &mdash; A value of <code>true</code> if a listener of the specified type is registered; <code>false</code> otherwise.
+	</td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="invoke()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>invoke</h2></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">メソッド</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function invoke():<a href="../../../lc/foundation/util/ObjectToken.html">lc.foundation.util:ObjectToken</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p> 
+		 Invokes the specified TaskManager endpoint. If the TaskManager endpoint returns a document,
+		 a <code>DocumentReference</code> object is returned. 
+		 WHen a TaskManager endpoint returns task information, a <code>Task</code> object is returned. 
+		 
+		 </p><p></p><span class="label">戻り値</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../lc/foundation/util/ObjectToken.html">lc.foundation.util:ObjectToken</a></code> &mdash; An object that contains the 
+		         endpoint invocation result as a <code>Task</code> or 
+		         <code>DocumentReference</code> object when the request completes.  
+		 
+		 </td></tr></table><p><span class="label">関連項目</span></p><div class="seeAlso"><a href="../../../lc/procmgmt/IEndpointManager.html#invokeEndpoint()" target="">lc.procmgmt.IEndpointManager.invokeEndpoint()</a></div></div></span><span id="pageFilter"><a name="removeEventListener()"></a><a name="removeEventListener(String,Function,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>removeEventListener</h2></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">メソッド</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeEventListener(type:<a href="../../../String.html">String</a>, listener:<a href="../../../Function.html">Function</a>, useCapture:<a href="../../../Boolean.html">Boolean</a> = false):<a href="../../../specialTypes.html#void">void</a></code><p></p><p></p><p>
+	 
+	Removes a listener from the EventDispatcher object. If there is no matching listener 
+	registered with the EventDispatcher object, a call to this method has no effect.
+	
+	</p><p><span class="label"> パラメーター </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../../String.html">String</a></code> &mdash; The type of event.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">listener</span>:<a href="../../../Function.html">Function</a></code> &mdash; The listener object to remove.
+	</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">useCapture</span>:<a href="../../../Boolean.html">Boolean</a></code> (default = <code>false</code>)<code></code> &mdash; Specifies whether the listener was registered for the capture phase or the target and bubbling phases. If the listener was registered for both the capture phase and the target and bubbling phases, two calls to <code>removeEventListener()</code> are required to remove both: one call with <code>useCapture</code> set to <code>true</code>, and another call with <code>useCapture</code> set to <code>false</code>. 
+	 
+	 </td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="setSession()"></a><a name="setSession(lc.foundation.domain.SessionMap)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>setSession</h2></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">メソッド</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>override public function setSession(session:<a href="../../../lc/foundation/domain/SessionMap.html">SessionMap</a>):<a href="../../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p>
+	   Sets a <code>SessionMap</code> object that stores the information relating to the 
+	   server session.
+	   </p><p><span class="label"> パラメーター </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">session</span>:<a href="../../../lc/foundation/domain/SessionMap.html">SessionMap</a></code> &mdash; Specifies the information relating to the server session.
+	   
+	   </td></tr></table></p></div></span><span id="pageFilter"><a name="willTrigger()"></a><a name="willTrigger(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>willTrigger</h2></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">メソッド</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function willTrigger(type:<a href="../../../String.html">String</a>):<a href="../../../Boolean.html">Boolean</a></code><p></p><p></p><p>
+	 
+	Checks whether an event listener is registered with this EventDispatcher object or any of its ancestors for the specified event type. This method returns <code>true</code> if an event listener is triggered during any phase of the event flow when an event of the specified type is dispatched to this EventDispatcher object or any of its descendants.
+	<p>The difference between <code>hasEventListener()</code> and <code>willTrigger()</code> is that <code>hasEventListener()</code> examines only the object to which it belongs, whereas <code>willTrigger()</code> examines the entire event flow for the event specified by the <code>type</code> parameter.</p>
+	
+	</p><p><span class="label"> パラメーター </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:<a href="../../../String.html">String</a></code> &mdash; The type of event.
+	</td></tr></table></p><p></p><span class="label">戻り値</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../Boolean.html">Boolean</a></code> &mdash; A value of <code>true</code> if a listener of the specified type will be triggered; <code>false</code> otherwise.
+	 
+	 </td></tr></table></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2011 Adobe Systems Incorporated. All rights reserved. <br/>Wed Jun 29 2011, 08:40 PM -07:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><!--BEGIN IONCOMMENTS--><div id="ionComHere"></div><!--END IONCOMMENTS--><!--googleoff: all-->
+
+<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript" language="JavaScript"></script>
+<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript" language="JavaScript"></script>
+<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript" language="JavaScript"></script>
+<script type="text/javascript">
+<!--
+// <![CDATA[
+
+var helpcfgPath;
+var request;
+var info;
+var ionLoadReady = false;
+var ionLoaded = false;
+var ionSupportLoaded = false;
+var ionSupportLoadReady = false;
+
+var agt=navigator.userAgent.toLowerCase();
+var use_robohelp_behavior = false;
+
+if (typeof(terms_HELPCFG) != 'undefined' && terms_HELPCFG.length > 0){
+    var loc = getLangName();     //alert(loc);
+    helpcfgPath = "http://" + window.location.host + "/HelpCfg/" + loc + "/" + terms_HELPCFG;
+    setTimeout ( createXMLHttpRequest, 500 );
+}
+
+
+// -----------------------------------------
+// ----------- START AJAX CODE  ------------
+//
+function createXMLHttpRequest(){
+    if (window.XMLHttpRequest){       // code for Firefox, Opera, IE7, etc.
+        request=new XMLHttpRequest();        
+    }else if (window.ActiveXObject){  // code for IE6, IE5
+        request=new ActiveXObject("Microsoft.XMLHTTP");
+    }    
+    if (request != null){
+        request.onreadystatechange = handleStateChange;
+        request.open("GET", helpcfgPath, true);
+        request.send(null);
+    }else{
+        alert("Your browser does NOT support XMLHTTP.");
+    }
+}
+
+function handleStateChange(){    
+    if(request.readyState == 4){    // "loaded" 
+        if (request.status == 200){ // "OK"
+            var requestMsg = getXMLDoc(request.responseText);
+            try
+            {
+                info  = requestMsg.getElementsByTagName('product');
+                label = getIonLabel();               
+                site  = getIonSite();    
+                if (use_robohelp_behavior || !(label) || !(loc) || !(label.length > 0) || !(loc.length > 0)) {
+           //         document.getElementById("ionCount").style.display = "none";
+                    document.getElementById("ionComHere").style.display = "none";
+					document.getElementById("badgeContainerSupport").style.display = "none";
+                }
+                else {
+          //          document.getElementById("ionCount").style.display = "block";
+                    document.getElementById("ionComHere").style.display = "block";
+					document.getElementById("badgeContainerSupport").style.display = "block";
+                }
+				
+                if ( (info[0].getAttribute('ionCommentingAllowed') == 'yes') && (label) && (label.length > 0) && (loc)  && (loc.length > 0)) {
+					//only do this if the DOM is ready, else wait and call the function
+					ionLoadReady = true;
+				}
+				if((info[0].getAttribute('ionSupportBadgeAllowed') == 'yes') && (label) && (label.length > 0) && (loc)  && (loc.length > 0)) {
+					ionSupportLoadReady = true;
+				}
+				ionReadyLoad();
+            }catch(exception){}
+        }
+    }
+}
+
+function ionReadyLoad()
+{
+	//only do if DOM ready and ionLoadReady, and not loaded yet
+	if(alreadyrunflag && ionLoadReady && !ionLoaded)
+	{
+		ionLoaded = true;
+		var badge = new ionBadge();
+		badge.url = window.location.toString().replace(/\?(.*)/, "");
+		badge.locale = loc;
+		//badge.anchor = document.getElementById("ionCount");
+		badge.container = document.getElementById("ionComHere");
+		badge.productLabel = label;
+		if ( info[0].getAttribute('ionRatingAllowed') == 'yes' ){
+		    badge.ratingType = info[0].getAttribute('ionRatingType');
+		    badge.siteArea = site;
+		}
+		badge.load();
+	}
+	if(alreadyrunflag && ionSupportLoadReady && !ionSupportLoaded){
+		ionSupportLoaded = true;
+		var badgeSupport = new ionSupportBadge();
+		badgeSupport.container = document.getElementById("badgeContainerSupport");
+		badgeSupport.commenting = true;
+		badgeSupport.locale = loc;
+		badgeSupport.productLabel = label;
+		badgeSupport.rating = true;
+		badgeSupport.ratingType = "thumbs";
+		badgeSupport.siteArea = site;
+		badgeSupport.timeOutDelay = 30000;
+		badgeSupport.url = window.location.toString().replace(/\?(.*)/, "");
+		badgeSupport.load();
+		
+	}
+}
+
+function getXMLDoc(xmlText){
+    if(window.ActiveXObject){
+        xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+        xmlDoc.async=false;
+        xmlDoc.loadXML(xmlText);
+    }else if(document.implementation && document.implementation.createDocument){
+        xmlDoc=document.implementation.createDocument('','',null);
+        var oParser=new DOMParser();
+        xmlDoc=oParser.parseFromString(xmlText,"text/xml");
+    }else{
+        return null;
+    }
+    return xmlDoc;
+}
+
+// 
+// -----------  END AJAX CODE   ------------
+// -----------------------------------------
+
+
+
+
+function getLangName() {
+    var lang = "en-us";
+    var metaElements = document.all ?
+    document.all.tags('meta') :
+    document.getElementsByTagName ?
+    document.getElementsByTagName ('meta') : new Array();
+    for (var m = 0; m < metaElements.length; m++) {
+        if (metaElements[m].name == "lang") {
+            lang = metaElements[m].content;
+            break;
+        }
+    }
+    var ptn = /(..)-(..)/;
+    if (ptn.test(lang)) {
+        var countryCode = lang.replace(ptn, "$1");
+        var languageCode = lang.replace(ptn, "$2");
+        lang = countryCode + "_" + languageCode.toUpperCase();
+    }
+    return lang;
+}
+
+function isHomepage() {
+    var metaElements = document.all ?
+    document.all.tags('meta') :
+    document.getElementsByTagName ?
+    document.getElementsByTagName ('meta') : new Array();
+    for (var m = 0; m < metaElements.length; m++) {
+        if ((metaElements[m].name == "topictype") && (metaElements[m].content == "homepage")) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function getIonLabel() {
+    var href = "" + document.location.href;
+    var label = "";
+    // No commenting for the home page
+    if (isHomepage()) {
+        return label;
+    }
+    // 3D Reviewer doesn't get commenting, but the rest of Acrobat does.
+    if (href.indexOf("Acrobat/9.0/Reviewer") != -1) {
+        return label;
+    }
+
+    label = info[0].getAttribute('ionId');
+    return label;
+}
+
+function getIonSite(){
+    if ( info[0].getAttribute('ionSiteArea') != "" ){
+        return info[0].getAttribute('ionSiteArea');
+    }else{
+        return "help";
+    }
+}
+
+
+//-->
+</script>
+<!--googleoff: all-->
+
+
+<div style="display: none;">
+<!-- SiteCatalyst -->
+<script language="JavaScript" type="text/javascript"><!--
+var s_code=' ';
+var s_docHost = window.location.hostname.toLowerCase();
+var s_docURL = window.location.pathname.toLowerCase();
+var scJsHost = (("https:" == document.location.protocol) ? "https://www.adobe.com" : "http://wwwimages.adobe.com");
+if (s_docHost.indexOf(".corp.adobe") != -1 || s_docHost.indexOf("stage.") != -1 || s_docHost.indexOf(".dev.adobe") != -1 || s_docHost.indexOf("staging.") != -1) scJsHost="";
+document.write(unescape("%3Cscript src='" + scJsHost + "/uber/js/omniture_s_code.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var s_accountName;
+s_server="www.adobe.com static content pages";
+if (!window.s_account) s_accountName="mxmacromedia";
+else s_accountName=window.s_account;
+
+if (window.s_docURL.indexOf("/designcenter/") != -1)
+  s_channel="Adobe Design Center";	
+else if ((window.s_docHost.indexOf("labs.adobe") != -1) ||
+(window.s_docHost.indexOf("labs-staging.") != -1))
+  s_channel="Labs";
+else if (window.s_docHost.indexOf("help.adobe.com") != -1) {
+  s_channel="Support Help.adobe.com";
+  if (window.s_docURL.indexOf("/en_us/") == -1) {
+    s_docURLArray=s_docURL.split('/');
+    s_pageName="http://help.adobe.com/"+s_docURLArray[1]+"/"+ s_docURLArray[2]+"/"+s_docURLArray[3];
+    s_prop23="http://help.adobe.com"+window.location.pathname;
+  }
+}
+else if (window.s_docHost.indexOf("kb2.adobe.com") != -1) {
+  s_channel="Support Knowledgebase";
+  s_prop23="http://kb2.adobe.com"+s_docURL+":";
+  if (typeof(omtrProductList) != 'undefined' && omtrProductList.length > 0)
+ {
+    s_prop23=s_prop23+omtrProductList;
+  }
+}
+else if (window.s_docHost.indexOf("resellers.adobe.com") != -1) {
+		var s_pageName=document.getElementsByTagName("title")[0].text;
+}
+
+if (!window.scMMInclude) {
+	var s_wd=window,s_tm=new Date;
+	if(s_code!=' '){
+		s_code=s_dc(s_accountName);
+		if(s_code)document.write(s_code)
+	} 
+} else {
+	s_wds(s_accountName);s_ca(s_accountName); 
+}	
+
+function sendAnalyticsEvent(str){var ns=s_accountName;if(str!=null)ns+=","+str;void(s_gs(ns));}
+function sendLinkEvent(accnt,lnkname,type){
+accnt=s_accountName;s_linkType=type;s_lnk=true;s_linkName=lnkname;void(s_gs(accnt));}
+//--></script>
+<noscript><img src="http://stats.adobe.com/b/ss/mxmacromedia/1/H.15-XELvs/0?pageName=http%3A//www.adobe.com%3A%20noscript&ch=http%3A//www.adobe.com%3A%20noscript&g=http%3A//www.adobe.com" height="1" width="1" border="0" alt="" /></noscript>
+<!-- End SiteCatalyst -->
+</div>
+
+<script language="JavaScript" type="text/javascript">//<![CDATA[
+var scJsHost = (("https:" == document.location.protocol) ? "https://www.adobe.com" : "http://wwwimages.adobe.com");
+document.write(unescape("%3Cscript src='" + scJsHost + "/uber/js/atm/s_code_www.js' type='text/javascript'%3E%3C/script%3E"));
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+if(s_adobe){	
+	s_adobe.server="www.adobe.com Static Content pages";
+	/* Set pageName */
+	s_adobe.s_URL="adobe.com"+((location.pathname.charAt(0)=='/')?location.pathname:'/'+location.pathname);
+	if (s_adobe.s_URL.substring(s_adobe.s_URL.lastIndexOf('/')+1)=="") s_adobe.s_URL=s_adobe.s_URL+"index.html";
+	s_adobe.s_URLSplit=s_adobe.s_URL.split("/");
+	s_adobe.pageName=s_adobe.s_URLSplit.join(":");
+
+	/* Set prop4 to language-locale */
+	var s_meta=document.getElementsByTagName('meta'); 
+      for (i=0; i<s_meta.length; i++) { 
+        if (s_meta[i].getAttribute("http-equiv") == "Content-Language") { 
+          s_adobe.prop4=s_meta[i].getAttribute("content"); 
+	    s_adobe.prop4=s_adobe.prop4.replace(/\s+/g,'');
+        } 
+      } 
+	s_adobe.t()
+}
+//]]></script>
+
+
+
+
+
+
+
+<p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/ja_JP/legalnotices/index.html">法律上の注意</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">プライバシーポリシー</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+	  <div id="whyEnglishContent">
+   	  <div id="light" class="white_content">
+   	    <div class="white_content_title">
+   	      <span style="float:right"><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">[ X ]</a></span><span style="float:left">英語で表示される理由</span>
+   	    </div>
+   	    <div class="white_content_body">
+   	      <b>ActionScript 3.0 リファレンスガイドのコンテンツが英語で表示されます。</b><br><br>
+   	      ActionScript 3.0 リファレンスガイドのすべての部分がすべての言語に翻訳されているわけではありません。言語エレメントが翻訳されていない場合、そのエレメントは英語で表示されます。例えば、ga.controls.HelpBox クラスはどの言語にも訳されていません。このため、リファレンスガイドの日本語バージョンでは、ga.controls.HelpBox クラスは英語で表示されます。
+   	    </div>
+   	   </div>
+   	  <div id="fade" class="black_overlay"></div>
+	  </div>
+	</body>
+</html><!-- &copy; 2011 Adobe Systems Incorporated. All rights reserved. <br/>Wed Jun 29 2011, 08:40 PM -07:00  -->

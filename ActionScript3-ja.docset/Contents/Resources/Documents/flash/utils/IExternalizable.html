@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"><html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=9"><meta name="book" content="Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド"><meta name="lang" content="ja-jp"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="lite"><meta name="runtimever" content="lite:4"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="lite"><meta name="productver" content="lite:4"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><link rel="stylesheet" href="../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../ion.css" type="text/css"><meta name="keywords" content="IExternalizable,flash.utils.IExternalizable,readExternal,writeExternal"><title>flash.utils.IExternalizable - Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド</title>
+		<link rel="stylesheet" href="../../filter-style.css" type="text/css">
+		<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen">
+		
+		<script src="../../jquery.js" type="text/javascript"></script>
+		<script src="../../jquery.ba-hashchange.js" type="text/javascript"></script>
+		<script src="../../cookies.js" type="text/javascript"></script>
+		<script src="../../asdoc.js" type="text/javascript"></script>
+		<script src="../../AC_OETags.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+			var runtimesLabel = "ランタイム";
+			var productsLabel = "製品";
+			var noneLabel = "選択しない";
+			var qsearchBoxLabel = "クイック検索";
+			var qsearchText = "文字列が見つかりません";
+			var ajaxErrorMsg="ページをロード中にエラーが発生しました";
+			var ajaxErrorTryMsg="再試行";
+			var ajaxLoadingMsg="ロード中です";
+			var cancelMsg = "キャンセル";
+			var classesText = "クラス";
+			
+		
+			var baseRef = "../../";
+			var buildType = 'filter';
+			var alreadyrunflag=0; //flag to indicate whether target function has already been run
+			var terms_HELPCFG = "PlatformASLR.helpcfg";
+			
+			$(document).ready(function(){
+				init2();
+			});
+			
+		
+		</script>
+		<!--oss:off-->
+		
+<!-- ********************************** -->
+<!-- START: ForeSee survey code in: /ssi/globalheader.ssi -->
+
+<script type="text/javascript">
+<!-- 
+// Enable the survey for only English, German and Japanese
+var agt=navigator.userAgent.toLowerCase();
+if ( agt.indexOf("community help client") == -1 ){
+    if ( document.location.href.indexOf("/en_US/") != -1 ){
+        showSurvey();
+//    }else if (document.location.href.indexOf("/de_DE/") != -1){
+//         var locale="de";
+//         showSurvey();
+    }else if (document.location.href.indexOf("/ja_JP/") != -1 ){
+         var locale="ja";
+         showSurvey();
+    }	
+}
+
+function showSurvey(){
+	document.write('<script type="text/javascript" src="/js/foresee/foresee-trigger.js"><\/scr'+'ipt>');
+}
+
+// -->
+</script>
+
+<!-- END: ForeSee survey code -->
+<!-- ******************************** -->
+
+
+	</head>
+	<body>
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+										Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド<br>
+										  <span class="titleTableTopNavION">
+										  <span id="homelink">
+											<a target="_self" href="../../index.html"> ホーム </a>&nbsp;|&nbsp;
+										  </span>
+										    <a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">パッケージおよびクラスリストの表示</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">パッケージおよびクラスリストの非表示</a>&nbsp;|&nbsp;
+										  <a target="_self" href="../../package-summary.html"> パッケージ </a>&nbsp;|&nbsp;
+										    <a target="_self" href="../../class-summary.html"> クラス </a>&nbsp;|&nbsp;
+										    <a target="_self" href="../../all-index-Symbols.html"> 索引 </a>&nbsp;|&nbsp;
+										    <a target="_self" href="../../appendixes.html"> 付録 </a>
+										    <span id="whyEnglish">&nbsp;|&nbsp;
+										      <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">英語で表示される理由</a>
+										    </span><br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+											  <form class="searchFormION" method="get" onSubmit="return submitValue('Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド','community.adobe.com/help/search.html','0','communityhelp_platform_aslr','ja_JP');">
+																	  <input class="hidden" name="loc" value="" type="hidden">
+																	  <input class="hidden" name="termPrefix" value="site:help.adobe.com/en_US/AS3CLR/Flash_10.0" type="hidden">
+																	  <input class="hidden" name="title" value="ActionScript 3.0 Reference for the Adobe Flash Platform" type="hidden">
+																	  <input class="hidden" name="term" value="" type="hidden">
+																	  <input class="hidden" name="area" value="" type="hidden">
+																	  <input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text">
+											    <input type="button" name="action" value="" onClick="submitValue('Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド','community.adobe.com/help/search.html','0','communityhelp_platform_aslr','ja_JP')" class="searchbutton"><br>
+																      <input id="checkBoxId" type="checkbox" name="checkbox" value="checkbox" checked>言語リファレンスのみ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+																	  </form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+						  <td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../asfilter.js"></script>
+					  <div id="filter_panel_nf">
+  					  <table class="filterTable" width="100%">
+  					    <tr>
+  					      <td>パッケージフィルターおよびクラスフィルター：</td>
+     					    <td width="5%" align="right"><div id="runtimeLabel" onMouseOut="hideFilterPods(event, 1)"></div></td>
+     					    <td id="runtimes" align="left" style=" white-space:normal">サーバーからデータを取得しています...</td>
+  					    </tr>
+  					    <tr>
+  					      <td></td>
+  					      <td align="right" valign="top"><div id="productLabel" onMouseOut="hideFilterPods(event, 2)"></div></td>
+  					      <td id="products" width="85%" style="white-space:normal">サーバーからデータを取得しています...</td>
+  					    </tr>
+  					  </table>
+					  </div>
+					  <div id="runtimespod" onMouseOut="hideFilterPods(event, 1)">
+					    <form id="runtimesForm">
+					      <div id="runtime_podblock">サーバーからデータを取得しています...</div>
+					    </form>
+					  </div>
+					  <div id="productspod" onMouseOut="hideFilterPods(event, 2)">
+					    <form id="productsForm">
+					       <div id="product_podblock">サーバーからデータを取得しています...</div> 
+					    </form>
+					  </div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">flash.utils&nbsp;</a><br>
+								<convert>IExternalizable&nbsp;</convert>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+							  <a id="propertiesLink" href="#propertySummary" style="display:none"> プロパティ </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> プロパティ </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> コンストラクター </a>
+								<span id="constructorBar" style="display:none"> | </span>
+							  <a id="methodsLink" href="#methodSummary" style="display:none"> メソッド </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('methodSummary');" style="display:none"> 関数 </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+							  <a id="eventsLink" href="#eventSummary" style="display:none"> イベント </a>
+								<span id="eventsBar" style="display:none"> | </span>
+							  <a id="stylesLink" href="#styleSummary" style="display:none"> スタイル </a>
+								<span id="stylesBar" style="display:none"> | </span>
+							  <a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> スキンパーツ </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+							  <a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> スキンの状態 </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+							  <a id="effectsLink" href="#effectSummary" style="display:none"> エフェクト </a>
+								<span id="effectsBar" style="display:none"> | </span>
+							  <a id="constantsLink" href="#constantSummary" style="display:none"> 定数 </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constantSummary');" style="display:none"> 定数 </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('interfaceSummary');" style="display:none"> インターフェイス </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('classSummary');" style="display:none"> クラス </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="packageUseLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('package-use.html');" style="display:none">用途</a>
+								<span id="packageUseBar" style="display:none"> | </span>
+							  <a id="examplesLink" href="#includeExamplesSummary" style="display:none"> 例 </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+        <div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<h3 id="classlisth3">
+						<a id="cls_name" href="" target="_self" onclick="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" oncontextmenu="this.href=baseRef + 'class-summary.html';saveClassListScrollTop();" style="color:black">
+						クラス
+						</a>
+						<span id="cls_searchspan" style="display:none">
+							<input type="text" id="cls_searchbox" onfocus="clsSearchBoxOnFocus();" onblur="clsSearchBoxOnBlur()" onkeyup="clsSearchOnKeyUp();">
+							<span id="cls_clear_search" class="search_inactive" onclick="clsClearSearchButton()">x</span>
+						</span>
+					</h3>
+					
+					<div id="classlistoutline" class="classlistoutline"></div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">パッケージ</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">flash.utils</a></td></tr><tr><td class="classHeaderTableLabel">インターフェイス</td><td class="classSignature">public  interface  IExternalizable</td></tr><tr><td class="classHeaderTableLabel">実装者</td><td> <a href="../../mx/collections/ArrayCollection.html">ArrayCollection</a>,  <a href="../../mx/collections/ArrayList.html">ArrayList</a>,  <a href="../../mx/data/CacheDataDescriptor.html">CacheDataDescriptor</a>,  <a href="../../mx/data/ChangedItems.html">ChangedItems</a>,  <a href="../../mx/data/Conflict.html">Conflict</a>,  <a href="../../mx/data/ManagedAssociation.html">ManagedAssociation</a>,  <a href="../../mx/data/MessageBatch.html">MessageBatch</a>,  <a href="../../mx/utils/ObjectProxy.html">ObjectProxy</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><div id="badgeAnchorSupport" class="ionBadgeWrapper"></div><div id="badgeContainerSupport"></div><p></p><p></p>
+ IExternalizable インターフェイスは、クラスがデータストリームにエンコードされるときに、クラスの直列化を制御します。IExternalizable インターフェイスの <code>writeExternal()</code> メソッドおよび <code>readExternal()</code> メソッドは、オブジェクトおよびそのスーパータイプのデータストリームの内容や形式のカスタマイズを可能にするためにクラスによって実装されています。ただし、クラス名やタイプはカスタマイズできません。個々のクラスを直列化して、インスタンスの状態を再構築する必要があります。これらのメソッドは、その状態を保存するためにスーパータイプと対称になっている必要があります。これらのメソッドは、AMF（Action Message Format）直列化の動作よりも優先されます。 
+ <p>クラスが IExternalizable インターフェイスを実装せず、IExternalizable インターフェイスを実装するクラスからの継承もしない場合は、public メンバーのみのデフォルトのメカニズムを使用して、クラスのインスタンスが直列化されます。したがって、クラスの private、internal および protected メンバーは使用できなくなります。</p>
+               <p>private メンバーを直列化するには、クラスに IExternalizable インターフェイスを使用する必要があります。例えば次のクラスは、メンバーが private メンバーなので直列化されません。</p>
+               <div class="listing"><pre>
+ class Example {
+ 
+       private var one:int;
+       private var two:int;
+ }
+ </pre></div>
+               <p>ただし、IExternalizable インターフェイスを実装すると、次のように、クラスの private メンバーへの書き込み、およびクラスの private メンバーからの読み取りを行うことができます。</p>
+               <div class="listing"><pre>
+ class Example implement IExternalizable {
+ 
+       private var one:int;
+       private var two:int;
+ 
+       public function writeExternal(output:IDataOutput) {
+ 
+            output.writeInt(one);
+            output.writeInt(two);
+       }
+ 
+       public function readExternal(input:IDataInput) {
+ 
+            one = input.readInt();
+            two = input.readInt();
+       }
+ }
+ </pre></div>
+               <p>
+                  <b>注意：</b>クラスが IExternalizable を実装する場合、そのクラスのインスタンスには、デフォルトの直列化は適用されません。そのクラスがスーパークラスから public メンバーを継承する場合、これらのメンバーも慎重に管理する必要があります。</p>
+               <p>IExternalizable を実装するクラスのサブクラスに固有の private メンバーが含まれている場合、そのサブクラスは、次のように、IExternalizable のメソッドを上書きする必要があります。</p>
+               <div class="listing"><pre>
+ public class Base implements IExternalizable {
+  
+      private var one:Boolean;
+  
+      public function writeExternal(output:IDataOutput):void {
+  
+          output.writeBoolean(one);
+      }
+  
+      public function readExternal(input:IDataInput):void {
+  
+          one = input.readBoolean();
+      }
+ }
+  
+ public class Example extends Base {
+  
+      private var one:String;
+  
+  
+      public override function writeExternal(output:IDataOutput):void {
+  
+          super.writeExternal(output);
+          output.writeUTF(one);
+      }
+  
+      public override function readExternal(input:IDataInput):void {
+      
+          super.readExternal(input);
+          one = input.readUTF();
+      }
+ }
+ </pre></div>
+               <p>IExternalizable インターフェイスを使用して、データストリームに書き込む前にデータを圧縮することもできます。次に実際の使用例を示します。</p>
+               <div class="listing"><pre>
+ class Example implements IExternalizable {
+  
+      public var one:Boolean;
+      public var two:Boolean;
+      public var three:Boolean;
+      public var four:Boolean;
+      public var five:Boolean;
+      public var six:Boolean;
+      public var seven:Boolean;
+      public var eight:Boolean;
+ 
+      public function writeExternal(output:IDataOutput) {
+ 
+          var flag:int = 0;
+ 
+          if (one) flag |= 1;
+          if (two) flag |= 2;
+          if (three) flag |= 4;
+          if (four) flag |= 8;
+          if (five) flag |= 16;
+          if (six) flag |= 32;
+          if (seven) flag |= 64;
+          if (eight) flag |= 128;
+ 
+          output.writeByte(flag);
+      }
+ 
+      public function readExternal(input:IDataInput) {
+ 
+          var flag:int = input.readByte();
+ 
+          one = (flag & 1) != 0;
+          two = (flag & 2) != 0;
+          three = (flag & 4) != 0;
+          four = (flag & 8) != 0;
+          five = (flag & 16) != 0;
+          six = (flag & 32) != 0;
+          seven = (flag & 64) != 0;
+          eight = (flag & 128) != 0;
+      }
+ }
+ </pre></div>
+            <p></p><p id="moreExamples"><span class="classHeaderTableLabel">さらに例を参照</span></p><div class="seeAlso"><a href="http://help.adobe.com/ja_JP/Flex/4.6/AccessingData/WS2db454920e96a9e51e63e3d11c0bf66651-7fd2.html" target="_blank">カスタムシリアライゼーションの使用</a><br/><a href="http://help.adobe.com/en_US/dataservices/4.6/Developing/WS7dd5c1363434bb70-163458dc12fc0c818a5-7ffa.html" target="_blank">Using custom serialization between
+ActionScript and Java</a></div><p><span class="classHeaderTableLabel">関連する API エレメント</span></p><div class="seeAlso"><a href="../../flash/net/ObjectEncoding.html" target="">flash.net.ObjectEncoding</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">パブリックメソッド </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">メソッド</th><th>定義元</th></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#readExternal()" class="signatureLink">readExternal</a>(input:<a href="../../flash/utils/IDataInput.html">IDataInput</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	 このメソッドは、IDataInput インターフェイスのメソッドを呼び出してデータストリームからデコードできるように、クラスで実装されています。</div></td><td class="summaryTableOwnerCol">IExternalizable</td></tr><tr class="" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#writeExternal()" class="signatureLink">writeExternal</a>(output:<a href="../../flash/utils/IDataOutput.html">IDataOutput</a>):<a href="../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	 このメソッドは、IDataOutput インターフェイスのメソッドを呼び出してそれ自身をデータストリームにエンコードするために、クラスに実装します。</div></td><td class="summaryTableOwnerCol">IExternalizable</td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><a name="methodDetail"></a><div class="detailSectionHeader">メソッドの詳細</div><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="readExternal()"></a><a name="readExternal(flash.utils.IDataInput)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>readExternal</h2></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">メソッド</td></tr></table><div class="detailBody"><code> public function readExternal(input:<a href="../../flash/utils/IDataInput.html">IDataInput</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 このメソッドは、IDataInput インターフェイスのメソッドを呼び出してデータストリームからデコードできるように、クラスで実装されています。このメソッドでは、<code>writeExternal()</code> メソッドで書き込まれたときと同じシーケンスおよびタイプで、値を読み出す必要があります。
+     </p><p><span class="label"> パラメーター </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">input</span>:<a href="../../flash/utils/IDataInput.html">IDataInput</a></code> &mdash; IDataInput インターフェイスを実装するクラスの名前です。
+	 </td></tr></table></p></div></span><span id="pageFilter" runtime="Flash::9##Lite::4##"><a name="writeExternal()"></a><a name="writeExternal(flash.utils.IDataOutput)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>writeExternal</h2></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">メソッド</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function writeExternal(output:<a href="../../flash/utils/IDataOutput.html">IDataOutput</a>):<a href="../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Lite 4</td></tr></table><p></p><p></p><p>
+	 このメソッドは、IDataOutput インターフェイスのメソッドを呼び出してそれ自身をデータストリームにエンコードするために、クラスに実装します。
+     </p><p><span class="label"> パラメーター </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">output</span>:<a href="../../flash/utils/IDataOutput.html">IDataOutput</a></code> &mdash; IDataOutput インターフェイスを実装するクラスの名前です。
+	 </td></tr></table></p></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2011 Adobe Systems Incorporated. All rights reserved. <br/>Wed Dec 21 2011, 05:51 PM -08:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><!--BEGIN IONCOMMENTS--><div id="ionComHere"></div><!--END IONCOMMENTS--><div style="display: none;">
+<!-- SiteCatalyst -->
+<script language="JavaScript" type="text/javascript"><!--
+var s_code=' ';
+var s_docHost = window.location.hostname.toLowerCase();
+var s_docURL = window.location.pathname.toLowerCase();
+var scJsHost = (("https:" == document.location.protocol) ? "https://www.adobe.com" : "http://wwwimages.adobe.com");
+if (s_docHost.indexOf(".corp.adobe") != -1 || s_docHost.indexOf("stage.") != -1 || s_docHost.indexOf(".dev.adobe") != -1 || s_docHost.indexOf("staging.") != -1) scJsHost="";
+document.write(unescape("%3Cscript src='" + scJsHost + "/uber/js/omniture_s_code.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var s_accountName;
+s_server="www.adobe.com static content pages";
+if (!window.s_account) s_accountName="mxmacromedia";
+else s_accountName=window.s_account;
+
+if (window.s_docURL.indexOf("/designcenter/") != -1)
+  s_channel="Adobe Design Center";	
+else if ((window.s_docHost.indexOf("labs.adobe") != -1) ||
+(window.s_docHost.indexOf("labs-staging.") != -1))
+  s_channel="Labs";
+else if (window.s_docHost.indexOf("help.adobe.com") != -1) {
+  s_channel="Support Help.adobe.com";
+  if (window.s_docURL.indexOf("/en_us/") == -1) {
+    s_docURLArray=s_docURL.split('/');
+    s_pageName="http://help.adobe.com/"+s_docURLArray[1]+"/"+ s_docURLArray[2]+"/"+s_docURLArray[3];
+    s_prop23="http://help.adobe.com"+window.location.pathname;
+  }
+}
+else if (window.s_docHost.indexOf("kb2.adobe.com") != -1) {
+  s_channel="Support Knowledgebase";
+  s_prop23="http://kb2.adobe.com"+s_docURL+":";
+  if (typeof(omtrProductList) != 'undefined' && omtrProductList.length > 0)
+ {
+    s_prop23=s_prop23+omtrProductList;
+  }
+}
+else if (window.s_docHost.indexOf("resellers.adobe.com") != -1) {
+		var s_pageName=document.getElementsByTagName("title")[0].text;
+}
+
+if (!window.scMMInclude) {
+	var s_wd=window,s_tm=new Date;
+	if(s_code!=' '){
+		s_code=s_dc(s_accountName);
+		if(s_code)document.write(s_code)
+	} 
+} else {
+	s_wds(s_accountName);s_ca(s_accountName); 
+}	
+
+function sendAnalyticsEvent(str){var ns=s_accountName;if(str!=null)ns+=","+str;void(s_gs(ns));}
+function sendLinkEvent(accnt,lnkname,type){
+accnt=s_accountName;s_linkType=type;s_lnk=true;s_linkName=lnkname;void(s_gs(accnt));}
+//--></script>
+<noscript><img src="http://stats.adobe.com/b/ss/mxmacromedia/1/H.15-XELvs/0?pageName=http%3A//www.adobe.com%3A%20noscript&ch=http%3A//www.adobe.com%3A%20noscript&g=http%3A//www.adobe.com" height="1" width="1" border="0" alt="" /></noscript>
+<!-- End SiteCatalyst -->
+</div>
+
+<script language="JavaScript" type="text/javascript">//<![CDATA[
+var scJsHost = (("https:" == document.location.protocol) ? "https://www.adobe.com" : "http://wwwimages.adobe.com");
+document.write(unescape("%3Cscript src='" + scJsHost + "/uber/js/atm/s_code_www.js' type='text/javascript'%3E%3C/script%3E"));
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+if(s_adobe){	
+	s_adobe.server="www.adobe.com Static Content pages";
+	/* Set pageName */
+	s_adobe.s_URL="adobe.com"+((location.pathname.charAt(0)=='/')?location.pathname:'/'+location.pathname);
+	if (s_adobe.s_URL.substring(s_adobe.s_URL.lastIndexOf('/')+1)=="") s_adobe.s_URL=s_adobe.s_URL+"index.html";
+	s_adobe.s_URLSplit=s_adobe.s_URL.split("/");
+	s_adobe.pageName=s_adobe.s_URLSplit.join(":");
+
+	/* Set prop4 to language-locale */
+	var s_meta=document.getElementsByTagName('meta'); 
+      for (i=0; i<s_meta.length; i++) { 
+        if (s_meta[i].getAttribute("http-equiv") == "Content-Language") { 
+          s_adobe.prop4=s_meta[i].getAttribute("content"); 
+	    s_adobe.prop4=s_adobe.prop4.replace(/\s+/g,'');
+        } 
+      } 
+	s_adobe.t()
+}
+//]]></script>
+
+
+
+
+
+
+
+<p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/ja_JP/legalnotices/index.html">法律上の注意</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">プライバシーポリシー</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+	  <div id="whyEnglishContent">
+   	  <div id="light" class="white_content">
+   	    <div class="white_content_title">
+   	      <span style="float:right"><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">[ X ]</a></span><span style="float:left">英語で表示される理由</span>
+   	    </div>
+   	    <div class="white_content_body">
+   	      <b>ActionScript 3.0 リファレンスガイドのコンテンツが英語で表示されます。</b><br><br>
+   	      ActionScript 3.0 リファレンスガイドのすべての部分がすべての言語に翻訳されているわけではありません。言語エレメントが翻訳されていない場合、そのエレメントは英語で表示されます。例えば、ga.controls.HelpBox クラスはどの言語にも訳されていません。このため、リファレンスガイドの日本語バージョンでは、ga.controls.HelpBox クラスは英語で表示されます。
+   	    </div>
+   	   </div>
+   	  <div id="fade" class="black_overlay"></div>
+	  </div>
+	  
+
+	<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript"></script>
+	<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript"></script>
+	<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript"></script>
+	</body>
+</html><!-- &copy; 2011 Adobe Systems Incorporated. All rights reserved. <br/>Wed Dec 21 2011, 05:51 PM -08:00  -->

@@ -1,0 +1,630 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"><html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="book" content="Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド"><meta name="lang" content="ja-jp"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:9"><meta name="runtime" content="flash player"><meta name="runtimever" content="flash player:10"><meta name="product" content="flash player"><meta name="productver" content="flash player:9"><meta name="product" content="flash player"><meta name="productver" content="flash player:10"><meta name="product" content="livecycle"><meta name="prodver" content="livecycle:ES2"><link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../override.css" type="text/css"><link rel="stylesheet" href="../../../../asfilter.css" type="text/css"><link rel="stylesheet" href="../../../../ion.css" type="text/css"><meta name="keywords" content="StartProcessModel,lc.procmgmt.ui.endpoint.StartProcessModel,STATE_INITIAL,STATE_LOADING,STATE_LOAD_ERROR,STATE_READY,endpointFromUrl,endpointSelectorModel,iconSource,listData,selectedListItem,session,initialize,loadCategories,selectEndpoint"><title>lc.procmgmt.ui.endpoint.StartProcessModel - Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド</title>
+		<link rel="stylesheet" href="../../../../filter-style.css" type="text/css">
+		<script type="text/javascript">
+			var runtimesLabel = "ランタイム";
+			var productsLabel = "製品";
+		  var noneLabel = "選択しない";
+				
+				var baseRef = "../../../../";
+				var buildType = 'filter';
+				var alreadyrunflag=0; //flag to indicate whether target function has already been run
+				var terms_HELPCFG = "PlatformASLR.helpcfg";
+
+if (document.addEventListener)
+  document.addEventListener("DOMContentLoaded", function(){alreadyrunflag=1; init()}, false)
+else if (document.all && !window.opera){
+ /* blocks IE from working, as it's fired before dom if ready
+ document.write('<script type="text/javascript" id="contentloadtag" defer="defer" src="javascript:void(0)"><\/script>')
+  var contentloadtag=document.getElementById("contentloadtag")
+  contentloadtag.onreadystatechange=function(){
+    if (this.readyState=="complete"){
+      alreadyrunflag=1;
+      init();
+    }
+  }*/
+} else if(/Safari/i.test(navigator.userAgent)){ //Test for Safari
+  var _timer=setInterval(function(){
+  if(/loaded|complete/.test(document.readyState)){
+    clearInterval(_timer)
+     alreadyrunflag=1;
+    init(); // call target function
+  }}, 10)
+}
+
+function onLoadFunction() {
+	setTimeout("if (!alreadyrunflag) init();  alreadyrunflag=1; ionReadyLoad(); ", 0);
+}			
+		</script>
+		<script language="javascript" type="text/javascript" src="../../../../cookies.js"></script>
+		<script language="javascript" type="text/javascript" src="../../../../asdoc.js"></script>
+		<!--oss:off-->
+		
+<!-- ********************************** -->
+<!-- START: ForeSee survey code in: /ssi/globalheader.ssi -->
+
+<script type="text/javascript">
+<!-- 
+// Enable the survey for only English, German and Japanese
+var agt=navigator.userAgent.toLowerCase();
+if ( agt.indexOf("community help client") == -1 ){
+    if ( document.location.href.indexOf("/en_US/") != -1 ){
+        showSurvey();
+//    }else if (document.location.href.indexOf("/de_DE/") != -1){
+//         var locale="de";
+//         showSurvey();
+    }else if (document.location.href.indexOf("/ja_JP/") != -1 ){
+         var locale="ja";
+         showSurvey();
+    }	
+}
+
+function showSurvey(){
+	document.write('<script type="text/javascript" src="/js/foresee/foresee-trigger.js"><\/scr'+'ipt>');
+}
+
+// -->
+</script>
+
+<!-- END: ForeSee survey code -->
+<!-- ******************************** -->
+
+
+	</head>
+	<body onload="onLoadFunction()">
+		<a name="top"></a>
+		
+		<table class="titleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table class="titleTable" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="titleTableTitleION" align="left" nowrap="true">
+										Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド<br>
+										  <span class="titleTableTopNavION">
+										    <a target="_self" id="showtoc" onClick="showHideTOC(true)" href="#top" style="display:">パッケージおよびクラスリストの表示</a><a target="_self" id="hidetoc" onClick="showHideTOC(false)" href="#top" style="display:none">パッケージおよびクラスリストの非表示</a>&nbsp;|&nbsp;
+										  <a target="_self" href="../../../../package-summary.html"> パッケージ </a>&nbsp;|&nbsp;
+										    <a target="_self" href="../../../../class-summary.html"> クラス </a>&nbsp;|&nbsp;
+										    <a target="_self" href="../../../../all-index-Symbols.html"> 索引 </a>&nbsp;|&nbsp;
+										    <a target="_self" href="../../../../appendixes.html"> 付録 </a>
+										    <span id="whyEnglish">&nbsp;|&nbsp;
+										      <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">英語で表示される理由</a>
+										    </span><br>
+											</span>	
+										</td>
+										<td class="titleTableSearchION" align="right" nowrap="true">
+											<span id="gsa" class="gsa">
+											  <form class="searchFormION" method="get" onSubmit="return submitValue('Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド','community.adobe.com/help/search.html','0','communityhelp_platform_aslr','ja_JP');">
+																	  <input class="hidden" name="loc" value="" type="hidden">
+																	  <input class="hidden" name="termPrefix" value="site:help.adobe.com/en_US/AS3CLR/Flash_10.0" type="hidden">
+																	  <input class="hidden" name="title" value="ActionScript 3.0 Reference for the Adobe Flash Platform" type="hidden">
+																	  <input class="hidden" name="term" value="" type="hidden">
+																	  <input class="hidden" name="area" value="" type="hidden">
+																	  <input class="searchinput" id="search-livedocs" name="search_text" value="" title="" type="text">
+											    <input type="button" name="action" value="" onClick="submitValue('Adobe&reg; Flash&reg; Platform 用 ActionScript&reg; 3.0 リファレンスガイド','community.adobe.com/help/search.html','0','communityhelp_platform_aslr','ja_JP')" class="searchbutton"><br>
+																      <input id="checkBoxId" type="checkbox" name="checkbox" value="checkbox" checked>言語リファレンスのみ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+																	  </form>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+						  <td class="titleTableLogo" align="right" rowspan="3"><div class="sprite logoION" alt="Adobe Logo" title="Adobe Logo"></div></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="filter_panel_float">
+						<script language="javascript" type="text/javascript" src="../../../../help.js"></script>
+						<script language="javascript" type="text/javascript" src="../../../../asfilter.js"></script>
+					  <div id="filter_panel_nf">
+  					  <table class="filterTable" width="100%">
+  					    <tr>
+  					      <td>パッケージフィルターおよびクラスフィルター：</td>
+     					    <td width="5%" align="right"><div id="runtimeLabel" onMouseOut="hideFilterPods(event, 1)"></div></td>
+     					    <td id="runtimes" align="left" style=" white-space:normal">サーバーからデータを取得しています...</td>
+  					    </tr>
+  					    <tr>
+  					      <td></td>
+  					      <td align="right" valign="top"><div id="productLabel" onMouseOut="hideFilterPods(event, 2)"></div></td>
+  					      <td id="products" width="85%" style="white-space:normal">サーバーからデータを取得しています...</td>
+  					    </tr>
+  					  </table>
+					  </div>
+					  <div id="runtimespod" onMouseOut="hideFilterPods(event, 1)">
+					    <form id="runtimesForm">
+					      <div id="runtime_podblock">サーバーからデータを取得しています...</div>
+					    </form>
+					  </div>
+					  <div id="productspod" onMouseOut="hideFilterPods(event, 2)">
+					    <form id="productsForm">
+					       <div id="product_podblock">サーバーからデータを取得しています...</div> 
+					    </form>
+					  </div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table class="titleTable" cellpadding="0" cellspacing="0">
+						<tr class="titleTableRow2">
+							<td class="titleTableSubTitle" id="subTitle" align="left" colspan="2">
+								<a href="package-detail.html" id="packageName" style="font-size:11px;">lc.procmgmt.ui.endpoint&nbsp;</a><br>
+								<convert>StartProcessModel&nbsp;</convert>
+							</td>
+							<td class="titleTableSubNav" id="subNav" align="right">
+							  <a id="propertiesLink" href="#propertySummary" style="display:none"> プロパティ </a>
+								<span id="propertiesBar" style="display:none"> | </span>
+								<a id="packagePropertiesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('propertySummary');" style="display:none"> プロパティ </a>
+								<span id="packagePropertiesBar" style="display:none"> | </span>
+								<a id="constructorLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constructorSummary');" style="display:none"> コンストラクター </a>
+								<span id="constructorBar" style="display:none"> | </span>
+							  <a id="methodsLink" href="#methodSummary" style="display:none"> メソッド </a>
+								<span id="methodsBar" style="display:none"> | </span>
+								<a id="packageFunctionsLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('methodSummary');" style="display:none"> 関数 </a>
+								<span id="packageFunctionsBar" style="display:none"> | </span>
+							  <a id="eventsLink" href="#eventSummary" style="display:none"> イベント </a>
+								<span id="eventsBar" style="display:none"> | </span>
+							  <a id="stylesLink" href="#styleSummary" style="display:none"> スタイル </a>
+								<span id="stylesBar" style="display:none"> | </span>
+							  <a id="SkinPartLink" href="#SkinPartSummary" style="display:none"> スキンパーツ </a>
+								<span id="SkinPartBar" style="display:none"> | </span>
+							  <a id="SkinStateLink" href="#SkinStateSummary" style="display:none"> スキンの状態 </a>
+								<span id="SkinStateBar" style="display:none"> | </span>
+							  <a id="effectsLink" href="#effectSummary" style="display:none"> エフェクト </a>
+								<span id="effectsBar" style="display:none"> | </span>
+							  <a id="constantsLink" href="#constantSummary" style="display:none"> 定数 </a>
+								<span id="constantsBar" style="display:none"> | </span>
+								<a id="packageConstantsLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('constantSummary');" style="display:none"> 定数 </a>
+								<span id="packageConstantsBar" style="display:none"> | </span>
+								<a id="interfacesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('interfaceSummary');" style="display:none"> インターフェイス </a>
+								<span id="interfacesBar" style="display:none"> | </span>
+								<a id="classesLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('classSummary');" style="display:none"> クラス </a>
+								<span id="classesBar" style="display:none"> | </span>
+								<a id="packageUseLink" href="#top" onClick="javascript:titleBar_gotoClassFrameAnchor('package-use.html');" style="display:none">用途</a>
+								<span id="packageUseBar" style="display:none"> | </span>
+							  <a id="examplesLink" href="#includeExamplesSummary" style="display:none"> 例 </a>
+							</td>
+						</tr>
+						<tr class="titleTableRow3">
+							<td colspan="4"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+        <div class="maincontainer" id="maincontainer" style="display:none">
+			<div class="mainleft" id="toc">
+				<div id="packagelist" class="packagelist"></div>
+				<div class="h_splitter" id="h_splitter" onMouseDown="h_splitterMouseDown(event, this);" onMouseUp="h_splitterMouseUp(event);" onMouseMove="h_splitterMouseMove(event);"></div>
+				<div id="classlist" class="classlist">
+					<div class="classlistoutline"></div>
+				</div>
+			</div>
+			<div class="splitter" id="splitter" onMouseDown="splitterMouseDown(event, this);" onMouseUp="splitterMouseUp(event);" onMouseMove="splitterMouseMove(event);">
+			</div>
+			<!--oss:on--><div class="mainright" id="content">
+				<div class="content"><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">パッケージ</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">lc.procmgmt.ui.endpoint</a></td></tr><tr><td class="classHeaderTableLabel">クラス</td><td class="classSignature">public  class  StartProcessModel</td></tr><tr><td class="classHeaderTableLabel">継承</td><td class="inheritanceList">StartProcessModel  <img src="../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../../../lc/procmgmt/ui/layout/NavigationSupervisorModel.html">NavigationSupervisorModel</a> <img src="../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../../../lc/procmgmt/ui/presentationmodel/PresentationModel.html">PresentationModel</a> <img src="../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../../../flash/events/EventDispatcher.html">EventDispatcher</a> <img src="../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> <a href="../../../../Object.html">Object</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><div id="badgeAnchorSupport" class="ionBadgeWrapper"></div><div id="badgeContainerSupport"></div><p></p><p></p>
+	 The <code>StartProcessModel</code> class acts as the model for the 
+	 <code>StartProcess</code> component.
+	 
+	 <p>The <code>StartProcessModel</code> class loads the contents of the list data into the navigation area 
+	 in the <code>StartProcess</code> component. The list data contains favorites and
+	 the available categories configured on a LiveCycle ES2 server. Depending on the selection of a
+	 <code>Category</code> or <code>FavoriteCategory</code> object, the appropriate set 
+	 of forms to start a process are loaded into the content area of the component. 
+	 Each form that starts a process is represented as an <code>Endpoint</code> object.</p>
+	 
+	           <p></p><p><span class="classHeaderTableLabel">関連項目</span></p><div class="seeAlso"><a href="../../../../lc/procmgmt/domain/FavoriteCategory.html" target="">lc.procmgmt.domain.FavoriteCategory</a><br/><a href="../../../../lc/procmgmt/domain/Category.html" target="">lc.procmgmt.domain.Category</a><br/><a href="../../../../lc/procmgmt/domain/Endpoint.html" target="">lc.procmgmt.domain.Endpoint</a><br/><a href="StartProcessModel.html" target="">lc.procmgmt.ui.endpoint.StartProcessModel</a></div><br/><hr></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="propertySummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">パブリックプロパティ</div><div class="showHideLinks"><div id="hideInheritedProperty" class="hideInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(false,'Property');"><img class="showHideLinkImage" src="../../../../images/expanded.gif"> 継承されるパブリックプロパティを隠す</a></div><div id="showInheritedProperty" class="showInheritedProperty"><a class="showHideLink" href="#propertySummary" onclick="javascript:setInheritedVisible(true,'Property');"><img class="showHideLinkImage" src="../../../../images/collapsed.gif"> 継承されるパブリックプロパティを表示</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">プロパティ</th><th>定義元</th></tr><tr class="hideInheritedProperty" runtime="Flash::9##Lite::4##AIR::1.0##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../../../Object.html#constructor" class="signatureLink">constructor</a> : <a href="../../../../Object.html">Object</a><div class="summaryTableDescription">
+	 指定されたオブジェクトインスタンスのクラスオブジェクトまたはコンストラクター関数への参照です。</div></td><td class="summaryTableOwnerCol"><a href="../../../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#endpointFromUrl" class="signatureLink">endpointFromUrl</a> : <a href="../../../../lc/procmgmt/domain/Endpoint.html">Endpoint</a><div class="summaryTableDescription"> 
+		 The URL for starting a process.</div></td><td class="summaryTableOwnerCol">StartProcessModel</td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#endpointSelectorModel" class="signatureLink">endpointSelectorModel</a> : EndpointSelectorModel<div class="summaryTableDescription"> 
+		 The model for the EndpointSelector.</div></td><td class="summaryTableOwnerCol">StartProcessModel</td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#iconSource" class="signatureLink">iconSource</a> : <a href="../../../../Class.html">Class</a><div class="summaryTableDescription"> 
+		 The icon source.</div></td><td class="summaryTableOwnerCol">StartProcessModel</td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#listData" class="signatureLink">listData</a> : AggregatingCollection<div class="summaryTableDescription"> 
+		A collection of Category objects and FavoriteCategory objects.</div></td><td class="summaryTableOwnerCol">StartProcessModel</td></tr><tr class="hideInheritedProperty" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../../../Object.html#prototype" class="signatureLink">prototype</a> : <a href="../../../../Object.html">Object</a><div class="summaryTableDescription">[静的] 
+	 クラスまたは関数オブジェクトのプロトタイプオブジェクトへの参照です。</div></td><td class="summaryTableOwnerCol"><a href="../../../../Object.html">Object</a></td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#selectedListItem" class="signatureLink">selectedListItem</a> : <a href="../../../../Object.html">Object</a><div class="summaryTableDescription"> 
+		 The currently selected item in the listData property.</div></td><td class="summaryTableOwnerCol">StartProcessModel</td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#session" class="signatureLink">session</a> : <a href="../../../../lc/foundation/domain/SessionMap.html">SessionMap</a><div class="summaryTableDescription">[オーバーライド] 
+		 Retrieves an instance of the current session map.</div></td><td class="summaryTableOwnerCol">StartProcessModel</td></tr><tr class="hideInheritedProperty" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><a href="../../../../lc/procmgmt/ui/presentationmodel/PresentationModel.html#state" class="signatureLink">state</a> : <a href="../../../../String.html">String</a><div class="summaryTableDescription">[読み取り専用] 
+		 The name of the state the current view is in.</div></td><td class="summaryTableOwnerCol"><a href="../../../../lc/procmgmt/ui/presentationmodel/PresentationModel.html">PresentationModel</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="methodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">パブリックメソッド </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../../../images/expanded.gif"> 継承されるパブリックメソッドを隠す</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../../../images/collapsed.gif"> 継承されるパブリックメソッドを表示</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">メソッド</th><th>定義元</th></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#StartProcessModel()" class="signatureLink">StartProcessModel</a>()</div><div class="summaryTableDescription">
+		 Constructor.</div></td><td class="summaryTableOwnerCol">StartProcessModel</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../flash/events/EventDispatcher.html#addEventListener()" class="signatureLink">addEventListener</a>(type:<a href="../../../../String.html">String</a>, listener:<a href="../../../../Function.html">Function</a>, useCapture:<a href="../../../../Boolean.html">Boolean</a> = false, priority:<a href="../../../../int.html">int</a> = 0, useWeakReference:<a href="../../../../Boolean.html">Boolean</a> = false):<a href="../../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	イベントリスナーオブジェクトを EventDispatcher オブジェクトに登録し、リスナーがイベントの通知を受け取るようにします。</div></td><td class="summaryTableOwnerCol"><a href="../../../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../lc/procmgmt/ui/presentationmodel/PresentationModel.html#bindProperty()" class="signatureLink">bindProperty</a>(destination:<a href="../../../../Object.html">Object</a>, destinationProperty:<a href="../../../../String.html">String</a>, source:<a href="../../../../Object.html">Object</a>, sourceChain:<a href="../../../../Object.html">Object</a>, commitOnly:<a href="../../../../Boolean.html">Boolean</a> = false):<a href="../../../../mx/binding/utils/ChangeWatcher.html">ChangeWatcher</a></div><div class="summaryTableDescription">
+     Binds a public property on the destination object from a property or
+     property chain on the source object.</div></td><td class="summaryTableOwnerCol"><a href="../../../../lc/procmgmt/ui/presentationmodel/PresentationModel.html">PresentationModel</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../flash/events/EventDispatcher.html#dispatchEvent()" class="signatureLink">dispatchEvent</a>(event:<a href="../../../../flash/events/Event.html">Event</a>):<a href="../../../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	イベントをイベントフローに送出します。</div></td><td class="summaryTableOwnerCol"><a href="../../../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../lc/procmgmt/ui/presentationmodel/PresentationModel.html#getCSSStyle()" class="signatureLink">getCSSStyle</a>(declaration:<a href="../../../../String.html">String</a>, styleProperty:<a href="../../../../String.html">String</a>, defaultValue:<a href="../../../../Object.html">Object</a> = null):<a href="../../../../Object.html">Object</a></div><div class="summaryTableDescription">
+		 Returns the corresponding cascading style sheet (CSS) property to use based on the specified parameters.</div></td><td class="summaryTableOwnerCol"><a href="../../../../lc/procmgmt/ui/presentationmodel/PresentationModel.html">PresentationModel</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../flash/events/EventDispatcher.html#hasEventListener()" class="signatureLink">hasEventListener</a>(type:<a href="../../../../String.html">String</a>):<a href="../../../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	EventDispatcher オブジェクトに、特定のイベントタイプに対して登録されたリスナーがあるかどうかを確認します。</div></td><td class="summaryTableOwnerCol"><a href="../../../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../Object.html#hasOwnProperty()" class="signatureLink">hasOwnProperty</a>(name:<a href="../../../../String.html">String</a>):<a href="../../../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 オブジェクトに指定されたプロパティが定義されているかどうかを示します。</div></td><td class="summaryTableOwnerCol"><a href="../../../../Object.html">Object</a></td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#initialize()" class="signatureLink">initialize</a>():<a href="../../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">[オーバーライド] 
+		 </div></td><td class="summaryTableOwnerCol">StartProcessModel</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../Object.html#isPrototypeOf()" class="signatureLink">isPrototypeOf</a>(theClass:<a href="../../../../Object.html">Object</a>):<a href="../../../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 Object クラスのインスタンスが、パラメーターとして指定されたオブジェクトのプロトタイプチェーン内にあるかどうかを示します。</div></td><td class="summaryTableOwnerCol"><a href="../../../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../Object.html#propertyIsEnumerable()" class="signatureLink">propertyIsEnumerable</a>(name:<a href="../../../../String.html">String</a>):<a href="../../../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	 指定されたプロパティが存在し、列挙できるかどうかを示します。</div></td><td class="summaryTableOwnerCol"><a href="../../../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../flash/events/EventDispatcher.html#removeEventListener()" class="signatureLink">removeEventListener</a>(type:<a href="../../../../String.html">String</a>, listener:<a href="../../../../Function.html">Function</a>, useCapture:<a href="../../../../Boolean.html">Boolean</a> = false):<a href="../../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+	EventDispatcher オブジェクトからリスナーを削除します。</div></td><td class="summaryTableOwnerCol"><a href="../../../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#selectEndpoint()" class="signatureLink">selectEndpoint</a>(endpoint:<a href="../../../../lc/procmgmt/domain/Endpoint.html">Endpoint</a>):<a href="../../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+		 Setting the selected task causes the  QueueEntryData object that 
+		 contains the selected task to have its details property set to true, and
+		 requests the QueueEntryData object to change to the selected
+		 task.</div></td><td class="summaryTableOwnerCol">StartProcessModel</td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../Object.html#setPropertyIsEnumerable()" class="signatureLink">setPropertyIsEnumerable</a>(name:<a href="../../../../String.html">String</a>, isEnum:<a href="../../../../Boolean.html">Boolean</a> = true):<a href="../../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+     ループ処理に対するダイナミックプロパティの可用性を設定します。</div></td><td class="summaryTableOwnerCol"><a href="../../../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../Object.html#toLocaleString()" class="signatureLink">toLocaleString</a>():<a href="../../../../String.html">String</a></div><div class="summaryTableDescription">
+	 ロケール固有の規則に従って書式設定された、このオブジェクトのストリング表現を返します。</div></td><td class="summaryTableOwnerCol"><a href="../../../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../Object.html#toString()" class="signatureLink">toString</a>():<a href="../../../../String.html">String</a></div><div class="summaryTableDescription">
+	 指定されたオブジェクトのストリング表現を返します。</div></td><td class="summaryTableOwnerCol"><a href="../../../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##AIR::1.0##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../Object.html#valueOf()" class="signatureLink">valueOf</a>():<a href="../../../../Object.html">Object</a></div><div class="summaryTableDescription">
+	 指定されたオブジェクトのプリミティブな値を返します。</div></td><td class="summaryTableOwnerCol"><a href="../../../../Object.html">Object</a></td></tr><tr class="hideInheritedMethod" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../flash/events/EventDispatcher.html#willTrigger()" class="signatureLink">willTrigger</a>(type:<a href="../../../../String.html">String</a>):<a href="../../../../Boolean.html">Boolean</a></div><div class="summaryTableDescription">
+	指定されたイベントタイプについて、この EventDispatcher オブジェクトまたはその祖先にイベントリスナーが登録されているかどうかを確認します。</div></td><td class="summaryTableOwnerCol"><a href="../../../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="protectedMethodSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">プロテクトメソッド </div><div class="showHideLinks"><div id="hideInheritedProtectedMethod" class="hideInheritedProtectedMethod"><a class="showHideLink" href="#protectedMethodSummary" onclick="javascript:setInheritedVisible(false,'ProtectedMethod');"><img class="showHideLinkImage" src="../../../../images/expanded.gif"> 継承されるプロテクトメソッドを隠す</a></div><div id="showInheritedProtectedMethod" class="showInheritedProtectedMethod"><a class="showHideLink" href="#protectedMethodSummary" onclick="javascript:setInheritedVisible(true,'ProtectedMethod');"><img class="showHideLinkImage" src="../../../../images/collapsed.gif"> 継承されるプロテクトメソッドを表示</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProtectedMethod"><tr><th>&nbsp;</th><th colspan="2">メソッド</th><th>定義元</th></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#loadCategories()" class="signatureLink">loadCategories</a>():<a href="../../../../lc/foundation/util/Token.html">lc.foundation.util:Token</a></div><div class="summaryTableDescription">
+		 Loads the categories from the SessionMap object and adds them to 
+		 the listData property.</div></td><td class="summaryTableOwnerCol">StartProcessModel</td></tr><tr class="hideInheritedProtectedMethod" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../lc/procmgmt/ui/presentationmodel/PresentationModel.html#setState()" class="signatureLink">setState</a>(newState:<a href="../../../../String.html">String</a>):<a href="../../../../specialTypes.html#void">void</a></div><div class="summaryTableDescription">
+		 Sets the state property to a new value and causes a PropertyChangeEvent event.</div></td><td class="summaryTableOwnerCol"><a href="../../../../lc/procmgmt/ui/presentationmodel/PresentationModel.html">PresentationModel</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="eventSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">イベント</div><div class="showHideLinks"><a href="http://help.adobe.com/en_US/Flex/4.5/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ee9.html" target="_blank">イベントの詳細についてはクリックしてください</a></div><div class="showHideLinks"><div id="hideInheritedEvent" class="hideInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(false,'Event');"><img class="showHideLinkImage" src="../../../../images/expanded.gif"> 継承されるイベントを隠す</a></div><div id="showInheritedEvent" class="showInheritedEvent"><a class="showHideLink" href="#eventSummary" onclick="javascript:setInheritedVisible(true,'Event');"><img class="showHideLinkImage" src="../../../../images/collapsed.gif"> 継承されるイベントを表示</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable hideInheritedEvent" id="summaryTableEvent"><tr><th>&nbsp;</th><th colspan="2">イベント</th><th> 概要 </th><th>定義元</th></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../flash/events/EventDispatcher.html#event:activate" class="signatureLink">activate</a></div></td><td class="summaryTableDescription summaryTableCol">[ブロードキャストイベント] Flash Player または AIR アプリケーションがオペレーティングシステムのフォーカスを取得して、アクティブになったときに送出されます。</td><td class="summaryTableOwnerCol"><a href="../../../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedEvent" runtime="Flash::9##Lite::4##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../flash/events/EventDispatcher.html#event:deactivate" class="signatureLink">deactivate</a></div></td><td class="summaryTableDescription summaryTableCol">「ブロードキャストイベント」- Flash Player または AIR アプリケーションがオペレーティングシステムのフォーカスを失って、非アクティブになったときに送出されます。</td><td class="summaryTableOwnerCol"><a href="../../../../flash/events/EventDispatcher.html">EventDispatcher</a></td></tr></table></div><a xmlns:xd="http://www.pnp-software.com/XSLTdoc" name="constantSummary"></a><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="summarySection"><div class="summaryTableTitle">パブリック定数</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">定数</th><th>定義元</th></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#STATE_INITIAL" class="signatureLink">STATE_INITIAL</a> : <a href="../../../../String.html">String</a> = "initialState"<div class="summaryTableDescription">[静的]  
+		 A special value that indicates that initialization is occurring and the categories have not been loaded.</div></td><td class="summaryTableOwnerCol">StartProcessModel</td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#STATE_LOAD_ERROR" class="signatureLink">STATE_LOAD_ERROR</a> : <a href="../../../../String.html">String</a> = "loadErrorState"<div class="summaryTableDescription">[静的]  
+		 A special value that indicates that an error occurred while loading the categories.</div></td><td class="summaryTableOwnerCol">StartProcessModel</td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#STATE_LOADING" class="signatureLink">STATE_LOADING</a> : <a href="../../../../String.html">String</a> = "loadingState"<div class="summaryTableDescription">[静的]  
+		 A special value that indicates that categories are being loading.</div></td><td class="summaryTableOwnerCol">StartProcessModel</td></tr><tr class="" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#STATE_READY" class="signatureLink">STATE_READY</a> : <a href="../../../../String.html">String</a> = "loadReadyState"<div class="summaryTableDescription">[静的]  
+		 A special value that indicates the process of loading categories is complete.</div></td><td class="summaryTableOwnerCol">StartProcessModel</td></tr></table></div><script xmlns:xd="http://www.pnp-software.com/XSLTdoc" language="javascript" type="text/javascript"><!--                      
+                      showHideInherited();                      
+                      --></script><div xmlns:xd="http://www.pnp-software.com/XSLTdoc" class="MainContent"><div class="detailSectionHeader">プロパティの詳細</div><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="propertyDetail"></a><a name="endpointFromUrl"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>endpointFromUrl</h2></td><td class="detailHeaderType">プロパティ</td></tr></table><div class="detailBody"><code>endpointFromUrl:<a href="../../../../lc/procmgmt/domain/Endpoint.html">Endpoint</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p> 
+		 The URL for starting a process. 
+		 
+		 </p><p>このプロパティはデータバインディングのソースとして使用できます。 このプロパティを変更すると、 <code>propertyChange</code>                 イベントが送出されます。</p><br/><br/><span class="label"> 実装 </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get endpointFromUrl():<a href="../../../../lc/procmgmt/domain/Endpoint.html">Endpoint</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set endpointFromUrl(value:<a href="../../../../lc/procmgmt/domain/Endpoint.html">Endpoint</a>):<a href="../../../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="propertyDetail"></a><a name="endpointSelectorModel"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>endpointSelectorModel</h2></td><td class="detailHeaderType">プロパティ</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>endpointSelectorModel:EndpointSelectorModel</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p> 
+		 The model for the <code>EndpointSelector</code>. 
+		 
+		 </p><p>このプロパティはデータバインディングのソースとして使用できます。 このプロパティを変更すると、 <code>propertyChange</code>                 イベントが送出されます。</p><br/><br/><span class="label"> 実装 </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get endpointSelectorModel():EndpointSelectorModel</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set endpointSelectorModel(value:EndpointSelectorModel):<a href="../../../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="propertyDetail"></a><a name="iconSource"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>iconSource</h2></td><td class="detailHeaderType">プロパティ</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>iconSource:<a href="../../../../Class.html">Class</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p> 
+		 The icon source. 
+		 
+		 </p><p>このプロパティはデータバインディングのソースとして使用できます。 このプロパティを変更すると、 <code>propertyChange</code>                 イベントが送出されます。</p><br/><br/><span class="label"> 実装 </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get iconSource():<a href="../../../../Class.html">Class</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set iconSource(value:<a href="../../../../Class.html">Class</a>):<a href="../../../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="propertyDetail"></a><a name="listData"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>listData</h2></td><td class="detailHeaderType">プロパティ</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>listData:AggregatingCollection</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p> 
+		A collection of <code>Category</code> objects and <code>FavoriteCategory</code> objects.
+		
+		</p><p>このプロパティはデータバインディングのソースとして使用できます。 このプロパティを変更すると、 <code>propertyChange</code>                 イベントが送出されます。</p><br/><br/><span class="label"> 実装 </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get listData():AggregatingCollection</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set listData(value:AggregatingCollection):<a href="../../../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="propertyDetail"></a><a name="selectedListItem"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>selectedListItem</h2></td><td class="detailHeaderType">プロパティ</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>selectedListItem:<a href="../../../../Object.html">Object</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p> 
+		 The currently selected item in the <code>listData</code> property. 
+		 
+		 </p><p>このプロパティはデータバインディングのソースとして使用できます。 このプロパティを変更すると、 <code>propertyChange</code>                 イベントが送出されます。</p><br/><br/><span class="label"> 実装 </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get selectedListItem():<a href="../../../../Object.html">Object</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set selectedListItem(value:<a href="../../../../Object.html">Object</a>):<a href="../../../../specialTypes.html#void">void</a></code><br/></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="propertyDetail"></a><a name="session"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>session</h2></td><td class="detailHeaderType">プロパティ</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>session:<a href="../../../../lc/foundation/domain/SessionMap.html">SessionMap</a></code>[オーバーライド] <p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p>
+		 Retrieves an instance of the current session map.
+		 </p><br/><br/><span class="label"> 実装 </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;override public function get session():<a href="../../../../lc/foundation/domain/SessionMap.html">SessionMap</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;override public function set session(value:<a href="../../../../lc/foundation/domain/SessionMap.html">SessionMap</a>):<a href="../../../../specialTypes.html#void">void</a></code><br/></div></span><a name="constructorDetail"></a><div class="detailSectionHeader">コンストラクターの詳細</div><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="StartProcessModel()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>StartProcessModel</h2></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">コンストラクター</td></tr></table><div class="detailBody"><code>public function StartProcessModel()</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p>
+		 Constructor. 
+		 
+		 </p></div></span><a name="methodDetail"></a><div class="detailSectionHeader">メソッドの詳細</div><span id="pageFilter"><a name="initialize()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>initialize</h2></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">メソッド</td></tr></table><div class="detailBody"><code>override public function initialize():<a href="../../../../specialTypes.html#void">void</a></code><p></p><p></p><p>
+		 </p></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="loadCategories()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>loadCategories</h2></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">メソッド</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> protected function loadCategories():<a href="../../../../lc/foundation/util/Token.html">lc.foundation.util:Token</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p>
+		 Loads the categories from the <code>SessionMap</code> object and adds them to 
+		 the <code>listData</code> property.
+		 </p><p></p><span class="label">戻り値</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../lc/foundation/util/Token.html">lc.foundation.util:Token</a></code> &mdash; A <code>Token</code> object that identifies whether the operation was successful.
+		 
+		 </td></tr></table></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="selectEndpoint()"></a><a name="selectEndpoint(lc.procmgmt.domain.Endpoint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>selectEndpoint</h2></td><td class="detailHeaderParens">()</td><td class="detailHeaderType">メソッド</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function selectEndpoint(endpoint:<a href="../../../../lc/procmgmt/domain/Endpoint.html">Endpoint</a>):<a href="../../../../specialTypes.html#void">void</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p>
+		 Setting the selected task causes the  <code>QueueEntryData</code> object that 
+		 contains the selected task to have its details property set to true, and
+		 requests the <code>QueueEntryData</code> object to change to the selected
+		 task.
+		 
+		 </p><p><span class="label"> パラメーター </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">endpoint</span>:<a href="../../../../lc/procmgmt/domain/Endpoint.html">Endpoint</a></code> &mdash; Specifies the task to be selected.
+		 
+		 </td></tr></table></p></div></span><div class="detailSectionHeader">定数の詳細</div><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="constantDetail"></a><a name="STATE_INITIAL"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>STATE_INITIAL</h2></td><td class="detailHeaderType">定数</td></tr></table><div class="detailBody"><code>public static const STATE_INITIAL:<a href="../../../../String.html">String</a> = "initialState"</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p> 
+		 A special value that indicates that initialization is occurring and the categories have not been loaded.
+		 
+		 </p></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="constantDetail"></a><a name="STATE_LOAD_ERROR"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>STATE_LOAD_ERROR</h2></td><td class="detailHeaderType">定数</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const STATE_LOAD_ERROR:<a href="../../../../String.html">String</a> = "loadErrorState"</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p> 
+		 A special value that indicates that an error occurred while loading the categories.
+		 
+		 </p></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="constantDetail"></a><a name="STATE_LOADING"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>STATE_LOADING</h2></td><td class="detailHeaderType">定数</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const STATE_LOADING:<a href="../../../../String.html">String</a> = "loadingState"</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p> 
+		 A special value that indicates that categories are being loading.
+		 
+		 </p></div></span><span id="pageFilter" runtime="Flash::9##Flash::10##" product="LCES::ES2##"><a name="constantDetail"></a><a name="STATE_READY"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName"><h2>STATE_READY</h2></td><td class="detailHeaderType">定数</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const STATE_READY:<a href="../../../../String.html">String</a> = "loadReadyState"</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>言語バージョン:&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>製品バージョン:&nbsp;</b></td><td>LiveCycle ES2</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b>ランタイムバージョン:&nbsp;</b></td><td>AIR 1.0, Flash Player 9, Flash Player 10</td></tr></table><p></p><p></p><p> 
+		 A special value that indicates the process of loading categories is complete.
+		 
+		 </p></div></span><br/><br/><hr><br/><script language="javascript" type="text/javascript" xml:space="preserve">                
+                                            
+        				
+        <!--				
+          				    				
+          					
+          if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle(""); titleBar_setSubNav(true,true,false,false,false,false,true,false,true,false,false,false,false,false,false,false);}				    
+          				        				    
+          				
+        -->                
+                                            
+        			
+      </script></div><p xmlns:xd="http://www.pnp-software.com/XSLTdoc"></p><center class="copyright"> &copy; 2011 Adobe Systems Incorporated. All rights reserved. <br/>Wed Jun 29 2011, 08:40 PM -07:00  </center></div>
+				<div class="contentfooter"><div class="separator">&nbsp;</div><!--BEGIN IONCOMMENTS--><div id="ionComHere"></div><!--END IONCOMMENTS--><!--googleoff: all-->
+
+<link href="http://community.adobe.com/help/badge/v3/ionBadge.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="http://community.adobe.com/help/badge/ionBadge.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="http://community.adobe.com/help/badge/v3/ionLoader.js" type="text/javascript" language="JavaScript"></script>
+<script src="http://community.adobe.com/help/badge/v3/ionSupport.js" type="text/javascript" language="JavaScript"></script>
+<script src="http://community.adobe.com/help/badge/v3/ionBadge.js" type="text/javascript" language="JavaScript"></script>
+<script type="text/javascript">
+<!--
+// <![CDATA[
+
+var helpcfgPath;
+var request;
+var info;
+var ionLoadReady = false;
+var ionLoaded = false;
+var ionSupportLoaded = false;
+var ionSupportLoadReady = false;
+
+var agt=navigator.userAgent.toLowerCase();
+var use_robohelp_behavior = false;
+
+if (typeof(terms_HELPCFG) != 'undefined' && terms_HELPCFG.length > 0){
+    var loc = getLangName();     //alert(loc);
+    helpcfgPath = "http://" + window.location.host + "/HelpCfg/" + loc + "/" + terms_HELPCFG;
+    setTimeout ( createXMLHttpRequest, 500 );
+}
+
+
+// -----------------------------------------
+// ----------- START AJAX CODE  ------------
+//
+function createXMLHttpRequest(){
+    if (window.XMLHttpRequest){       // code for Firefox, Opera, IE7, etc.
+        request=new XMLHttpRequest();        
+    }else if (window.ActiveXObject){  // code for IE6, IE5
+        request=new ActiveXObject("Microsoft.XMLHTTP");
+    }    
+    if (request != null){
+        request.onreadystatechange = handleStateChange;
+        request.open("GET", helpcfgPath, true);
+        request.send(null);
+    }else{
+        alert("Your browser does NOT support XMLHTTP.");
+    }
+}
+
+function handleStateChange(){    
+    if(request.readyState == 4){    // "loaded" 
+        if (request.status == 200){ // "OK"
+            var requestMsg = getXMLDoc(request.responseText);
+            try
+            {
+                info  = requestMsg.getElementsByTagName('product');
+                label = getIonLabel();               
+                site  = getIonSite();    
+                if (use_robohelp_behavior || !(label) || !(loc) || !(label.length > 0) || !(loc.length > 0)) {
+           //         document.getElementById("ionCount").style.display = "none";
+                    document.getElementById("ionComHere").style.display = "none";
+					document.getElementById("badgeContainerSupport").style.display = "none";
+                }
+                else {
+          //          document.getElementById("ionCount").style.display = "block";
+                    document.getElementById("ionComHere").style.display = "block";
+					document.getElementById("badgeContainerSupport").style.display = "block";
+                }
+				
+                if ( (info[0].getAttribute('ionCommentingAllowed') == 'yes') && (label) && (label.length > 0) && (loc)  && (loc.length > 0)) {
+					//only do this if the DOM is ready, else wait and call the function
+					ionLoadReady = true;
+				}
+				if((info[0].getAttribute('ionSupportBadgeAllowed') == 'yes') && (label) && (label.length > 0) && (loc)  && (loc.length > 0)) {
+					ionSupportLoadReady = true;
+				}
+				ionReadyLoad();
+            }catch(exception){}
+        }
+    }
+}
+
+function ionReadyLoad()
+{
+	//only do if DOM ready and ionLoadReady, and not loaded yet
+	if(alreadyrunflag && ionLoadReady && !ionLoaded)
+	{
+		ionLoaded = true;
+		var badge = new ionBadge();
+		badge.url = window.location.toString().replace(/\?(.*)/, "");
+		badge.locale = loc;
+		//badge.anchor = document.getElementById("ionCount");
+		badge.container = document.getElementById("ionComHere");
+		badge.productLabel = label;
+		if ( info[0].getAttribute('ionRatingAllowed') == 'yes' ){
+		    badge.ratingType = info[0].getAttribute('ionRatingType');
+		    badge.siteArea = site;
+		}
+		badge.load();
+	}
+	if(alreadyrunflag && ionSupportLoadReady && !ionSupportLoaded){
+		ionSupportLoaded = true;
+		var badgeSupport = new ionSupportBadge();
+		badgeSupport.container = document.getElementById("badgeContainerSupport");
+		badgeSupport.commenting = true;
+		badgeSupport.locale = loc;
+		badgeSupport.productLabel = label;
+		badgeSupport.rating = true;
+		badgeSupport.ratingType = "thumbs";
+		badgeSupport.siteArea = site;
+		badgeSupport.timeOutDelay = 30000;
+		badgeSupport.url = window.location.toString().replace(/\?(.*)/, "");
+		badgeSupport.load();
+		
+	}
+}
+
+function getXMLDoc(xmlText){
+    if(window.ActiveXObject){
+        xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+        xmlDoc.async=false;
+        xmlDoc.loadXML(xmlText);
+    }else if(document.implementation && document.implementation.createDocument){
+        xmlDoc=document.implementation.createDocument('','',null);
+        var oParser=new DOMParser();
+        xmlDoc=oParser.parseFromString(xmlText,"text/xml");
+    }else{
+        return null;
+    }
+    return xmlDoc;
+}
+
+// 
+// -----------  END AJAX CODE   ------------
+// -----------------------------------------
+
+
+
+
+function getLangName() {
+    var lang = "en-us";
+    var metaElements = document.all ?
+    document.all.tags('meta') :
+    document.getElementsByTagName ?
+    document.getElementsByTagName ('meta') : new Array();
+    for (var m = 0; m < metaElements.length; m++) {
+        if (metaElements[m].name == "lang") {
+            lang = metaElements[m].content;
+            break;
+        }
+    }
+    var ptn = /(..)-(..)/;
+    if (ptn.test(lang)) {
+        var countryCode = lang.replace(ptn, "$1");
+        var languageCode = lang.replace(ptn, "$2");
+        lang = countryCode + "_" + languageCode.toUpperCase();
+    }
+    return lang;
+}
+
+function isHomepage() {
+    var metaElements = document.all ?
+    document.all.tags('meta') :
+    document.getElementsByTagName ?
+    document.getElementsByTagName ('meta') : new Array();
+    for (var m = 0; m < metaElements.length; m++) {
+        if ((metaElements[m].name == "topictype") && (metaElements[m].content == "homepage")) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function getIonLabel() {
+    var href = "" + document.location.href;
+    var label = "";
+    // No commenting for the home page
+    if (isHomepage()) {
+        return label;
+    }
+    // 3D Reviewer doesn't get commenting, but the rest of Acrobat does.
+    if (href.indexOf("Acrobat/9.0/Reviewer") != -1) {
+        return label;
+    }
+
+    label = info[0].getAttribute('ionId');
+    return label;
+}
+
+function getIonSite(){
+    if ( info[0].getAttribute('ionSiteArea') != "" ){
+        return info[0].getAttribute('ionSiteArea');
+    }else{
+        return "help";
+    }
+}
+
+
+//-->
+</script>
+<!--googleoff: all-->
+
+
+<div style="display: none;">
+<!-- SiteCatalyst -->
+<script language="JavaScript" type="text/javascript"><!--
+var s_code=' ';
+var s_docHost = window.location.hostname.toLowerCase();
+var s_docURL = window.location.pathname.toLowerCase();
+var scJsHost = (("https:" == document.location.protocol) ? "https://www.adobe.com" : "http://wwwimages.adobe.com");
+if (s_docHost.indexOf(".corp.adobe") != -1 || s_docHost.indexOf("stage.") != -1 || s_docHost.indexOf(".dev.adobe") != -1 || s_docHost.indexOf("staging.") != -1) scJsHost="";
+document.write(unescape("%3Cscript src='" + scJsHost + "/uber/js/omniture_s_code.js' type='text/javascript'%3E%3C/script%3E"));
+//--></script>
+<script type="text/javascript"><!--
+var s_accountName;
+s_server="www.adobe.com static content pages";
+if (!window.s_account) s_accountName="mxmacromedia";
+else s_accountName=window.s_account;
+
+if (window.s_docURL.indexOf("/designcenter/") != -1)
+  s_channel="Adobe Design Center";	
+else if ((window.s_docHost.indexOf("labs.adobe") != -1) ||
+(window.s_docHost.indexOf("labs-staging.") != -1))
+  s_channel="Labs";
+else if (window.s_docHost.indexOf("help.adobe.com") != -1) {
+  s_channel="Support Help.adobe.com";
+  if (window.s_docURL.indexOf("/en_us/") == -1) {
+    s_docURLArray=s_docURL.split('/');
+    s_pageName="http://help.adobe.com/"+s_docURLArray[1]+"/"+ s_docURLArray[2]+"/"+s_docURLArray[3];
+    s_prop23="http://help.adobe.com"+window.location.pathname;
+  }
+}
+else if (window.s_docHost.indexOf("kb2.adobe.com") != -1) {
+  s_channel="Support Knowledgebase";
+  s_prop23="http://kb2.adobe.com"+s_docURL+":";
+  if (typeof(omtrProductList) != 'undefined' && omtrProductList.length > 0)
+ {
+    s_prop23=s_prop23+omtrProductList;
+  }
+}
+else if (window.s_docHost.indexOf("resellers.adobe.com") != -1) {
+		var s_pageName=document.getElementsByTagName("title")[0].text;
+}
+
+if (!window.scMMInclude) {
+	var s_wd=window,s_tm=new Date;
+	if(s_code!=' '){
+		s_code=s_dc(s_accountName);
+		if(s_code)document.write(s_code)
+	} 
+} else {
+	s_wds(s_accountName);s_ca(s_accountName); 
+}	
+
+function sendAnalyticsEvent(str){var ns=s_accountName;if(str!=null)ns+=","+str;void(s_gs(ns));}
+function sendLinkEvent(accnt,lnkname,type){
+accnt=s_accountName;s_linkType=type;s_lnk=true;s_linkName=lnkname;void(s_gs(accnt));}
+//--></script>
+<noscript><img src="http://stats.adobe.com/b/ss/mxmacromedia/1/H.15-XELvs/0?pageName=http%3A//www.adobe.com%3A%20noscript&ch=http%3A//www.adobe.com%3A%20noscript&g=http%3A//www.adobe.com" height="1" width="1" border="0" alt="" /></noscript>
+<!-- End SiteCatalyst -->
+</div>
+
+<script language="JavaScript" type="text/javascript">//<![CDATA[
+var scJsHost = (("https:" == document.location.protocol) ? "https://www.adobe.com" : "http://wwwimages.adobe.com");
+document.write(unescape("%3Cscript src='" + scJsHost + "/uber/js/atm/s_code_www.js' type='text/javascript'%3E%3C/script%3E"));
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+if(s_adobe){	
+	s_adobe.server="www.adobe.com Static Content pages";
+	/* Set pageName */
+	s_adobe.s_URL="adobe.com"+((location.pathname.charAt(0)=='/')?location.pathname:'/'+location.pathname);
+	if (s_adobe.s_URL.substring(s_adobe.s_URL.lastIndexOf('/')+1)=="") s_adobe.s_URL=s_adobe.s_URL+"index.html";
+	s_adobe.s_URLSplit=s_adobe.s_URL.split("/");
+	s_adobe.pageName=s_adobe.s_URLSplit.join(":");
+
+	/* Set prop4 to language-locale */
+	var s_meta=document.getElementsByTagName('meta'); 
+      for (i=0; i<s_meta.length; i++) { 
+        if (s_meta[i].getAttribute("http-equiv") == "Content-Language") { 
+          s_adobe.prop4=s_meta[i].getAttribute("content"); 
+	    s_adobe.prop4=s_adobe.prop4.replace(/\s+/g,'');
+        } 
+      } 
+	s_adobe.t()
+}
+//]]></script>
+
+
+
+
+
+
+
+<p id="creativecommons" class="creativecommons"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="external"><span class="sprite CC">&nbsp;</span></a></p><p id="cpsPromo"><a href="http://www.adobe.com/community/publishing/download.html" target="_blank" class="sprite CC_promo"></a></p><a class="legal" target="external" href="http://help.adobe.com/ja_JP/legalnotices/index.html">法律上の注意</a>&nbsp;|&nbsp;<a class="privacy" href="http://www.adobe.com/misc/privacy.html" target="external">プライバシーポリシー</a></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+	  <div id="whyEnglishContent">
+   	  <div id="light" class="white_content">
+   	    <div class="white_content_title">
+   	      <span style="float:right"><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">[ X ]</a></span><span style="float:left">英語で表示される理由</span>
+   	    </div>
+   	    <div class="white_content_body">
+   	      <b>ActionScript 3.0 リファレンスガイドのコンテンツが英語で表示されます。</b><br><br>
+   	      ActionScript 3.0 リファレンスガイドのすべての部分がすべての言語に翻訳されているわけではありません。言語エレメントが翻訳されていない場合、そのエレメントは英語で表示されます。例えば、ga.controls.HelpBox クラスはどの言語にも訳されていません。このため、リファレンスガイドの日本語バージョンでは、ga.controls.HelpBox クラスは英語で表示されます。
+   	    </div>
+   	   </div>
+   	  <div id="fade" class="black_overlay"></div>
+	  </div>
+	</body>
+</html><!-- &copy; 2011 Adobe Systems Incorporated. All rights reserved. <br/>Wed Jun 29 2011, 08:40 PM -07:00  -->
