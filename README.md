@@ -4,15 +4,22 @@
 
 ## 使い方
 
-下記のリンクをクリックすればDashに登録できます。
+下記のリンクをSafariなどで開けばDashに登録できます。
 
 [dash-feed://https%3A%2F%2Fraw.github.com%2Fton1517%2Fasdoc-ja-docset%2Fmaster%2FActionScript3-ja.xml](dash-feed://https%3A%2F%2Fraw.github.com%2Fton1517%2Fasdoc-ja-docset%2Fmaster%2FActionScript3-ja.xml)
 
-クリックしてもDashに登録されない場合はターミナルから
+Dashに登録されない場合はターミナルから
 
     open dash-feed://https%3A%2F%2Fraw.github.com%2Fton1517%2Fasdoc-ja-docset%2Fmaster%2FActionScript3-ja.xml
 
 としてください。
+
+## 自分のASDocをDashに登録したい場合
+
+自分や他の人のライブラリのASdocをDashに登録したい場合は、
+変換ツールを用意しましたので、お試しください。
+
+[ton1517/asdoc2dash · GitHub](https://github.com/ton1517/asdoc2das)
 
 
 ## ライセンス
