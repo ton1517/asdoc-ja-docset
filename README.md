@@ -2,11 +2,9 @@
 
 [ActionScript3.0 リファレンスガイド 日本語版](http://help.adobe.com/ja_JP/FlashPlatform/reference/actionscript/3/index.html)の[Dash](http://kapeli.com/dash) Docsetです。
 
-**<a href="dash-feed://https%3A%2F%2Fraw.github.com%2Fton1517%2Fasdoc-ja-docset%2Fmaster%2FActionScript3-ja.xml">Add to Dash</a>**
-
 ## 使い方
 
-上記の[Add to Dash]ボタンまたは下記のリンクをSafariなどで開けばDashに登録できます。
+下記のリンクをSafariなどで開けばDashに登録できます。
 
 [dash-feed://https%3A%2F%2Fraw.github.com%2Fton1517%2Fasdoc-ja-docset%2Fmaster%2FActionScript3-ja.xml](dash-feed://https%3A%2F%2Fraw.github.com%2Fton1517%2Fasdoc-ja-docset%2Fmaster%2FActionScript3-ja.xml)
 
