@@ -19,7 +19,7 @@ Dashに登録されない場合はターミナルから
 自分や他の人のライブラリのASdocをDashに登録したい場合は、
 変換ツールを用意しましたので、お試しください。
 
-[ton1517/asdoc2dash · GitHub](https://github.com/ton1517/asdoc2das)
+[ton1517/asdoc2dash · GitHub](https://github.com/ton1517/asdoc2dash)
 
 
 ## ライセンス
